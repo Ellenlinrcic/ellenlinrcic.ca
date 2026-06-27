@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ontario Launches Three New Pathways to Permanent Residence | 安省推出三条新的永久居民申请通道</title>
+  <meta name="description" content="Ontario has launched three new pathways to permanent residence under the Ontario Immigrant Nominee Program, including TEER 0-3, TEER 4-5, and self-employed physicians pathways." />
+
+  <style>
+    :root {
+      --deep-green: #12343b;
+      --green: #2d545e;
+      --warm-gold: #d4a373;
+      --cream: #f8f7f4;
+      --soft-cream: #efe9dc;
+      --text: #1f2933;
+      --muted: #5f6b73;
+      --white: #ffffff;
+      --border: #e4ded4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--deep-green);
+      color: var(--white);
+      padding: 22px 0;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: -0.5px;
+    }
+
+    .brand p {
+      margin: 4px 0 0;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .article-hero {
+      background: linear-gradient(135deg, var(--deep-green), var(--green));
+      color: var(--white);
+      padding: 70px 0;
+    }
+
+    .article-hero .category {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .article-hero h2 {
+      max-width: 900px;
+      margin: 0 0 18px;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+    }
+
+    .article-hero p {
+      max-width: 760px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 18px;
+    }
+
+    .article-meta {
+      margin-top: 22px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 15px;
+    }
+
+    main {
+      padding: 60px 0;
+    }
+
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 36px;
+      align-items: start;
+    }
+
+    article {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 42px;
+      box-shadow: 0 18px 45px rgba(18, 52, 59, 0.08);
+    }
+
+    article h3 {
+      color: var(--deep-green);
+      font-size: 30px;
+      margin: 0 0 18px;
+      line-height: 1.25;
+    }
+
+    article h4 {
+      color: var(--deep-green);
+      font-size: 22px;
+      margin: 34px 0 12px;
+    }
+
+    article p {
+      margin: 0 0 18px;
+      color: var(--text);
+      font-size: 17px;
+    }
+
+    article ul {
+      margin: 0 0 24px 22px;
+      padding: 0;
+    }
+
+    article li {
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    .zh {
+      color: var(--muted);
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 42px 0;
+    }
+
+    .note {
+      background: var(--cream);
+      border-left: 4px solid var(--warm-gold);
+      padding: 22px;
+      border-radius: 12px;
+      margin: 28px 0;
+    }
+
+    .note p {
+      margin-bottom: 12px;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 24px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 18px 45px rgba(18, 52, 59, 0.06);
+    }
+
+    .sidebar h4 {
+      margin: 0 0 14px;
+      color: var(--deep-green);
+      font-size: 20px;
+    }
+
+    .sidebar p {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0 0 16px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--deep-green);
+      color: var(--white);
+      padding: 13px 18px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--deep-green);
+      border: 1px solid var(--deep-green);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--deep-green);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    footer {
+      background: var(--deep-green);
+      color: rgba(255, 255, 255, 0.78);
+      padding: 26px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 850px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .article-layout {
+        grid-template-columns: 1fr;
+      }
+
+      article {
+        padding: 28px;
+      }
+
+      .sidebar {
+        position: static;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Jie “Ellen” Lin, RCIC</h1>
+        <p>Canadian Immigration Consultant | 加拿大持牌移民顾问</p>
+      </div>
+
+      <nav>
+        <a href="../index.html">Home 首页</a>
+        <a href="../index.html#services">Services 服务</a>
+        <a href="../index.html#updates">Updates 最新动态</a>
+        <a href="../index.html#contact">Contact 联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="container">
+      <div class="category">Policy Updates | 政策更新</div>
+      <h2>Ontario Launches Three New Pathways to Permanent Residence</h2>
+      <p>安省推出三条新的永久居民申请通道</p>
+      <div class="article-meta">Published on June 26, 2026 | 发布日期：2026年6月26日</div>
+    </div>
+  </section>
+
+  <main>
+    <div class="container article-layout">
+      <article>
+        <a class="back-link" href="../index.html#updates">← Back to Immigration Updates | 返回最新动态</a>
+
+        <h3>安省推出三条新的永久居民申请通道</h3>
+
+        <p class="zh">
+          安省省提名项目 OINP 近期进行了重大改革，并推出了三条新的永久居民申请通道。这些新通道属于新的
+          <strong>Ontario Workforce Priority Stream（安省劳动力优先类别）</strong>，主要目的是帮助安省更有针对性地筛选能够满足本省劳动力市场需求的外国工人。
+        </p>
+
+        <p class="zh">此次推出的三条新通道包括：</p>
+
+        <ul class="zh">
+          <li>TEER 0–3 通道</li>
+          <li>TEER 4–5 通道</li>
+          <li>自雇医生通道</li>
+        </ul>
+
+        <h4>1. TEER 0–3 通道</h4>
+
+        <p class="zh">
+          TEER 0–3 通道主要适用于持有安省合资格雇主提供的全职、永久 job offer 的申请人，且职位属于 TEER 0、1、2 或 3 类别。
+        </p>
+
+        <p class="zh">
+          一般来说，这类职位包括管理类、专业类、技术类、技工类、主管类等职位。
+        </p>
+
+        <p class="zh">
+          申请人需要根据自己的职位和背景满足语言、学历、执照、工作经验等方面的要求。对于近期从安省院校毕业的申请人，新通道下也将会有相应的特别规定。
+        </p>
+
+        <h4>2. TEER 4–5 通道</h4>
+
+        <p class="zh">
+          TEER 4–5 通道主要适用于持有安省合资格雇主提供的全职、永久 job offer，且职位属于 TEER 4 或 TEER 5 类别的申请人。
+        </p>
+
+        <p class="zh">
+          这一点非常值得关注，因为它可能为部分低技术或入门级岗位的工人提供更清晰的省提名路径。过去这类申请人的移民选择通常比较有限。
+        </p>
+
+        <p class="zh">该通道预计会涉及以下要求：</p>
+
+        <ul class="zh">
+          <li>申请人需要有安省合资格雇主提供的全职、永久 job offer；</li>
+          <li>需要有一定时间的同一雇主工作经验；</li>
+          <li>需要达到最低语言要求；</li>
+          <li>需要具备至少高中或等同学历；</li>
+          <li>工资需要达到相应职位的要求。</li>
+        </ul>
+
+        <p class="zh">
+          对于已经在安省工作的 TEER 4–5 类工人来说，这可能是一个值得关注的新机会。
+        </p>
+
+        <h4>3. 自雇医生通道</h4>
+
+        <p class="zh">
+          安省还推出了专门针对自雇医生的申请通道。
+        </p>
+
+        <p class="zh">
+          该通道主要适用于已经在安省注册、执业状态良好，并且有资格通过 OHIP 收费的医生。
+        </p>
+
+        <p class="zh">
+          这项变化非常重要，因为很多医生在实际工作中是以自雇或独立承包人的形式执业，并不一定符合传统雇主担保类别中“雇员”的结构。新通道可能为这类医生提供更合适的省提名路径。
+        </p>
+
+        <div class="note">
+          <p class="zh">
+            <strong>重要提醒：</strong>目前，安省新的 EOI 系统尚未完全开放。因此，申请人不能理解为现在已经可以马上递交申请。安省预计会继续公布更多关于新系统开放和申请细节的信息。
+          </p>
+          <p class="zh">
+            已经在旧 OINP 通道下递交的申请，预计会继续按照递交时有效的规定进行审理。
+          </p>
+          <p class="zh">
+            此外，安省之后还预计会推出第二阶段的新通道，包括医疗优先类别、企业家类别和杰出人才类别等，但目前尚未公布具体开放时间。
+          </p>
+        </div>
+
+        <h4>对申请人的意义</h4>
+
+        <p class="zh">这次安省新政对于以下申请人可能具有重要意义：</p>
+
+        <ul class="zh">
+          <li>已经获得安省雇主提供的永久 job offer；</li>
+          <li>已经在安省工作；</li>
+          <li>能够满足工资、语言、学历、工作经验要求；</li>
+          <li>职位符合安省劳动力市场需求；</li>
+          <li>在安省以自雇形式执业的医生。</li>
+        </ul>
+
+        <p class="zh">
+          不过，是否符合条件仍然要根据申请人的具体职位、雇主情况、工资水平、工作经验、学历、语言成绩以及当前身份来综合判断。
+        </p>
+
+        <p class="zh">
+          建议申请人在做移民规划前，先进行个案评估，确认自己是否符合新通道的基本要求，并留意安省后续公布的正式申请细则。
+        </p>
+
+        <div class="divider"></div>
+
+        <h3>Ontario Launches Three New Pathways to Permanent Residence</h3>
+
+        <p>
+          Ontario has launched three new pathways to permanent residence under the Ontario Immigrant Nominee Program (OINP), as part of a major redesign of the province’s immigration selection system.
+        </p>
+
+        <p>
+          These new pathways fall under the new <strong>Ontario Workforce Priority Stream</strong> and are intended to help Ontario better select foreign workers who can meet the province’s labour market needs.
+        </p>
+
+        <p>The three new pathways are:</p>
+
+        <ul>
+          <li>TEER 0–3 Pathway</li>
+          <li>TEER 4–5 Pathway</li>
+          <li>Self-Employed Physicians Pathway</li>
+        </ul>
+
+        <h4>1. TEER 0–3 Pathway</h4>
+
+        <p>
+          This pathway is designed for foreign workers who have a full-time, permanent job offer from an eligible Ontario employer in a TEER 0, 1, 2, or 3 occupation.
+        </p>
+
+        <p>
+          Generally, this category may benefit skilled workers, professionals, supervisors, technicians, and tradespersons who have a qualifying job offer in Ontario.
+        </p>
+
+        <p>
+          Depending on the occupation and the applicant’s background, candidates may need to meet requirements related to language ability, education, licensing, and work experience. Recent Ontario graduates may also benefit from specific eligibility rules under this pathway.
+        </p>
+
+        <h4>2. TEER 4–5 Pathway</h4>
+
+        <p>
+          This pathway is designed for workers with a full-time, permanent job offer in a TEER 4 or TEER 5 occupation.
+        </p>
+
+        <p>
+          This is a significant development because it may provide a clearer route to permanent residence for certain lower-skilled or entry-level workers who are already contributing to Ontario’s labour market.
+        </p>
+
+        <p>Key requirements are expected to include:</p>
+
+        <ul>
+          <li>A qualifying full-time, permanent job offer from an eligible Ontario employer;</li>
+          <li>Work experience with the same employer;</li>
+          <li>Minimum language ability;</li>
+          <li>Education equivalent to at least secondary school;</li>
+          <li>A wage that meets the required level for the occupation.</li>
+        </ul>
+
+        <p>
+          This pathway may be particularly important for workers who previously had limited provincial nomination options.
+        </p>
+
+        <h4>3. Self-Employed Physicians Pathway</h4>
+
+        <p>
+          Ontario has also introduced a pathway for self-employed physicians.
+        </p>
+
+        <p>
+          This pathway is intended for physicians who are licensed and in good standing in Ontario and who are eligible to bill through OHIP.
+        </p>
+
+        <p>
+          This is an important change because many physicians work under self-employed or independent contractor arrangements, which may not fit easily into traditional employer job offer immigration streams.
+        </p>
+
+        <div class="note">
+          <p>
+            <strong>Important Notes:</strong> At this stage, Ontario’s new Expression of Interest system for these pathways is not yet fully open. Applicants should not assume that they can apply immediately. More details are expected as Ontario continues to implement the redesigned OINP system.
+          </p>
+          <p>
+            Applications that were already submitted under the previous OINP streams should continue to be processed under the rules that were in place when they were received.
+          </p>
+          <p>
+            Ontario is also expected to introduce additional pathways in a later phase, including streams related to priority healthcare, entrepreneurs, and exceptional talent.
+          </p>
+        </div>
+
+        <h4>What This Means for Applicants</h4>
+
+        <p>
+          These new pathways may create new opportunities for foreign workers in Ontario, especially those who:
+        </p>
+
+        <ul>
+          <li>Have a permanent job offer from an eligible Ontario employer;</li>
+          <li>Are already working in Ontario;</li>
+          <li>Can meet the required wage, language, education, and work experience criteria;</li>
+          <li>Work in occupations that are important to Ontario’s labour market;</li>
+          <li>Are physicians working in Ontario under a self-employed structure.</li>
+        </ul>
+
+        <p>
+          However, eligibility will still depend on the applicant’s specific occupation, employer, wage, work history, education, language results, and immigration status.
+        </p>
+
+        <p>
+          Applicants should carefully review their personal situation before making any immigration plan.
+        </p>
+
+        <div class="note">
+          <p>
+            This article is for general information only and does not constitute legal advice or immigration advice for any specific case.
+          </p>
+          <p class="zh">
+            本文仅供一般信息参考，并不构成针对任何具体个案的法律意见或移民建议。
+          </p>
+        </div>
+      </article>
+
+      <aside class="sidebar">
+        <h4>Need case-specific advice?</h4>
+        <p>
+          Immigration eligibility depends on your occupation, employer, wage, work history, education, language results, and current immigration status.
+        </p>
+        <p class="zh">
+          是否符合申请条件，需要结合您的职位、雇主、工资、工作经历、学历、语言成绩及当前身份综合判断。
+        </p>
+        <a class="button" href="../index.html#contact">Contact Ellen | 联系 Ellen</a>
+        <a class="button secondary" href="../index.html#updates">More Updates | 更多动态</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Jie “Ellen” Lin, RCIC. All rights reserved.
+  </footer>
+</body>
+</html>
