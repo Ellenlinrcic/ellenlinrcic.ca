@@ -294,7 +294,45 @@
     .services {
       background: var(--soft-cream);
     }
+.updates {
+  background: var(--cream);
+}
 
+.update-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.update-meta {
+  color: var(--warm-gold);
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.update-link {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--deep-green);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.update-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.coming-soon {
+  margin-top: 28px;
+  padding: 22px;
+  background: var(--white);
+  border-left: 4px solid var(--warm-gold);
+  border-radius: 12px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+}  
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -505,11 +543,12 @@
     </div>
 
     <nav>
-      <a href="#about">About 关于我</a>
-      <a href="#services">Services 服务</a>
-      <a href="#why">Why Ellen 为什么选择我</a>
-      <a href="#contact">Contact 联系</a>
-    </nav>
+  <a href="#about">About 关于我</a>
+  <a href="#services">Services 服务</a>
+  <a href="#updates">Updates 最新动态</a>
+  <a href="#why">Why Ellen 为什么选择我</a>
+  <a href="#contact">Contact 联系</a>
+</nav>
   </header>
 
   <main>
@@ -722,7 +761,73 @@
         </div>
       </div>
     </section>
+    <section id="updates" class="updates">
+      <div class="container">
+        <div class="section-title">
+          <h3>Immigration Updates | 加拿大移民最新动态</h3>
+          <p>
+            Practical updates and observations on Canadian immigration policies, application planning,
+            refusals, procedural fairness letters, and status-related issues.
+          </p>
+        </div>
 
+        <div class="cards">
+          <div class="card update-card">
+            <div>
+              <div class="update-meta">Policy Updates | 政策更新</div>
+              <h4>Canadian Immigration Policy Updates<br>加拿大移民政策动态</h4>
+              <p>
+                Updates on Canadian immigration programs, work permits, study permits, family sponsorship,
+                and permanent residence pathways.
+              </p>
+              <p class="zh">
+                分享加拿大移民项目、工签、学签、家庭团聚及永久居民路径相关政策动态。
+              </p>
+            </div>
+            <a class="update-link" href="#">Read more | 阅读更多</a>
+          </div>
+
+          <div class="card update-card">
+            <div>
+              <div class="update-meta">Case Strategy Notes | 案件策略笔记</div>
+              <h4>Application Strategy & Risk Notes<br>申请策略与风险提示</h4>
+              <p>
+                Practical notes on refusals, procedural fairness letters, document preparation,
+                application timing, and immigration case planning.
+              </p>
+              <p class="zh">
+                记录关于拒签、程序公平信、文件准备、申请时机及案件规划的实务观察。
+              </p>
+            </div>
+            <a class="update-link" href="#">Read more | 阅读更多</a>
+          </div>
+
+          <div class="card update-card">
+            <div>
+              <div class="update-meta">Client Reminders | 申请提醒</div>
+              <h4>Important Immigration Reminders<br>重要申请提醒</h4>
+              <p>
+                Reminders about status maintenance, biometrics, passport requests, deadlines,
+                document submission, and family status planning.
+              </p>
+              <p class="zh">
+                提醒申请人关注身份维持、指纹、护照提交、补件截止日期及家庭成员身份规划。
+              </p>
+            </div>
+            <a class="update-link" href="#">Read more | 阅读更多</a>
+          </div>
+        </div>
+
+        <div class="coming-soon">
+          <p>
+            More Canadian immigration updates will be published here soon.
+          </p>
+          <p>
+            更多加拿大移民最新动态、申请提醒及实务分析将陆续更新。
+          </p>
+        </div>
+      </div>
+    </section>    
     <section id="why" class="why">
       <div class="container">
         <div class="why-box">
