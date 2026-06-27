@@ -161,6 +161,12 @@
       background: transparent;
     }
 
+    .button.email {
+      background: var(--deep-green);
+      color: var(--white);
+      margin-top: 12px;
+    }
+
     .hero-card {
       background: rgba(255,255,255,0.1);
       border: 1px solid rgba(255,255,255,0.2);
@@ -189,6 +195,37 @@
 
     .hero-card li:last-child {
       border-bottom: none;
+    }
+
+    .trust-strip {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 22px 8%;
+    }
+
+    .trust-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .trust-item {
+      border-left: 4px solid var(--warm-gold);
+      padding-left: 14px;
+    }
+
+    .trust-item strong {
+      display: block;
+      color: var(--deep-green);
+      font-size: 15px;
+      margin-bottom: 3px;
+    }
+
+    .trust-item span {
+      color: var(--muted);
+      font-size: 14px;
     }
 
     section {
@@ -405,7 +442,8 @@
         grid-template-columns: 1fr;
       }
 
-      .cards {
+      .cards,
+      .trust-inner {
         grid-template-columns: 1fr 1fr;
       }
 
@@ -432,7 +470,8 @@
         font-size: 33px;
       }
 
-      .cards {
+      .cards,
+      .trust-inner {
         grid-template-columns: 1fr;
       }
 
@@ -458,10 +497,10 @@
     </div>
 
     <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#why">Why Ellen</a>
-      <a href="#contact">Contact</a>
+      <a href="#about">About 关于我</a>
+      <a href="#services">Services 服务</a>
+      <a href="#why">Why Ellen 为什么选择我</a>
+      <a href="#contact">Contact 联系</a>
     </nav>
   </header>
 
@@ -484,13 +523,13 @@
           </p>
 
           <p class="zh">
-            加拿大移民顾问服务｜中英文服务。为个人、家庭、学生、工人及雇主提供清晰、务实、
-            基于经验的加拿大移民申请建议。
+            加拿大持牌移民顾问服务｜中英文服务。为个人、家庭、学生、工人及雇主提供清晰、务实、
+            基于实际经验的加拿大移民申请建议。
           </p>
 
           <div class="hero-actions">
-            <a class="button primary" href="#contact">Book a Consultation</a>
-            <a class="button secondary" href="#services">View Services</a>
+            <a class="button primary" href="#contact">Book a Consultation | 预约咨询</a>
+            <a class="button secondary" href="#services">View Services | 查看服务</a>
           </div>
         </div>
 
@@ -506,6 +545,27 @@
         </aside>
       </div>
     </section>
+
+    <div class="trust-strip">
+      <div class="trust-inner">
+        <div class="trust-item">
+          <strong>Regulated Canadian Immigration Consultant</strong>
+          <span>加拿大持牌移民顾问</span>
+        </div>
+        <div class="trust-item">
+          <strong>Based in Richmond, BC</strong>
+          <span>位于 BC 省 Richmond</span>
+        </div>
+        <div class="trust-item">
+          <strong>English & Chinese Services</strong>
+          <span>中英文服务</span>
+        </div>
+        <div class="trust-item">
+          <strong>By Appointment Only</strong>
+          <span>咨询需提前预约</span>
+        </div>
+      </div>
+    </div>
 
     <section id="about">
       <div class="container">
@@ -637,7 +697,7 @@
       <div class="container">
         <div class="why-box">
           <div>
-            <h3>Why Work With Ellen</h3>
+            <h3>Why Work With Ellen | 为什么选择 Ellen</h3>
             <p>
               Immigration applications are not only about filling out forms. A strong application
               requires strategy, consistency, supporting evidence, and a clear understanding of the
@@ -676,6 +736,8 @@
               <strong>Email | 邮箱</strong>
               <span>ellenjie@gmail.com</span>
             </div>
+
+            <a class="button email" href="mailto:ellenjie@gmail.com">Email Ellen | 发送邮件</a>
 
             <div class="contact-item">
               <strong>Location | 地点</strong>
@@ -722,8 +784,14 @@
           is required before advice can be provided based on individual circumstances.
         </p>
         <p>
+          No consultant-client relationship is created by viewing this website or sending an initial inquiry.
+        </p>
+        <p>
           <strong>免责声明：</strong> 本网站内容仅供一般信息参考，并不构成针对任何具体个案的法律意见或移民建议。
           具体申请建议需在了解个人情况后通过咨询提供。
+        </p>
+        <p>
+          浏览本网站或发送初步咨询信息，并不当然建立顾问与客户之间的服务关系。
         </p>
       </div>
     </div>
