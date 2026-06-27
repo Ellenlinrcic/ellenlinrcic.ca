@@ -3,127 +3,448 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jie "Ellen" Lin, RCIC | Canadian Immigration Consultant</title>
-  <meta name="description" content="Official website for Jie 'Ellen' Lin, RCIC. Canadian immigration consulting services in English and Chinese." />
+
+  <title>Jie “Ellen” Lin, RCIC | Canadian Immigration Consultant</title>
+  <meta name="description" content="Jie 'Ellen' Lin, RCIC provides Canadian immigration consulting services in English and Chinese from Richmond, British Columbia." />
+
   <style>
+    :root {
+      --deep-green: #12343b;
+      --green: #2d545e;
+      --warm-gold: #d4a373;
+      --cream: #f8f7f4;
+      --soft-cream: #efe9dc;
+      --text: #1f2933;
+      --muted: #5f6b73;
+      --white: #ffffff;
+      --border: #e4ded4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      color: #1f2933;
-      background: #f8f7f4;
-      line-height: 1.6;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
     }
 
     header {
-      background: #12343b;
-      color: white;
-      padding: 28px 8%;
+      background: rgba(18, 52, 59, 0.98);
+      color: var(--white);
+      padding: 22px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 20px;
       flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
     }
 
-    header h1 {
+    .brand h1 {
       margin: 0;
-      font-size: 24px;
-      letter-spacing: 0.3px;
+      font-size: 23px;
+      letter-spacing: 0.2px;
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 22px;
+    .brand p {
+      margin: 3px 0 0;
+      font-size: 13px;
+      color: rgba(255,255,255,0.82);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
       font-size: 15px;
     }
 
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      opacity: 0.92;
+    }
+
+    nav a:hover {
+      opacity: 1;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+
     .hero {
-      padding: 90px 8%;
-      background: linear-gradient(135deg, #12343b, #2d545e);
-      color: white;
+      background: linear-gradient(135deg, var(--deep-green), var(--green));
+      color: var(--white);
+      padding: 90px 8% 80px;
+    }
+
+    .hero-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.45fr 0.85fr;
+      gap: 46px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: rgba(212,163,115,0.18);
+      border: 1px solid rgba(212,163,115,0.55);
+      color: #ffe6c7;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 18px;
     }
 
     .hero h2 {
-      font-size: 44px;
-      max-width: 760px;
-      margin: 0 0 20px;
-      line-height: 1.15;
+      font-size: 46px;
+      line-height: 1.12;
+      margin: 0 0 22px;
+      max-width: 820px;
     }
 
     .hero p {
-      max-width: 680px;
-      font-size: 19px;
-      margin-bottom: 32px;
+      font-size: 18px;
+      max-width: 760px;
+      margin: 0 0 18px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .hero .zh {
+      color: rgba(255,255,255,0.88);
+      margin-top: 20px;
+      border-left: 4px solid var(--warm-gold);
+      padding-left: 18px;
+    }
+
+    .hero-actions {
+      margin-top: 34px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
     }
 
     .button {
       display: inline-block;
-      background: #d4a373;
-      color: #111;
       padding: 13px 22px;
-      border-radius: 6px;
+      border-radius: 7px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 700;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.14);
+    }
+
+    .button.primary {
+      background: var(--warm-gold);
+      color: #111;
+    }
+
+    .button.secondary {
+      border: 1px solid rgba(255,255,255,0.65);
+      color: var(--white);
+      background: transparent;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 18px;
+      padding: 28px;
+      backdrop-filter: blur(6px);
+    }
+
+    .hero-card h3 {
+      color: var(--white);
+      margin: 0 0 14px;
+      font-size: 22px;
+    }
+
+    .hero-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hero-card li {
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.14);
+      color: rgba(255,255,255,0.9);
+    }
+
+    .hero-card li:last-child {
+      border-bottom: none;
     }
 
     section {
-      padding: 65px 8%;
-      max-width: 1100px;
-      margin: auto;
+      padding: 72px 8%;
     }
 
-    h3 {
-      font-size: 30px;
-      margin-bottom: 18px;
-      color: #12343b;
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      margin-bottom: 28px;
+    }
+
+    .section-title h3 {
+      color: var(--deep-green);
+      font-size: 32px;
+      margin: 0 0 8px;
+      line-height: 1.2;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      margin: 0;
+      max-width: 760px;
+      font-size: 17px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .panel {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.045);
+    }
+
+    .panel h4 {
+      margin: 0 0 14px;
+      color: var(--deep-green);
+      font-size: 22px;
+    }
+
+    .panel p {
+      margin: 0 0 14px;
+    }
+
+    .panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .services {
+      background: var(--soft-cream);
     }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 22px;
-      margin-top: 26px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 
     .card {
-      background: white;
-      padding: 26px;
-      border-radius: 10px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.045);
     }
 
     .card h4 {
-      margin-top: 0;
-      color: #12343b;
-      font-size: 20px;
+      color: var(--deep-green);
+      font-size: 19px;
+      margin: 0 0 12px;
+      line-height: 1.35;
     }
 
-    .contact {
-      background: #e8e2d6;
-      border-radius: 12px;
+    .card p {
+      margin: 0 0 13px;
+      color: var(--text);
+    }
+
+    .card .zh {
+      color: var(--muted);
+      font-size: 15px;
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+    }
+
+    .why {
+      background: var(--cream);
+    }
+
+    .why-box {
+      background: var(--deep-green);
+      color: var(--white);
+      border-radius: 18px;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 34px;
+      box-shadow: 0 16px 38px rgba(0,0,0,0.12);
+    }
+
+    .why-box h3 {
+      color: var(--white);
+      margin-top: 0;
+      font-size: 30px;
+    }
+
+    .why-box p {
+      color: rgba(255,255,255,0.88);
+    }
+
+    .why-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .why-list li {
+      padding: 11px 0 11px 30px;
+      position: relative;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.9);
+    }
+
+    .why-list li:last-child {
+      border-bottom: none;
+    }
+
+    .why-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--warm-gold);
+      font-weight: bold;
+    }
+
+    .contact-section {
+      background: var(--soft-cream);
+    }
+
+    .contact-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
       padding: 38px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.055);
+    }
+
+    .contact-box h3 {
+      margin-top: 0;
+      color: var(--deep-green);
+      font-size: 30px;
+    }
+
+    .contact-item {
+      margin: 16px 0;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--deep-green);
+      margin-bottom: 3px;
+    }
+
+    .note {
+      background: #f8f7f4;
+      border-left: 4px solid var(--warm-gold);
+      padding: 16px 18px;
+      border-radius: 8px;
+      color: var(--muted);
     }
 
     footer {
-      background: #12343b;
-      color: white;
-      text-align: center;
-      padding: 28px 8%;
+      background: var(--deep-green);
+      color: var(--white);
+      padding: 34px 8%;
       font-size: 14px;
     }
 
-    @media (max-width: 700px) {
+    .footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    footer p {
+      margin: 6px 0;
+      color: rgba(255,255,255,0.84);
+    }
+
+    .disclaimer {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.16);
+      color: rgba(255,255,255,0.72);
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner,
+      .two-col,
+      .why-box,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
       .hero h2 {
-        font-size: 34px;
+        font-size: 38px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      header {
+        align-items: flex-start;
       }
 
       nav {
-        margin-top: 14px;
+        width: 100%;
+        gap: 12px;
       }
 
-      nav a {
-        margin-left: 0;
-        margin-right: 16px;
+      .hero {
+        padding-top: 70px;
+      }
+
+      .hero h2 {
+        font-size: 33px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 56px 6%;
+      }
+
+      .panel,
+      .card,
+      .why-box,
+      .contact-box {
+        padding: 24px;
       }
     }
   </style>
@@ -131,81 +452,281 @@
 
 <body>
   <header>
-    <h1>Jie “Ellen” Lin, RCIC</h1>
+    <div class="brand">
+      <h1>Jie “Ellen” Lin, RCIC</h1>
+      <p>Canadian Immigration Consultant | 加拿大持牌移民顾问</p>
+    </div>
+
     <nav>
       <a href="#about">About</a>
       <a href="#services">Services</a>
+      <a href="#why">Why Ellen</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <div class="hero">
-    <h2>Canadian Immigration Services with Care, Clarity, and Experience</h2>
-    <p>
-      Professional immigration consulting services for individuals, families, students, workers, and employers.
-      Services are available in English and Chinese.
-    </p>
-    <a class="button" href="#contact">Book a Consultation</a>
-  </div>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <span class="eyebrow">English & Chinese Immigration Services</span>
+          <h2>Canadian Immigration Consulting Services in English and Chinese</h2>
 
-  <section id="about">
-    <h3>About</h3>
-    <p>
-      Jie “Ellen” Lin is a Regulated Canadian Immigration Consultant based in Richmond, British Columbia.
-      Ellen assists clients with Canadian temporary residence, permanent residence, family sponsorship,
-      employer-supported applications, and immigration refusal matters.
-    </p>
-    <p>
-      This website is currently under development. More information about services, consultations, and immigration
-      updates will be added soon.
-    </p>
-  </section>
+          <p>
+            Practical, clear, and experience-based immigration guidance for individuals, families,
+            students, workers, and employers.
+          </p>
 
-  <section id="services">
-    <h3>Services</h3>
-    <div class="cards">
-      <div class="card">
-        <h4>Temporary Residence</h4>
-        <p>Visitor visas, study permits, work permits, extensions, restorations, and related applications.</p>
+          <p>
+            Based in Richmond, British Columbia, Jie “Ellen” Lin, RCIC assists clients with temporary
+            residence, permanent residence, family sponsorship, employer-supported applications, and
+            immigration refusal matters.
+          </p>
+
+          <p class="zh">
+            加拿大移民顾问服务｜中英文服务。为个人、家庭、学生、工人及雇主提供清晰、务实、
+            基于经验的加拿大移民申请建议。
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Book a Consultation</a>
+            <a class="button secondary" href="#services">View Services</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <h3>Areas of Service</h3>
+          <ul>
+            <li>Temporary Residence | 临时居民申请</li>
+            <li>Family Sponsorship | 家庭团聚</li>
+            <li>Employer-Supported Applications | 雇主支持类申请</li>
+            <li>Refusal Review & PFL Response | 拒签分析与程序公平信回复</li>
+            <li>Case Strategy & Document Review | 案件策略与文件审查</li>
+          </ul>
+        </aside>
       </div>
+    </section>
 
-      <div class="card">
-        <h4>Family Sponsorship</h4>
-        <p>Spousal sponsorship, common-law partner sponsorship, and family-based permanent residence applications.</p>
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <h3>About Ellen | 关于 Ellen</h3>
+          <p>
+            Regulated Canadian Immigration Consultant based in Richmond, British Columbia.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="panel">
+            <h4>About Ellen</h4>
+            <p>
+              Jie “Ellen” Lin is a Regulated Canadian Immigration Consultant based in Richmond,
+              British Columbia. She provides immigration consulting services to clients in English
+              and Chinese.
+            </p>
+            <p>
+              Ellen works with individuals, families, students, workers, and employers to assess
+              immigration options, prepare application strategies, organize supporting documents,
+              and respond to immigration concerns such as refusals or procedural fairness letters.
+            </p>
+            <p>
+              Her approach is practical, detail-oriented, and focused on helping clients understand
+              both the opportunities and risks involved in their applications.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h4>关于 Ellen</h4>
+            <p>
+              Jie “Ellen” Lin 是位于 BC 省 Richmond 的加拿大持牌移民顾问，为客户提供中英文移民咨询服务。
+            </p>
+            <p>
+              Ellen 协助个人、家庭、学生、工人及雇主评估移民路径、制定申请策略、整理支持文件，
+              并处理拒签、程序公平信等移民申请中的复杂问题。
+            </p>
+            <p>
+              她的服务风格注重务实分析、文件逻辑和风险把控，帮助客户在申请前充分了解自身选择、
+              机会与潜在风险。
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h4>Employer-Supported Applications</h4>
-        <p>LMIA-related matters, work permit strategies, and employer-supported immigration options.</p>
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-title">
+          <h3>Services | 服务项目</h3>
+          <p>
+            Immigration services for temporary residence, permanent residence, family sponsorship,
+            employer-supported applications, and refusal-related matters.
+          </p>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <h4>Temporary Residence<br>临时居民申请</h4>
+            <p>
+              Visitor visas, study permits, work permits, extensions, restorations, and status
+              planning for applicants inside or outside Canada.
+            </p>
+            <p class="zh">
+              访问签证、学签、工签、续签、身份恢复，以及加拿大境内外申请人的身份衔接规划。
+            </p>
+          </div>
+
+          <div class="card">
+            <h4>Family Sponsorship<br>家庭团聚</h4>
+            <p>
+              Spousal sponsorship, common-law partner sponsorship, and family-based permanent
+              residence applications.
+            </p>
+            <p class="zh">
+              配偶团聚、同居伴侣团聚及其他家庭类别永久居民申请。
+            </p>
+          </div>
+
+          <div class="card">
+            <h4>Employer-Supported Applications<br>雇主支持类申请</h4>
+            <p>
+              LMIA-related matters, employer-supported work permit strategies, and immigration
+              options involving Canadian employers.
+            </p>
+            <p class="zh">
+              LMIA 相关事务、雇主支持工签策略，以及涉及加拿大雇主的移民申请方案。
+            </p>
+          </div>
+
+          <div class="card">
+            <h4>Permanent Residence Pathways<br>永久居民路径评估</h4>
+            <p>
+              Assessment of potential PR pathways, including federal and provincial options where
+              applicable.
+            </p>
+            <p class="zh">
+              评估可能适用的永久居民路径，包括联邦及省提名等申请方向。
+            </p>
+          </div>
+
+          <div class="card">
+            <h4>Refusal Review & PFL Response<br>拒签分析与程序公平信回复</h4>
+            <p>
+              Review of refusal letters, procedural fairness letters, and strategy for addressing
+              immigration officers’ concerns.
+            </p>
+            <p class="zh">
+              分析拒签信、程序公平信，并制定回应移民官疑虑的申请策略。
+            </p>
+          </div>
+
+          <div class="card">
+            <h4>Case Strategy & Document Review<br>案件策略与文件审查</h4>
+            <p>
+              Application strategy, document organization, explanation letters, and review of
+              supporting evidence.
+            </p>
+            <p class="zh">
+              申请策略、文件整理、解释信撰写及支持材料审查。
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h4>Refusal & PFL Response</h4>
-        <p>Review of refusal letters, procedural fairness letters, and strategy for responding to immigration concerns.</p>
+    <section id="why" class="why">
+      <div class="container">
+        <div class="why-box">
+          <div>
+            <h3>Why Work With Ellen</h3>
+            <p>
+              Immigration applications are not only about filling out forms. A strong application
+              requires strategy, consistency, supporting evidence, and a clear understanding of the
+              applicant’s circumstances.
+            </p>
+            <p>
+              移民申请不仅仅是填写表格。一个完整而有说服力的申请，通常需要清晰的策略、
+              前后一致的文件、充分的支持证据，以及对申请人实际情况的准确理解。
+            </p>
+          </div>
+
+          <ul class="why-list">
+            <li>Clear assessment before filing | 递交前的清晰评估</li>
+            <li>Practical strategy based on real case experience | 基于实际案件经验的务实策略</li>
+            <li>Careful document review and organization | 细致的文件审查与整理</li>
+            <li>Bilingual communication in English and Chinese | 中英文双语沟通</li>
+            <li>Attention to risks, inconsistencies, and refusal concerns | 提前分析风险点、矛盾点及拒签隐患</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <div class="contact">
-      <h3>Contact</h3>
-      <p>
-        For consultation inquiries, please contact:
-      </p>
-      <p>
-        <strong>Email:</strong> ellenjie@gmail.com
-      </p>
-      <p>
-        <strong>Location:</strong> Richmond, British Columbia, Canada
-      </p>
-      <p>
-        A professional domain email address will be added once the website setup is complete.
-      </p>
-    </div>
-  </section>
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-box">
+          <div>
+            <h3>Contact | 联系方式</h3>
+            <p>
+              Consultations are available by appointment.
+            </p>
+            <p>
+              咨询服务需提前预约。
+            </p>
+
+            <div class="contact-item">
+              <strong>Email | 邮箱</strong>
+              <span>ellenjie@gmail.com</span>
+            </div>
+
+            <div class="contact-item">
+              <strong>Location | 地点</strong>
+              <span>Richmond, British Columbia, Canada<br>加拿大 BC 省 Richmond</span>
+            </div>
+
+            <div class="contact-item">
+              <strong>Languages | 服务语言</strong>
+              <span>English and Mandarin Chinese<br>英文、普通话</span>
+            </div>
+          </div>
+
+          <div class="note">
+            <p>
+              A professional domain email address will be added soon.
+            </p>
+            <p>
+              正式域名邮箱将稍后启用。
+            </p>
+            <p>
+              For consultation inquiries, please briefly describe your immigration matter, current
+              status, deadline, and the type of assistance you are seeking.
+            </p>
+            <p>
+              咨询时请简要说明您的移民事项、目前身份、重要截止日期，以及希望获得的协助类型。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    © 2026 Jie “Ellen” Lin, RCIC. All rights reserved.
+    <div class="footer-inner">
+      <p><strong>Jie “Ellen” Lin, RCIC</strong></p>
+      <p>Canadian Immigration Consultant | 加拿大持牌移民顾问</p>
+      <p>Richmond, British Columbia, Canada</p>
+      <p>© 2026 Jie “Ellen” Lin, RCIC. All rights reserved.</p>
+
+      <div class="disclaimer">
+        <p>
+          <strong>Disclaimer:</strong> The information on this website is for general information only
+          and does not constitute legal advice or immigration advice for any specific case. A consultation
+          is required before advice can be provided based on individual circumstances.
+        </p>
+        <p>
+          <strong>免责声明：</strong> 本网站内容仅供一般信息参考，并不构成针对任何具体个案的法律意见或移民建议。
+          具体申请建议需在了解个人情况后通过咨询提供。
+        </p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
