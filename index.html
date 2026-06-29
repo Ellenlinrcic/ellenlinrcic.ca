@@ -563,6 +563,50 @@
         padding: 24px;
       }
     }
+ @media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero {
+    padding: 56px 6% 56px;
+  }
+
+  .hero-inner {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    line-height: 1.08;
+  }
+
+  .hero-card {
+    width: 100%;
+  }
+
+  .hero-card li {
+    white-space: normal;
+  }
+
+  .container,
+  .updates .container {
+    max-width: 100%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .update-card {
+    width: 100%;
+  }
+  
   </style>
 </head>
 
