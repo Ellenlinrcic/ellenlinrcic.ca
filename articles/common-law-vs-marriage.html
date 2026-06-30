@@ -1,1 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Common-Law vs. Marriage in Canadian Immigration Law | 事实婚姻与结婚在加拿大移民法中的区别</title>
+  <meta name="description" content="A bilingual case strategy note explaining the difference between common-law partnership and marriage in Canadian immigration law, including legal definitions, evidence focus, sponsorship risks, and excluded family member issues." />
 
+  <style>
+    :root {
+      --deep-green: #12343b;
+      --green: #2d545e;
+      --warm-gold: #d4a373;
+      --cream: #f8f7f4;
+      --soft-cream: #efe9dc;
+      --text: #1f2933;
+      --muted: #5f6b73;
+      --white: #ffffff;
+      --border: #e4ded4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--deep-green);
+      color: var(--white);
+      padding: 22px 0;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: -0.5px;
+    }
+
+    .brand p {
+      margin: 4px 0 0;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .article-hero {
+      background: linear-gradient(135deg, var(--deep-green), var(--green));
+      color: var(--white);
+      padding: 70px 0;
+    }
+
+    .article-hero .category {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .article-hero h2 {
+      max-width: 900px;
+      margin: 0 0 18px;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+    }
+
+    .article-hero p {
+      max-width: 760px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 18px;
+    }
+
+    .article-meta {
+      margin-top: 22px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 15px;
+    }
+
+    main {
+      padding: 60px 0;
+    }
+
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 36px;
+      align-items: start;
+    }
+
+    article {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 42px;
+      box-shadow: 0 18px 45px rgba(18, 52, 59, 0.08);
+    }
+
+    article h3 {
+      color: var(--deep-green);
+      font-size: 30px;
+      margin: 0 0 18px;
+      line-height: 1.25;
+    }
+
+    article h4 {
+      color: var(--deep-green);
+      font-size: 22px;
+      margin: 34px 0 12px;
+    }
+
+    article p {
+      margin: 0 0 18px;
+      color: var(--text);
+      font-size: 17px;
+    }
+
+    article ul {
+      margin: 0 0 24px 22px;
+      padding: 0;
+    }
+
+    article li {
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    .zh {
+      color: var(--muted);
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 42px 0;
+    }
+
+    .note {
+      background: var(--cream);
+      border-left: 4px solid var(--warm-gold);
+      padding: 22px;
+      border-radius: 12px;
+      margin: 28px 0;
+    }
+
+    .note p {
+      margin-bottom: 12px;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 24px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 18px 45px rgba(18, 52, 59, 0.06);
+    }
+
+    .sidebar h4 {
+      margin: 0 0 14px;
+      color: var(--deep-green);
+      font-size: 20px;
+    }
+
+    .sidebar p {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0 0 16px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--deep-green);
+      color: var(--white);
+      padding: 13px 18px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--deep-green);
+      border: 1px solid var(--deep-green);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--deep-green);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    footer {
+      background: var(--deep-green);
+      color: rgba(255, 255, 255, 0.78);
+      padding: 26px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 850px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .article-layout {
+        grid-template-columns: 1fr;
+      }
+
+      article {
+        padding: 28px;
+      }
+
+      .sidebar {
+        position: static;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Jie “Ellen” Lin, RCIC</h1>
+        <p>Canadian Immigration Consultant | 加拿大持牌移民顾问</p>
+      </div>
+
+      <nav>
+        <a href="../index.html">Home 首页</a>
+        <a href="../index.html#services">Services 服务</a>
+        <a href="../updates.html">Updates 最新动态</a>
+        <a href="../index.html#contact">Contact 联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="container">
+      <div class="category">Case Strategy Notes | 案件策略笔记</div>
+      <h2>Common-Law vs. Marriage in Canadian Immigration Law</h2>
+      <p>Common-Law（事实婚姻/同居伴侣）与 Marriage（结婚）在加拿大移民法中的区别</p>
+      <div class="article-meta">Published on June 30, 2026 | 发布日期：2026年6月30日</div>
+    </div>
+  </section>
+
+  <main>
+    <div class="container article-layout">
+      <article>
+        <a class="back-link" href="../updates.html">← Back to Immigration Updates | 返回最新动态</a>
+
+        <h3>Common-Law（事实婚姻/同居伴侣）与 Marriage（结婚）在加拿大移民法中的区别</h3>
+
+        <p class="zh">
+          在加拿大移民申请中，很多申请人会问：“我们已经结婚了，是不是就比 common-law 更稳妥？”或者：“我们以前是 common-law，被拒以后现在结婚了，是不是可以重新申请？”
+        </p>
+
+        <p class="zh">
+          答案并不是简单的“结婚更强”或“同居更弱”。在加拿大移民法下，Common-law partner 和 spouse 都是可以被承认的亲密伴侣关系类别，但它们的法律成立条件、证据重点和案件风险并不完全相同。
+        </p>
+
+        <h4>一、Common-law 不是“感情很好”，而是必须满足法律定义</h4>
+
+        <p class="zh">
+          在加拿大移民法中，common-law partner 通常指双方已经以夫妻关系共同生活至少连续 12 个月。IRPR 对 common-law partner 的定义是：与某人处于 conjugal relationship，并且已经同居至少一年。
+        </p>
+
+        <p class="zh">
+          IRCC 也说明，common-law partner 需要与申请人连续共同生活至少 12 个月，期间不能有长期分开；如果短暂分开，是因为工作、家庭义务或临时原因，才可能被接受。
+        </p>
+
+        <p class="zh">
+          因此，common-law 的核心不是“我们交往了一年”，也不是“我们经常见面”，而是：双方是否已经形成类似婚姻的共同生活关系，并且这种共同生活是否达到至少连续 12 个月。
+        </p>
+
+        <p class="zh">
+          常见证据包括：共同住址、租约、账单、银行记录、保险、报税资料、通信记录、共同出行、亲友证明、照片，以及双方在公众场合是否以伴侣身份出现。IRCC 在配偶/伴侣团聚指南中也提到，common-law 关系通常需要证明双方共同居住、经济和情感上互相支持、是否有子女，以及是否在公众面前以伴侣身份出现。
+        </p>
+
+        <h4>二、Marriage 不是“自动通过”，仍然要证明关系真实</h4>
+
+        <p class="zh">
+          Marriage，即法律婚姻，首先要求婚姻本身有效并被加拿大法律承认。但在移民申请中，有合法结婚证并不代表申请一定会获批。
+        </p>
+
+        <p class="zh">
+          IRPR 第 4 条明确规定，如果婚姻、common-law partnership 或 conjugal partnership 是主要为了取得移民身份，或者关系本身不真实，申请人就不会被视为配偶、common-law partner 或 conjugal partner。
+        </p>
+
+        <p class="zh">
+          所以，结婚证只是证明“法律婚姻关系存在”的重要文件，但它不能独立证明双方感情真实、关系持续、共同生活合理、未来计划一致，或者婚姻不是为了移民目的而建立。
+        </p>
+
+        <p class="zh">
+          在实际案件中，签证官往往会综合考虑双方认识过程、交往时间、同居情况、经济安排、家庭参与、语言文化差异、过往婚史、年龄差距、申请时间点、是否有移民目的等因素。对某些案件来说，结婚反而会引发更多问题，例如：为什么之前长期没有结婚？为什么在被拒或身份即将到期后突然结婚？双方是否真正共同生活？婚后关系是否有实质变化？
+        </p>
+
+        <h4>三、Common-law 与 Marriage 的证据重点不同</h4>
+
+        <p class="zh">
+          Common-law 案件的重点通常是有没有连续 12 个月的共同生活，以及共同生活是否达到夫妻关系的程度。
+        </p>
+
+        <p class="zh">
+          如果两个人只是恋爱、短期同住，或者因为方便而住在一起，但没有共同生活安排、没有经济互相支持、没有对外以伴侣身份出现，就未必能达到 common-law 的法律标准。
+        </p>
+
+        <p class="zh">
+          Marriage 案件的重点通常是：婚姻是否合法，以及婚姻关系是否真实、持续，而不是为了移民目的。
+        </p>
+
+        <p class="zh">
+          如果两个人已经结婚，但婚前交往很短、婚后没有共同生活、双方家庭不了解、经济完全分开、沟通记录有限，或者婚姻时间点与移民申请高度相关，签证官仍然可能质疑婚姻真实性。
+        </p>
+
+        <p class="zh">
+          简单来说，common-law 更强调“同居事实和共同生活”；marriage 更强调“法律婚姻加真实关系”。但两者最终都会回到同一个核心问题：这段关系是否真实、持续，并且不是主要为了取得移民身份。
+        </p>
+
+        <h4>四、结婚并不一定可以“修复”过去的 common-law 问题</h4>
+
+        <p class="zh">
+          这是很多案件中最容易被误解的一点。
+        </p>
+
+        <p class="zh">
+          如果申请人以前以 common-law 关系申请被拒，后来双方结婚，并不代表过去的问题自动消失。签证官仍然可以回头审视双方关系的发展历史，包括：以前是否真的已经达到 common-law 标准、之前提交的信息是否一致、是否曾经隐瞒关系、是否有虚假陈述，或者是否存在 excluded family member 的问题。
+        </p>
+
+        <p class="zh">
+          尤其是在某些案件中，如果担保人在自己成为加拿大永久居民时，已经有配偶、common-law partner 或需要申报的家庭成员，但当时没有申报、没有接受体检或背景审查，之后再尝试担保该家庭成员，可能会触及 IRPR 117(9)(d) 或 125(1)(d) 的排除规定。
+        </p>
+
+        <p class="zh">
+          这类问题不是简单通过“后来结婚”就能解决的。因为问题的关键不是现在是否结婚，而是：在担保人当年申请永久居民的时候，双方是否已经存在需要申报的家庭关系？如果存在，为什么没有申报和接受审查？是否有例外、公共政策或人道因素可以考虑？
+        </p>
+
+        <p class="zh">
+          IRCC 曾有针对某些被 117(9)(d) 或 125(1)(d) 影响的申请人的公共政策，但该政策有特定适用条件，并不代表所有未申报家庭成员都可以自动豁免。
+        </p>
+
+        <h4>五、选择 common-law 还是 marriage，不应只看“哪一个更容易”</h4>
+
+        <p class="zh">
+          在准备配偶或伴侣类申请时，申请类别应当基于事实，而不是为了看起来更容易而强行选择。如果双方已经连续共同生活至少 12 个月，并且证据充分，common-law 可以是合适类别。如果双方已经合法结婚，且婚姻真实持续，spouse 类别通常更直接。
+        </p>
+
+        <p class="zh">
+          如果双方没有结婚，也没有连续同居 12 个月，仅仅是恋爱关系或订婚关系，通常不能直接作为 common-law partner 申请。
+        </p>
+
+        <p class="zh">
+          在案件策略上，最重要的是保持时间线清楚、事实一致、证据完整。比如：什么时候认识、什么时候开始恋爱、什么时候开始同居、是否曾经分开、什么时候结婚、为什么选择在那个时间结婚、双方家庭是否知道、经济和生活如何安排，这些都需要有合理解释和文件支持。
+        </p>
+
+        <h4>六、案件准备中的实务提醒</h4>
+
+        <ul class="zh">
+          <li>不要把 common-law 翻译成普通意义上的“男女朋友同居”。在移民法中，common-law 是一个有明确法律门槛的关系类别。</li>
+          <li>不要以为有结婚证就不需要关系证据。婚姻案件仍然需要证明关系真实，不是以移民为目的。</li>
+          <li>如果关系历史复杂，例如曾经被拒、曾经没有申报伴侣、曾经有婚史或长期分居，应当先分析法律风险，再决定申请策略。</li>
+          <li>如果申请人从 common-law 关系变成 marriage，新的婚姻关系可以作为新的事实提交，但过去 common-law 阶段的事实、证据和矛盾仍然可能被审查。</li>
+          <li>如果案件涉及 117(9)(d) 或 125(1)(d) 的 excluded family member 问题，需要特别谨慎。这类问题通常不是普通关系证明不足，而是可能影响申请资格本身。</li>
+        </ul>
+
+        <h4>结语</h4>
+
+        <p class="zh">
+          在加拿大移民法中，common-law 和 marriage 都可能成为配偶/伴侣团聚申请的基础，但两者不是简单的“强弱关系”。Common-law 的关键是连续同居和类似婚姻的共同生活；marriage 的关键是合法婚姻和真实持续的关系。
+        </p>
+
+        <p class="zh">
+          无论是哪一种类别，申请成功的核心始终是：关系真实、事实一致、证据完整，并且申请策略能够正面回应案件中的风险点。
+        </p>
+
+        <p class="zh">
+          对于关系历史复杂、曾被拒签、曾经没有申报家庭成员，或从 common-law 转为 marriage 的案件，建议在递交前进行完整的法律和证据分析，而不是仅仅依赖“我们现在已经结婚了”这一点。
+        </p>
+
+        <div class="divider"></div>
+
+        <h3>The Difference Between Common-Law Partnership and Marriage in Canadian Immigration Law</h3>
+
+        <p>
+          In Canadian immigration applications, many applicants ask: “If we are married, does that make our case stronger than a common-law relationship?” or “If our previous common-law sponsorship was refused, can we simply get married and apply again?”
+        </p>
+
+        <p>
+          The answer is not as simple as saying that marriage is stronger or common-law is weaker. Under Canadian immigration law, both a common-law partner and a spouse can be recognized as valid family relationships. However, the legal requirements, evidentiary focus, and potential risks are different.
+        </p>
+
+        <h4>1. Common-law is not just a close relationship — it has a legal definition</h4>
+
+        <p>
+          In Canadian immigration law, a common-law partner is generally someone who has lived with the applicant in a conjugal relationship for at least 12 consecutive months.
+        </p>
+
+        <p>
+          This means that common-law is not simply “we have been dating for one year,” “we spend a lot of time together,” or “we often stay overnight at each other’s place.” The key questions are whether the couple has established a marriage-like relationship and whether they have lived together continuously for at least 12 months.
+        </p>
+
+        <p>
+          Common types of evidence may include joint residential documents, leases, utility bills, bank records, insurance documents, tax records, correspondence, travel records, photographs, letters from family and friends, and evidence showing that the couple presents themselves publicly as partners.
+        </p>
+
+        <p>
+          For a common-law case, the focus is often on whether the couple truly shared a life together, including emotional, financial, social, and household commitments.
+        </p>
+
+        <h4>2. Marriage does not guarantee approval</h4>
+
+        <p>
+          Marriage refers to a legally valid marriage that is recognized in the jurisdiction where it took place and, generally, under Canadian law. However, in immigration applications, a marriage certificate alone is not enough to guarantee approval.
+        </p>
+
+        <p>
+          Canadian immigration law requires the officer to assess whether the relationship is genuine and whether it was entered into primarily for immigration purposes. If the officer believes that the marriage is not genuine or was entered into mainly to obtain immigration status, the application may be refused.
+        </p>
+
+        <p>
+          Therefore, a marriage certificate is an important legal document, but it does not, by itself, prove that the relationship is genuine, ongoing, or not entered into for immigration purposes.
+        </p>
+
+        <p>
+          In practice, an officer may consider many factors, including how the couple met, the length and development of the relationship, cohabitation history, financial arrangements, family involvement, cultural or language differences, previous marriages, age differences, timing of the marriage, immigration history, and the couple’s future plans.
+        </p>
+
+        <p>
+          In some cases, marriage may even raise additional questions. For example: Why did the couple marry only after a refusal? Why did the marriage take place shortly before a status deadline? Why is there limited evidence of shared life after marriage? These questions must be addressed carefully.
+        </p>
+
+        <h4>3. The evidentiary focus is different</h4>
+
+        <p>
+          For common-law cases, the main focus is usually whether the couple lived together continuously for at least 12 months, and whether their cohabitation amounted to a marriage-like relationship.
+        </p>
+
+        <p>
+          If the couple merely dated, lived together for a short period, stayed overnight occasionally, or shared accommodation for convenience without building a committed partnership, they may not meet the legal threshold for common-law partnership.
+        </p>
+
+        <p>
+          For marriage cases, the main focus is usually whether the marriage is legally valid, and whether the marital relationship is genuine and continuing.
+        </p>
+
+        <p>
+          If a couple is legally married but has little evidence of shared life, minimal communication, no meaningful family involvement, no financial or emotional interdependence, or a marriage timeline that appears closely connected to immigration needs, the officer may still question the genuineness of the relationship.
+        </p>
+
+        <p>
+          In simple terms, common-law cases focus more heavily on cohabitation and shared life. Marriage cases focus on both the legal marriage and the genuineness of the relationship. But both categories ultimately come back to the same core question: Is the relationship genuine, continuing, and not entered into primarily for immigration purposes?
+        </p>
+
+        <h4>4. Marriage does not necessarily “fix” previous common-law problems</h4>
+
+        <p>
+          This is one of the most common misunderstandings in complex sponsorship cases.
+        </p>
+
+        <p>
+          If an applicant previously applied as a common-law partner and was refused, getting married later does not automatically erase the issues from the previous application. The officer may still review the full relationship history, including whether the couple truly met the common-law definition before, whether the information provided in the past was consistent, whether any relationship was previously concealed, whether there was any misrepresentation, and whether the excluded family member provisions may apply.
+        </p>
+
+        <p>
+          This is especially important where a sponsor became a permanent resident but failed to declare a spouse, common-law partner, or family member who should have been examined at the time. In such situations, the sponsored person may be excluded from being sponsored later under certain provisions of the Immigration and Refugee Protection Regulations, including IRPR 117(9)(d) or 125(1)(d).
+        </p>
+
+        <p>
+          In these cases, the issue is not simply whether the couple is married now. The real questions may include:
+        </p>
+
+        <ul>
+          <li>Did the relationship already exist when the sponsor became a permanent resident?</li>
+          <li>Was the partner required to be declared and examined at that time?</li>
+          <li>Why was the partner not declared?</li>
+          <li>Is there any applicable public policy, exception, or humanitarian consideration?</li>
+        </ul>
+
+        <p>
+          A later marriage does not automatically overcome these legal concerns. These cases require careful legal and factual analysis before filing a new application.
+        </p>
+
+        <h4>5. The category should be based on facts, not convenience</h4>
+
+        <p>
+          When preparing a spousal or partner sponsorship application, the category should be chosen based on the actual facts of the relationship, not simply on which option appears easier.
+        </p>
+
+        <p>
+          If the couple has lived together continuously for at least 12 months and the evidence is strong, a common-law sponsorship may be appropriate.
+        </p>
+
+        <p>
+          If the couple is legally married and the marriage is genuine and continuing, a spousal sponsorship may be more direct.
+        </p>
+
+        <p>
+          If the couple is dating, engaged, or in a romantic relationship but has not married and has not lived together continuously for 12 months, they usually cannot qualify as common-law partners.
+        </p>
+
+        <p>
+          From a case strategy perspective, it is essential to have a clear and consistent relationship timeline. Important details include when the couple met, when the romantic relationship began, when they started living together, whether they were ever separated, when they married, why they married at that time, whether their families knew about the relationship, and how their financial and daily lives were arranged.
+        </p>
+
+        <h4>6. Practical reminders for case preparation</h4>
+
+        <ul>
+          <li>Do not treat common-law as simply “boyfriend and girlfriend living together.” In immigration law, common-law partnership has a specific legal threshold.</li>
+          <li>Do not assume that a marriage certificate alone is enough. A marriage case still requires evidence that the relationship is genuine and not primarily for immigration purposes.</li>
+          <li>If the relationship history is complicated, such as a previous refusal, a previously undeclared partner, prior marriages, long periods of separation, or inconsistent information, the legal risks should be analyzed before deciding on the application strategy.</li>
+          <li>If a relationship changed from common-law to marriage, the new marriage can be submitted as a new fact, but the previous common-law history may still be reviewed.</li>
+          <li>If the case involves potential excluded family member issues under IRPR 117(9)(d) or 125(1)(d), extra caution is required. This is not merely a question of insufficient relationship evidence; it may affect whether the person is eligible to be sponsored at all.</li>
+        </ul>
+
+        <h4>Conclusion</h4>
+
+        <p>
+          In Canadian immigration law, both common-law partnership and marriage can form the basis of a spousal or partner sponsorship application. However, they are not simply stronger or weaker versions of each other.
+        </p>
+
+        <p>
+          Common-law requires proof of continuous cohabitation and a marriage-like relationship. Marriage requires proof of a legally valid marriage and a genuine, continuing relationship. In both categories, the core of the application remains the same: the relationship must be genuine, the facts must be consistent, and the evidence must be complete.
+        </p>
+
+        <p>
+          For cases involving a complex relationship history, previous refusals, undeclared family members, or a transition from common-law to marriage, a careful legal and evidentiary review should be completed before filing. Relying only on the fact that “we are married now” may not be enough.
+        </p>
+
+        <div class="note">
+          <p>
+            This article is intended for general informational purposes only and does not constitute legal advice or immigration advice for any specific case.
+          </p>
+          <p class="zh">
+            本文仅供一般信息参考，并不构成针对任何具体个案的法律意见或移民建议。每个案件的事实和法律问题均有所不同，如涉及配偶担保、common-law 关系、未申报家庭成员或 excluded family member 问题，建议根据具体情况寻求专业意见后再作决定。
+          </p>
+        </div>
+      </article>
+
+      <aside class="sidebar">
+        <h4>Need help with a spousal or common-law sponsorship case?</h4>
+        <p>
+          Relationship-based immigration cases may require careful review of the legal category, relationship history, evidence, and potential sponsorship risks.
+        </p>
+        <p class="zh">
+          配偶或 common-law 类申请可能需要仔细分析关系类别、关系历史、证据完整性以及潜在的担保风险。
+        </p>
+        <a class="button" href="../index.html#contact">Contact Ellen | 联系 Ellen</a>
+        <a class="button secondary" href="../updates.html">More Updates | 更多动态</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Jie “Ellen” Lin, RCIC. All rights reserved.
+  </footer>
+</body>
+</html>
