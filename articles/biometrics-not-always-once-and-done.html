@@ -14,6 +14,10 @@
       --muted: #5f6f76;
       --accent: #d2a06f;
       --border: #e6d9ca;
+      --deep-green: #12383d;
+      --green: #1f555b;
+      --white: #ffffff;
+      --shadow: 0 18px 45px rgba(18, 56, 61, 0.08);
     }
 
     * {
@@ -38,10 +42,110 @@
       color: var(--accent);
     }
 
-    .page {
+    .topbar {
+      background: var(--deep-green);
+      color: var(--white);
+      padding: 18px 8%;
+    }
+
+    .nav {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .brand {
+      font-weight: 900;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    .brand span {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      opacity: 0.85;
+      margin-top: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    .article-hero {
+      background: linear-gradient(135deg, var(--deep-green), var(--green));
+      color: var(--white);
+      padding: 42px 8% 56px;
+    }
+
+    .hero-inner {
       max-width: 980px;
       margin: 0 auto;
-      padding: 36px 22px 72px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 999px;
+      color: rgba(255,255,255,0.92);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .article-hero h1 {
+      max-width: 900px;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.1;
+      margin: 0 0 18px;
+      letter-spacing: -1.5px;
+    }
+
+    .hero-subtitle {
+      max-width: 760px;
+      font-size: 22px;
+      color: rgba(255,255,255,0.86);
+      margin: 0 0 22px;
+      font-weight: 700;
+    }
+
+    .published {
+      color: rgba(255,255,255,0.8);
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .page {
+      max-width: 1280px;
+      margin: 48px auto 0;
+      padding: 0 0 80px;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .article-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 46px;
+      box-shadow: var(--shadow);
     }
 
     .back-link {
@@ -49,39 +153,18 @@
       margin-bottom: 28px;
       color: var(--muted);
       font-size: 15px;
-    }
-
-    .article {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 46px;
-      box-shadow: 0 18px 45px rgba(18, 56, 61, 0.08);
-    }
-
-    .meta {
-      color: var(--accent);
       font-weight: 800;
-      margin-bottom: 14px;
-      letter-spacing: 0.02em;
     }
 
-    h1 {
-      font-size: clamp(34px, 5vw, 54px);
-      line-height: 1.12;
-      margin: 0 0 18px;
+    .article-card h2 {
+      font-size: 34px;
+      line-height: 1.2;
+      margin: 0 0 24px;
       color: var(--ink);
     }
 
-    .subtitle {
-      font-size: 24px;
-      font-weight: 800;
-      margin: 0 0 34px;
-      color: var(--ink);
-    }
-
-    h2 {
-      font-size: 28px;
+    .article-card h3 {
+      font-size: 26px;
       margin-top: 42px;
       margin-bottom: 16px;
       color: var(--ink);
@@ -108,175 +191,231 @@
     .note p {
       margin-bottom: 0;
       color: #394f55;
-      font-weight: 600;
+      font-weight: 700;
+    }
+
+    .sidebar {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 24px;
+    }
+
+    .sidebar h3 {
+      font-size: 24px;
+      line-height: 1.3;
+      margin: 0 0 18px;
+      color: var(--ink);
+    }
+
+    .sidebar p {
+      font-size: 16px;
+      margin-bottom: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 18px;
+      border-radius: 10px;
+      background: var(--ink);
+      color: var(--white);
+      font-weight: 900;
+      margin-top: 8px;
+    }
+
+    .button:hover {
+      color: var(--white);
+      background: var(--accent);
     }
 
     .disclaimer {
       margin-top: 44px;
       padding-top: 24px;
       border-top: 1px solid var(--border);
-      font-size: 15px;
-      color: var(--muted);
     }
 
     .disclaimer p {
       font-size: 15px;
     }
 
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 36px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 18px;
-      border-radius: 999px;
-      border: 1px solid var(--ink);
-      color: var(--ink);
-      font-weight: 800;
-    }
-
-    .button.primary {
-      background: var(--ink);
-      color: white;
-    }
-
-    @media (max-width: 720px) {
-      .article {
-        padding: 28px 22px;
+    @media (max-width: 900px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
       }
 
-      h1 {
-        font-size: 34px;
+      .nav-links {
+        justify-content: flex-start;
       }
 
-      .subtitle {
-        font-size: 21px;
+      .content-grid {
+        grid-template-columns: 1fr;
       }
 
-      p {
-        font-size: 17px;
+      .sidebar {
+        position: static;
+      }
+
+      .article-card {
+        padding: 30px 22px;
+      }
+
+      .article-hero {
+        padding: 42px 8% 56px;
+      }
+
+      .page {
+        padding: 0 8% 80px;
       }
     }
   </style>
 </head>
 
 <body>
-  <main class="page">
-    <a class="back-link" href="../updates.html">← Back to Updates | 返回最新动态</a>
+  <header class="topbar">
+    <nav class="nav">
+      <div class="brand">
+        Jie “Ellen” Lin, RCIC
+        <span>Canadian Immigration Consultant | 加拿大持牌移民顾问</span>
+      </div>
 
-    <article class="article">
-      <div class="meta">Client Reminders | 申请提醒</div>
+      <div class="nav-links">
+        <a href="../index.html">Home 首页</a>
+        <a href="../index.html#services">Services 服务</a>
+        <a href="../updates.html">Updates 最新动态</a>
+        <a href="../index.html#contact">Contact 联系</a>
+      </div>
+    </nav>
+  </header>
 
+  <section class="article-hero">
+    <div class="hero-inner">
+      <div class="pill">Client Reminders | 申请提醒</div>
       <h1>Biometrics Are Not Always “Once and Done”</h1>
-      <p class="subtitle">生物信息采集并不总是“一次完成，十年有效”</p>
+      <p class="hero-subtitle">生物信息采集并不总是“一次完成，十年有效”</p>
+      <p class="published">Published on June 29, 2026 | 发布日期：2026年6月29日</p>
+    </div>
+  </section>
 
-      <p class="zh">
-        很多申请人以为，只要曾经向 IRCC 提供过指纹和照片，未来十年内就不需要再次录入生物信息。
-        这个理解只说对了一部分。
-      </p>
+  <main class="page">
+    <div class="content-grid">
+      <article class="article-card">
+        <a class="back-link" href="../updates.html">← Back to Immigration Updates | 返回最新动态</a>
 
-      <p class="zh">
-        根据 IRCC 的规定，申请人是否需要再次提供生物信息，取决于其递交的申请类型。
-      </p>
+        <h2>生物信息采集并不总是“一次完成，十年有效”</h2>
 
-      <h2>临时居民申请：通常十年有效</h2>
-
-      <p class="zh">
-        对于临时居民申请，例如旅游签证、学习许可、工作许可或境内延期申请，生物信息通常在十年内有效。
-        如果申请人在过去十年内已经提供过生物信息，IRCC 通常可以将其自动关联到新的临时居民申请中。
-      </p>
-
-      <h2>永久居民申请：规则并不一样</h2>
-
-      <p class="zh">
-        但是，对于永久居民申请，规则是不一样的。大多数永久居民申请人需要在每一次递交永久居民申请时
-        重新提供生物信息，即使申请人此前已经因为工作许可、学习许可、旅游签证或其他临时居民申请
-        完成过生物信息采集。
-      </p>
-
-      <p class="zh">
-        这意味着，如果申请人此前已经因工作许可申请完成过生物信息采集，但之后又在配偶团聚、
-        家庭团聚、Express Entry、省提名、H&amp;C 人道主义申请或其他永久居民申请项下收到新的
-        生物信息采集通知，这并不一定是 IRCC 系统出错。
-      </p>
-
-      <p class="zh">
-        这很可能只是因为新的申请属于永久居民申请，而 IRCC 要求申请人为该永久居民申请重新提供生物信息。
-      </p>
-
-      <h2>收到 Biometric Instruction Letter 后应注意什么？</h2>
-
-      <p class="zh">
-        申请人应当仔细阅读 IRCC 发出的生物信息采集通知。如果 IRCC 要求申请人提供生物信息，
-        通常需要在信件日期起三十天内完成。
-      </p>
-
-      <p class="zh">
-        拖延或忽视该要求，可能会导致申请审理延误，甚至引发其他问题。
-      </p>
-
-      <div class="note">
-        <p>
-          实务提醒：不要因为以前录过指纹，就自动认为新的申请一定不需要再次录入。
-          申请人应根据自己递交的申请类型，严格按照 IRCC 最新发出的通知办理。
+        <p class="zh">
+          很多申请人以为，只要曾经向 IRCC 提供过指纹和照片，未来十年内就不需要再次录入生物信息。
+          这个理解只说对了一部分。
         </p>
-      </div>
 
-      <h2>English Summary</h2>
-
-      <p>
-        Many applicants believe that once they have provided fingerprints and a photo to IRCC,
-        they will not need to provide biometrics again for ten years. This is only partly correct.
-      </p>
-
-      <p>
-        For temporary residence applications, such as visitor visas, study permits, work permits,
-        or extensions, biometrics are generally valid for ten years. If biometrics were provided
-        within the past ten years, IRCC may automatically attach them to a new temporary residence
-        application.
-      </p>
-
-      <p>
-        However, for permanent residence applications, the rule is different. Most permanent residence
-        applicants are required to provide biometrics every time they apply, even if they previously
-        completed biometrics for a work permit, study permit, visitor visa, or another temporary
-        residence application.
-      </p>
-
-      <p>
-        Therefore, if an applicant receives a new Biometric Instruction Letter under a family sponsorship,
-        Express Entry, PNP, humanitarian and compassionate application, or another permanent residence
-        application, it is not necessarily an IRCC mistake.
-      </p>
-
-      <p>
-        Applicants should always read the latest instruction letter carefully and complete biometrics
-        within the required deadline.
-      </p>
-
-      <div class="disclaimer">
-        <p>
-          This article is for general information only and does not constitute legal advice.
-          Immigration requirements may change, and each applicant’s circumstances should be assessed individually.
+        <p class="zh">
+          根据 IRCC 的规定，申请人是否需要再次提供生物信息，取决于其递交的申请类型。
         </p>
-        <p>
-          本文仅供一般信息参考，不构成法律意见。移民政策及申请要求可能发生变化，
-          每位申请人的具体情况均应个案评估。
-        </p>
-        <p>
-          Source: IRCC official biometrics instructions.
-        </p>
-      </div>
 
-      <div class="buttons">
-        <a class="button primary" href="../index.html#contact">Contact Ellen | 联系 Ellen</a>
-        <a class="button" href="../updates.html">Back to Updates | 返回最新动态</a>
-      </div>
-    </article>
+        <h3>临时居民申请：通常十年有效</h3>
+
+        <p class="zh">
+          对于临时居民申请，例如旅游签证、学习许可、工作许可或境内延期申请，生物信息通常在十年内有效。
+          如果申请人在过去十年内已经提供过生物信息，IRCC 通常可以将其自动关联到新的临时居民申请中。
+        </p>
+
+        <h3>永久居民申请：规则并不一样</h3>
+
+        <p class="zh">
+          但是，对于永久居民申请，规则是不一样的。大多数永久居民申请人需要在每一次递交永久居民申请时
+          重新提供生物信息，即使申请人此前已经因为工作许可、学习许可、旅游签证或其他临时居民申请完成过生物信息采集。
+        </p>
+
+        <p class="zh">
+          这意味着，如果申请人此前已经因工作许可申请完成过生物信息采集，但之后又在配偶团聚、
+          家庭团聚、Express Entry、省提名、H&amp;C 人道主义申请或其他永久居民申请项下收到新的
+          生物信息采集通知，这并不一定是 IRCC 系统出错。
+        </p>
+
+        <p class="zh">
+          这很可能只是因为新的申请属于永久居民申请，而 IRCC 要求申请人为该永久居民申请重新提供生物信息。
+        </p>
+
+        <h3>收到 Biometric Instruction Letter 后应注意什么？</h3>
+
+        <p class="zh">
+          申请人应当仔细阅读 IRCC 发出的生物信息采集通知。如果 IRCC 要求申请人提供生物信息，
+          通常需要在信件日期起三十天内完成。
+        </p>
+
+        <p class="zh">
+          拖延或忽视该要求，可能会导致申请审理延误，甚至引发其他问题。
+        </p>
+
+        <div class="note">
+          <p>
+            实务提醒：不要因为以前录过指纹，就自动认为新的申请一定不需要再次录入。
+            申请人应根据自己递交的申请类型，严格按照 IRCC 最新发出的通知办理。
+          </p>
+        </div>
+
+        <h3>English Summary</h3>
+
+        <p>
+          Many applicants believe that once they have provided fingerprints and a photo to IRCC,
+          they will not need to provide biometrics again for ten years. This is only partly correct.
+        </p>
+
+        <p>
+          For temporary residence applications, such as visitor visas, study permits, work permits,
+          or extensions, biometrics are generally valid for ten years. If biometrics were provided
+          within the past ten years, IRCC may automatically attach them to a new temporary residence application.
+        </p>
+
+        <p>
+          However, for permanent residence applications, the rule is different. Most permanent residence
+          applicants are required to provide biometrics every time they apply, even if they previously
+          completed biometrics for a work permit, study permit, visitor visa, or another temporary residence application.
+        </p>
+
+        <p>
+          Therefore, if an applicant receives a new Biometric Instruction Letter under a family sponsorship,
+          Express Entry, PNP, humanitarian and compassionate application, or another permanent residence application,
+          it is not necessarily an IRCC mistake.
+        </p>
+
+        <p>
+          Applicants should always read the latest instruction letter carefully and complete biometrics
+          within the required deadline.
+        </p>
+
+        <div class="disclaimer">
+          <p>
+            This article is for general information only and does not constitute legal advice.
+            Immigration requirements may change, and each applicant’s circumstances should be assessed individually.
+          </p>
+          <p>
+            本文仅供一般信息参考，不构成法律意见。移民政策及申请要求可能发生变化，
+            每位申请人的具体情况均应个案评估。
+          </p>
+          <p>
+            Source: IRCC official biometrics instructions.
+          </p>
+        </div>
+      </article>
+
+      <aside class="sidebar">
+        <h3>Received a new biometric instruction letter?</h3>
+        <p>
+          A new biometrics request is not always a system mistake. Whether biometrics must be provided again
+          depends on the type of application being submitted.
+        </p>
+        <p class="zh">
+          如果您已经录过指纹，但又在新的申请中收到生物信息采集通知，不要自动认为这是系统错误。
+          是否需要重新采集，通常要看申请类型。
+        </p>
+        <a class="button" href="../index.html#contact">Contact Ellen | 联系 Ellen</a>
+      </aside>
+    </div>
   </main>
 </body>
 </html>
