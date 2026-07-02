@@ -169,26 +169,14 @@
       gap: 16px;
     }
 
-    .article-directory li {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      box-shadow: 0 12px 30px rgba(18, 52, 59, 0.07);
-      overflow: hidden;
-    }
-
-    .article-directory a {
-      display: block;
-      padding: 24px 28px;
-      color: var(--deep-green);
-      text-decoration: none;
-    }
-
-    .article-directory a:hover {
-      background: var(--cream);
-    }
-
-    .title-zh {
+        .article-directory li {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(18, 52, 59, 0.07);
+  padding: 24px 28px;
+}
+        .title-zh {
       display: block;
       font-size: 23px;
       font-weight: 800;
@@ -210,6 +198,19 @@
       font-size: 15px;
     }
 
+.read-more {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--deep-green);
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}    
     .tag {
       display: inline-block;
       margin-top: 14px;
@@ -290,14 +291,11 @@
        
       <ul class="article-directory">
         <li>
-          <a href="articles/why-genuine-marriage-can-still-be-refused.html">
-            <span class="title-zh">为什么真实婚姻仍会面临被拒风险？</span>
-            <span class="title-en">Why a Genuine Marriage Can Still Be Refused</span>
-            <span class="article-note">
-              讨论真实婚姻、未申报家庭成员、common-law 历史、IRPR 117(9)(d)、125(1)(d) 以及 PFL 风险。
-            </span>
-<span class="read-more">阅读全文 →</span>            
-             </a>
+        span class="title-zh">为什么真实婚姻仍会面临被拒风险？</span>
+  <span class="article-note">
+    讨论真实婚姻、未申报家庭成员、common-law 历史、IRPR 117(9)(d)、125(1)(d) 以及 PFL 风险。
+  </span>
+  <a class="read-more" href="articles/why-genuine-marriage-can-still-be-refused.html">阅读全文 →</a>
         </li>
 
         <li>
