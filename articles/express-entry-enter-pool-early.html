@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KCHE6G6R63"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KCHE6G6R63');
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Express Entry 是否应该尽早入池？“越早越好”并不适用于所有人 | Should You Create an Express Entry Profile Early?</title>
+  <meta name="description" content="Express Entry 是否应该尽早入池？本文解释同分筛选规则、EE profile 有效期、一年内现实获邀机会，以及申请人是否应该提前建立 Express Entry profile。" />
+
+  <style>
+    :root {
+      --deep-green: #12343b;
+      --green: #2d545e;
+      --warm-gold: #d4a373;
+      --cream: #f8f7f4;
+      --soft-cream: #efe9dc;
+      --text: #1f2933;
+      --muted: #5f6b73;
+      --white: #ffffff;
+      --border: #e4ded4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    header {
+      background: var(--deep-green);
+      color: var(--white);
+      padding: 22px 0;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: -0.5px;
+    }
+
+    .brand p {
+      margin: 4px 0 0;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .article-hero {
+      background: linear-gradient(135deg, var(--deep-green), var(--green));
+      color: var(--white);
+      padding: 74px 0 76px;
+    }
+
+    .article-hero .category {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .article-hero h2 {
+      max-width: 950px;
+      margin: 0 0 18px;
+      font-size: clamp(34px, 4.8vw, 56px);
+      line-height: 1.16;
+      letter-spacing: -1.2px;
+    }
+
+    .article-hero .subtitle {
+      max-width: 900px;
+      margin: 0 0 14px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 19px;
+      line-height: 1.6;
+    }
+
+    .article-date {
+      margin-top: 20px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 15px;
+    }
+
+    main {
+      background: var(--soft-cream);
+      padding: 54px 0 70px;
+    }
+
+    .article-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 34px;
+      align-items: start;
+    }
+
+    .article-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 34px;
+      box-shadow: 0 16px 38px rgba(18, 52, 59, 0.07);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--deep-green);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .article-meta {
+      color: var(--warm-gold);
+      font-weight: 800;
+      font-size: 14px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    article h1 {
+      margin: 0 0 18px;
+      color: var(--deep-green);
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.22;
+      letter-spacing: -0.6px;
+    }
+
+    article h2 {
+      margin: 42px 0 14px;
+      color: var(--deep-green);
+      font-size: 26px;
+      line-height: 1.35;
+      border-left: 5px solid var(--warm-gold);
+      padding-left: 14px;
+    }
+
+    article h3 {
+      margin: 34px 0 12px;
+      color: var(--deep-green);
+      font-size: 22px;
+      line-height: 1.35;
+    }
+
+    article p {
+      margin: 0 0 18px;
+      font-size: 17px;
+    }
+
+    article ul {
+      margin: 0 0 22px 0;
+      padding-left: 22px;
+    }
+
+    article li {
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    .note-box {
+      background: #f6f8fb;
+      border: 1px solid #dce6ef;
+      border-left: 5px solid var(--warm-gold);
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin: 28px 0;
+    }
+
+    .note-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .english-section {
+      margin-top: 58px;
+      padding-top: 36px;
+      border-top: 2px solid var(--border);
+    }
+
+    .sidebar {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 12px 30px rgba(18, 52, 59, 0.06);
+      position: sticky;
+      top: 24px;
+    }
+
+    .sidebar h3 {
+      color: var(--deep-green);
+      margin: 0 0 14px;
+      font-size: 20px;
+      line-height: 1.35;
+    }
+
+    .sidebar p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 11px 16px;
+      background: var(--deep-green);
+      color: var(--white);
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .contact-button:hover {
+      background: var(--green);
+    }
+
+    footer {
+      background: var(--deep-green);
+      color: rgba(255, 255, 255, 0.78);
+      padding: 26px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .article-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .article-card {
+        padding: 24px;
+      }
+
+      article p,
+      article li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Jie “Ellen” Lin, RCIC</h1>
+        <p>Canadian Immigration Consultant | 加拿大持牌移民顾问</p>
+      </div>
+
+      <nav>
+        <a href="../index.html">Home 首页</a>
+        <a href="../index.html#services">Services 服务</a>
+        <a href="../index.html#updates">Updates 最新动态</a>
+        <a href="../index.html#contact">Contact 联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="container">
+      <div class="category">申请重要提醒 | Application Reminders</div>
+      <h2>Express Entry 是否应该尽早入池？“越早越好”并不适用于所有人</h2>
+      <p class="subtitle">
+        Should You Create an Express Entry Profile Early? What Applicants Need to Know About the Tie-Breaking Rule
+      </p>
+      <div class="article-date">Published on July 7, 2026 | 发布日期：2026年7月7日</div>
+    </div>
+  </section>
+
+  <main>
+    <div class="container article-layout">
+      <article class="article-card">
+        <a class="back-link" href="../client-reminders.html">← 返回申请提醒目录 | Back to Application Reminders</a>
+
+        <div class="article-meta">Application Reminders | 申请提醒</div>
+
+        <h1>Express Entry 是否应该尽早入池？“越早越好”并不适用于所有人</h1>
+
+        <p>
+          在 Express Entry 快速通道申请中，很多申请人都会听到一个建议：“先把 profile 建起来，早点入池，占据同分筛选优势。”
+        </p>
+
+        <p>
+          这个说法有一定道理，但并不完整。对于某些申请人来说，尽早入池确实可能带来优势；但对于另一些申请人来说，如果目前分数明显不足、材料还不成熟，或者一年内几乎没有现实机会被邀请，过早入池的实际意义并不大。
+        </p>
+
+        <p>
+          因此，Express Entry 是否应该尽早入池，不能简单回答“是”或“不是”，而要看申请人的具体情况。
+        </p>
+
+        <h2>一、什么是 Express Entry 入池？</h2>
+
+        <p>
+          Express Entry 是加拿大联邦政府管理经济类移民申请的电子系统。符合条件的申请人可以创建 Express Entry profile，进入候选池。
+        </p>
+
+        <p>
+          进入候选池后，系统会根据申请人的年龄、学历、语言成绩、加拿大工作经验、海外工作经验、配偶因素、雇主安排、省提名等因素计算 CRS 分数。IRCC 会定期进行抽签，邀请符合某一轮抽签条件、并且分数达到要求的申请人递交永久居民申请。
+        </p>
+
+        <p>
+          简单来说，入池只是第一步。入池并不等于获得邀请，也不等于已经递交了永久居民申请。只有收到 ITA，也就是 Invitation to Apply，申请人才可以正式递交永久居民申请。
+        </p>
+
+        <h2>二、为什么有人说应该尽早入池？</h2>
+
+        <p>
+          “尽早入池”的主要理由，是因为 Express Entry 有一个 tie-breaking rule，同分筛选规则。
+        </p>
+
+        <p>
+          在每一轮抽签中，IRCC 会设定邀请类别、邀请人数和最低 CRS 分数。如果某一轮的最低分是517分，并不代表所有517分的申请人都会被邀请。
+        </p>
+
+        <p>
+          IRCC 会先邀请高于517分的申请人。如果剩余名额不足以邀请所有517分申请人，就会使用同分筛选时间。也就是说，谁更早提交 Express Entry profile，谁就可能在同分情况下排在前面。
+        </p>
+
+        <p>
+          因此，如果两个申请人的 CRS 分数完全一样，而且都刚好等于某一轮最低邀请分数，那么较早进入池子的申请人可能会更有优势。
+        </p>
+
+        <p>
+          这就是“早点入池”的逻辑来源。
+        </p>
+
+        <h2>三、同分筛选时间到底有什么作用？</h2>
+
+        <p>
+          同分筛选时间并不是随机设置的。它本质上是系统根据本轮邀请人数、候选人分数排序和 profile 提交时间自动形成的结果。
+        </p>
+
+        <p>
+          假设某一轮 CEC 抽签发出2,000份邀请。系统先按照 CRS 分数从高到低排序。如果排到第2,000位时，刚好落在517分，而517分的人数超过剩余名额，那么系统就会继续按照 profile 提交时间排序。
+        </p>
+
+        <p>
+          最后一位被邀请的517分申请人的提交时间，就会成为这一轮的同分筛选时间。
+        </p>
+
+        <div class="note-box">
+          <p>
+            所以，同分筛选时间只影响一类人：刚好等于本轮最低邀请分数的人。
+          </p>
+          <p>
+            如果申请人分数高于最低分，同分筛选时间通常没有影响；如果申请人分数低于最低分，同分筛选时间也没有帮助。
+          </p>
+        </div>
+
+        <h2>四、为什么“越早入池越好”并不准确？</h2>
+
+        <p>
+          问题在于，Express Entry profile 不是永久有效的。
+        </p>
+
+        <p>
+          Express Entry profile 只有一年的有效期。如果申请人在一年内没有收到邀请，profile 到期后就需要重新创建。重新创建后，新的 profile 会产生新的提交时间。
+        </p>
+
+        <p>
+          这意味着，所谓“早点建立入池时间”的优势并不能无限期保留。
+        </p>
+
+        <p>
+          如果申请人目前 CRS 分数明显低于近期抽签分数，而且短期内也没有语言提升、省提名、法语类别、职业类别抽签或加拿大工作经验增加等现实加分路径，那么过早入池可能只是让 profile 在池子里等待一年，最后到期重新创建。
+        </p>
+
+        <p>
+          这种情况下，“早点入池”的实际价值并不高。
+        </p>
+
+        <h2>五、哪些人适合尽早入池？</h2>
+
+        <h3>1. 分数已经接近近期抽签线的人</h3>
+
+        <p>
+          如果申请人的 CRS 分数已经接近近期 CEC、普通抽签或类别抽签的邀请分数，那么尽早入池是有意义的。
+        </p>
+
+        <p>
+          例如，近期 CEC 抽签分数在510多分，如果申请人已经达到510分以上，只是差几分，那么就应该认真考虑尽早入池。因为一旦某轮邀请人数增加，最低分可能下降；如果刚好卡在最低分，同分筛选时间就可能产生实际影响。
+        </p>
+
+        <h3>2. 已经符合某一优先类别的人</h3>
+
+        <p>
+          如果申请人符合医疗、技工、教育、运输、法语或其他 IRCC 指定类别，那么入池的意义也更大。
+        </p>
+
+        <p>
+          类别抽签并不只看总分是否达到普通高分线，而是看申请人是否符合该类别要求。在这种情况下，即使 CRS 分数不是特别高，也可能因为职业类别或语言类别而获得邀请。
+        </p>
+
+        <p>
+          但前提是，申请人的 EE profile 必须准确反映其 NOC、工作经验、语言成绩和其他相关信息，否则系统可能无法识别其类别资格。
+        </p>
+
+        <h3>3. 预计一年内分数会明显提高的人</h3>
+
+        <p>
+          有些申请人现在分数可能还不够，但未来一年内有明确加分点。例如：
+        </p>
+
+        <ul>
+          <li>加拿大工作经验即将满一年、两年或三年；</li>
+          <li>语言成绩正在准备提升；</li>
+          <li>配偶语言成绩或学历认证即将完成；</li>
+          <li>省提名申请正在推进；</li>
+          <li>学历认证 ECA 即将完成；</li>
+          <li>雇主支持或其他加分因素即将落实。</li>
+        </ul>
+
+        <p>
+          这类申请人可以考虑提前入池，并在条件变化后及时更新 profile。因为他们在 profile 有效期内有现实可能接近或达到邀请分数。
+        </p>
+
+        <h3>4. 省提名项目要求必须先入 EE 池的人</h3>
+
+        <p>
+          部分省提名项目要求申请人已经拥有有效的 Express Entry profile，并提供 Job Seeker Validation Code。如果申请人有意申请这类 EE 关联省提名，那么先建立 EE profile 可能是必要步骤。
+        </p>
+
+        <p>
+          这种情况下，入池不是为了等待联邦抽签，而是为了满足省提名项目的技术要求。
+        </p>
+
+        <h2>六、哪些人不一定适合过早入池？</h2>
+
+        <h3>1. CRS 分数明显偏低，而且短期内没有加分路径</h3>
+
+        <p>
+          如果申请人的 CRS 分数距离近期抽签分数差距很大，又没有法语、省提名、优先职业类别或其他加分机会，那么过早入池的意义有限。
+        </p>
+
+        <p>
+          这种情况下，更重要的是先做整体规划，而不是急着创建 profile。
+        </p>
+
+        <h3>2. 语言成绩还不理想的人</h3>
+
+        <p>
+          语言成绩是 CRS 分数中最关键的因素之一。对于很多申请人来说，语言成绩提高一个档次，可能带来几十甚至上百分的变化。
+        </p>
+
+        <p>
+          如果申请人目前语言成绩明显偏低，且正在准备重新考试，那么可以先集中提升语言，而不是急着用一个低分 profile 入池。
+        </p>
+
+        <p>
+          当然，如果申请人已经符合入池条件，也可以先入池后再更新语言成绩。但从策略上看，重点仍然是提升竞争力，而不是单纯追求入池时间。
+        </p>
+
+        <h3>3. 工作经验还没有满足要求的人</h3>
+
+        <p>
+          有些申请人还没有达到 CEC 或 Federal Skilled Worker 的基本资格要求，却误以为可以先占位。这种做法是有风险的。
+        </p>
+
+        <p>
+          Express Entry profile 中的信息必须真实、准确。如果申请人在创建 profile 的时候还不符合项目要求，可能导致系统判断错误，甚至为后续申请带来严重影响。
+        </p>
+
+        <h3>4. 材料信息还不清楚的人</h3>
+
+        <p>
+          Express Entry profile 虽然不是正式 PR 申请，但其中填写的信息会影响 CRS 分数和项目资格。学历、工作经验、NOC、语言成绩、婚姻状况、配偶信息等都必须准确。
+        </p>
+
+        <p>
+          如果申请人对自己的工作职责、NOC 选择、学历认证、工作经验时间段还没有梳理清楚，建议先完成基本评估，再决定是否入池。
+        </p>
+
+        <h2>七、入池后可以更新信息吗？</h2>
+
+        <p>
+          可以。
+        </p>
+
+        <p>
+          申请人进入 Express Entry 池后，如果语言成绩、工作经验、学历、婚姻状况、配偶信息、省提名等发生变化，可以更新 profile。
+        </p>
+
+        <p>
+          正常更新 profile 通常不会导致原来的提交时间自动失效。但是，如果 profile 过期、被撤回，或者申请人重新创建新的 profile，那么新的 profile 会有新的提交时间。
+        </p>
+
+        <p>
+          因此，已经入池的申请人也不能只是被动等待，而应定期检查 profile 信息是否准确，尤其是工作经验、语言成绩有效期、护照信息、婚姻状态和联系方式等重要内容。
+        </p>
+
+        <h2>八、不要为了“早入池”而忽略身份规划</h2>
+
+        <p>
+          对于加拿大境内申请人来说，是否入池只是移民规划的一部分。更重要的问题往往是：当前身份还能维持多久？
+        </p>
+
+        <p>
+          很多申请人特别关注 EE 分数，却忽略了自己的工签、毕业工签、配偶工签或访客身份到期时间。如果 EE 短期内没有邀请，而身份又即将到期，就必须提前考虑身份衔接方案。
+        </p>
+
+        <p>例如：</p>
+
+        <ul>
+          <li>PGWP 即将到期，是否还有 LMIA 工签、省提名工签支持信、配偶工签或其他选择？</li>
+          <li>当前工签是否可以续签？</li>
+          <li>是否有资格申请省提名？</li>
+          <li>是否需要提前准备 visitor record 作为临时身份衔接？</li>
+          <li>是否存在离境后再入境的风险？</li>
+        </ul>
+
+        <p>
+          这些问题都不能等到 EE profile 快到期、工签也快到期时才开始处理。
+        </p>
+
+        <h2>九、结论：是否尽早入池，要看“有没有现实机会”</h2>
+
+        <p>
+          Express Entry 不是越早入池就越安全，也不是等到完全完美才可以行动。
+        </p>
+
+        <p>
+          比较合理的判断标准是：申请人在未来一年内是否有现实机会被邀请，或者是否需要 EE profile 来配合省提名等其他移民路径。
+        </p>
+
+        <p>
+          如果申请人已经接近抽签分数、符合优先类别、正在推进省提名，或者未来一年内有明确加分机会，那么尽早入池通常是有意义的。
+        </p>
+
+        <p>
+          但如果申请人目前分数明显不足，短期内没有加分路径，也不符合任何类别抽签或省提名方向，那么与其急着入池，不如先完成语言、学历、工作经验、职业定位、省提名和身份衔接的整体规划。
+        </p>
+
+        <div class="note-box">
+          <p>
+            换句话说，Express Entry 的关键不是“越早越好”，而是：在合适的时间，用准确的信息，进入正确的赛道。
+          </p>
+        </div>
+
+        <div class="english-section">
+          <h2>Should You Create an Express Entry Profile Early? What Applicants Need to Know About the Tie-Breaking Rule</h2>
+
+          <p>
+            In Express Entry applications, many applicants often hear the same piece of advice: “Create your profile first, enter the pool early, and secure an advantage under the tie-breaking rule.”
+          </p>
+
+          <p>
+            This advice is partly correct, but it is not complete. For some applicants, entering the pool early may indeed provide an advantage. However, for others, if their CRS score is clearly insufficient, their information or documents are not yet ready, or they have little realistic chance of receiving an invitation within one year, entering the pool too early may not have much practical value.
+          </p>
+
+          <p>
+            Therefore, whether an applicant should enter the Express Entry pool early cannot be answered simply with “yes” or “no.” It depends on the applicant’s specific circumstances.
+          </p>
+
+          <h3>1. What Does It Mean to Enter the Express Entry Pool?</h3>
+
+          <p>
+            Express Entry is the electronic system used by the Canadian federal government to manage economic immigration applications. Eligible applicants may create an Express Entry profile and enter the candidate pool.
+          </p>
+
+          <p>
+            After entering the pool, the system calculates the applicant’s Comprehensive Ranking System (CRS) score based on factors such as age, education, language test results, Canadian work experience, foreign work experience, spouse or common-law partner factors, arranged employment, and provincial nomination. IRCC conducts draws regularly and invites applicants who meet the requirements of a particular draw and have a high enough CRS score to submit a permanent residence application.
+          </p>
+
+          <p>
+            In simple terms, entering the pool is only the first step. Entering the pool does not mean receiving an invitation, nor does it mean that a permanent residence application has already been submitted. Only after receiving an ITA, or Invitation to Apply, can the applicant formally submit a permanent residence application.
+          </p>
+
+          <h3>2. Why Do People Say Applicants Should Enter the Pool Early?</h3>
+
+          <p>
+            The main reason for “entering the pool early” is the tie-breaking rule in Express Entry.
+          </p>
+
+          <p>
+            In each draw, IRCC sets the invitation category, the number of invitations, and the minimum CRS score. If the minimum score for a particular draw is 517, it does not necessarily mean that all applicants with 517 points will be invited.
+          </p>
+
+          <p>
+            IRCC first invites applicants with scores higher than 517. If there are not enough remaining spots to invite all applicants with exactly 517 points, IRCC will apply the tie-breaking time. In other words, among applicants with the same CRS score, those who submitted their Express Entry profiles earlier may be ranked ahead.
+          </p>
+
+          <h3>3. What Does the Tie-Breaking Time Actually Do?</h3>
+
+          <p>
+            The tie-breaking time is not randomly selected. It is essentially generated automatically based on the number of invitations in that round, candidates’ CRS ranking, and the time when their profiles were submitted.
+          </p>
+
+          <p>
+            Therefore, the tie-breaking time only affects one group of applicants: those whose CRS score is exactly equal to the minimum invited score in that round.
+          </p>
+
+          <h3>4. Why “The Earlier, the Better” Is Not Accurate</h3>
+
+          <p>
+            The issue is that an Express Entry profile is not valid forever. An Express Entry profile is valid for only one year. If an applicant does not receive an invitation within one year, the profile will expire and the applicant will need to create a new profile. Once a new profile is created, it will have a new submission time.
+          </p>
+
+          <p>
+            This means that the advantage of “establishing an earlier pool entry time” cannot be preserved indefinitely. If an applicant’s current CRS score is clearly below recent draw scores and there is no realistic short-term pathway to increase the score, entering the pool too early may have limited practical value.
+          </p>
+
+          <h3>5. Who Should Consider Entering the Pool Early?</h3>
+
+          <p>
+            Applicants whose scores are already close to recent draw cut-offs may benefit from entering the pool early. Applicants who qualify under a priority category, expect their scores to increase significantly within one year, or need an Express Entry profile for a provincial nomination program may also consider creating a profile earlier.
+          </p>
+
+          <h3>6. Who May Not Need to Enter the Pool Too Early?</h3>
+
+          <p>
+            Applicants with clearly low CRS scores and no short-term pathway to gain points may not need to rush into the pool. Applicants whose language scores are still not ideal, whose work experience has not yet met the requirements, or whose information is not yet clear should first complete a careful assessment.
+          </p>
+
+          <h3>7. Can Information Be Updated After Entering the Pool?</h3>
+
+          <p>
+            Yes. After an applicant enters the Express Entry pool, they may update their profile if their language test results, work experience, education, marital status, spouse information, provincial nomination, or other circumstances change.
+          </p>
+
+          <p>
+            Normal updates to the profile usually do not automatically invalidate the original submission time. However, if the profile expires, is withdrawn, or the applicant creates a new profile, the new profile will have a new submission time.
+          </p>
+
+          <h3>8. Do Not Ignore Status Planning</h3>
+
+          <p>
+            For applicants inside Canada, whether to enter the pool is only one part of immigration planning. The more important question is often how long the applicant can maintain valid temporary status.
+          </p>
+
+          <p>
+            If Express Entry does not result in an invitation in the short term and the applicant’s status is about to expire, they must consider a status transition plan in advance.
+          </p>
+
+          <h3>9. Conclusion</h3>
+
+          <p>
+            Express Entry is not safer simply because an applicant enters the pool earlier. A more reasonable standard is whether the applicant has a realistic chance of being invited within the next year, or whether they need an Express Entry profile to support another immigration pathway, such as a provincial nomination.
+          </p>
+
+          <p>
+            In other words, the key to Express Entry is not “the earlier, the better.” It is about entering the right track at the right time, with accurate information.
+          </p>
+        </div>
+      </article>
+
+      <aside class="sidebar">
+        <h3>Need case-specific advice?</h3>
+        <p>
+          Express Entry planning depends on CRS score, language results, work experience, NOC, province, employer support, and status expiry timeline.
+        </p>
+        <p>
+          是否应该尽早入池，需要结合分数、语言、工作经验、职业类别、省份、雇主支持以及身份到期时间综合判断。
+        </p>
+        <a class="contact-button" href="../index.html#contact">Contact Ellen | 联系 Ellen</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Jie “Ellen” Lin, RCIC. All rights reserved.
+  </footer>
+</body>
+</html>
