@@ -318,6 +318,37 @@
         position: static;
       }
     }
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.article-card,
+.article-layout,
+article {
+  min-width: 0;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.info-table th,
+.info-table td {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}    
   </style>
 </head>
 
