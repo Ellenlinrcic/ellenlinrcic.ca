@@ -10,11 +10,14 @@
   gtag('js', new Date());
 
   gtag('config', 'G-KCHE6G6R63');
-</script>  
+</script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Immigration Updates | 加拿大移民最新动态 | Jie “Ellen” Lin, RCIC</title>
-  <meta name="description" content="Canadian immigration updates, policy notes, application reminders, and practical immigration observations by Jie Ellen Lin, RCIC." />
+
+  <title>Immigration Updates | 加拿大移民最新动态</title>
+
+  <meta name="description" content="Canadian immigration policy updates, case strategy notes, and important application reminders by Jie Ellen Lin, RCIC." />
 
   <style>
     :root {
@@ -38,7 +41,7 @@
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
       background: var(--cream);
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
     header {
@@ -48,7 +51,7 @@
     }
 
     .container {
-      width: min(1100px, 90%);
+      width: min(1180px, 92%);
       margin: 0 auto;
     }
 
@@ -92,10 +95,10 @@
     .hero {
       background: linear-gradient(135deg, var(--deep-green), var(--green));
       color: var(--white);
-      padding: 74px 0;
+      padding: 72px 0;
     }
 
-    .hero .label {
+    .hero .category {
       display: inline-block;
       padding: 7px 14px;
       border: 1px solid rgba(255, 255, 255, 0.25);
@@ -108,129 +111,134 @@
     .hero h2 {
       max-width: 900px;
       margin: 0 0 18px;
-      font-size: clamp(38px, 5vw, 62px);
-      line-height: 1.08;
+      font-size: clamp(36px, 5vw, 58px);
+      line-height: 1.1;
       letter-spacing: -1.5px;
     }
 
     .hero p {
-      max-width: 780px;
+      max-width: 840px;
       margin: 0;
       color: rgba(255, 255, 255, 0.86);
       font-size: 18px;
     }
 
     main {
-      padding: 60px 0;
+      padding: 60px 0 72px;
+      background: var(--soft-cream);
     }
 
     .intro {
-      margin-bottom: 34px;
-      color: var(--muted);
-      font-size: 18px;
       max-width: 850px;
+      margin-bottom: 28px;
+      color: var(--muted);
+      font-size: 16px;
     }
 
-    .updates-list {
+    .updates-note {
+      margin: 0 0 28px;
+      padding: 16px 20px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--warm-gold);
+      border-radius: 14px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .cards {
       display: grid;
-      gap: 24px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      align-items: stretch;
     }
-.article-section {
-  margin-bottom: 52px;
-}
 
-.article-section h2 {
-  font-size: 30px;
-  margin: 0 0 10px;
-  color: var(--ink);
-}
-
-.section-intro {
-  font-size: 17px;
-  color: var(--muted);
-  margin: 0 0 8px;
-  max-width: 760px;
-}
-
-.section-intro.zh {
-  margin-bottom: 22px;
-}    
-    .article-card {
+    .card {
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 30px;
-      box-shadow: 0 16px 40px rgba(18, 52, 59, 0.07);
+      border-left: 5px solid var(--warm-gold);
+      border-radius: 20px;
+      padding: 34px 40px;
+      box-shadow: 0 18px 38px rgba(18, 52, 59, 0.08);
     }
 
-    .article-meta {
-      color: var(--warm-gold);
-      font-weight: 700;
-      font-size: 14px;
-      margin-bottom: 10px;
+    .update-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100%;
     }
 
-    .article-card h3 {
-      margin: 0 0 14px;
-      color: var(--deep-green);
-      font-size: 28px;
-      line-height: 1.25;
-    }
-
-    .article-card p {
-      margin: 0 0 14px;
-      color: var(--text);
-      font-size: 17px;
-    }
-
-    .article-card .zh {
-      color: var(--muted);
-    }
-
-    .read-link {
+    .update-meta {
       display: inline-block;
-      margin-top: 12px;
-      color: var(--deep-green);
-      font-weight: 700;
+      color: var(--warm-gold);
+      font-weight: 800;
+      font-size: 16px;
+      margin-bottom: 14px;
       text-decoration: none;
     }
 
-    .read-link:hover {
+    .update-meta:hover {
       text-decoration: underline;
       text-underline-offset: 4px;
     }
 
-    .note {
-      margin-top: 34px;
-      padding: 24px;
-      background: var(--white);
-      border-left: 4px solid var(--warm-gold);
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      color: var(--muted);
-    }
-
-    .button-row {
-      margin-top: 34px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .button {
-      display: inline-block;
-      background: var(--deep-green);
-      color: var(--white);
-      padding: 13px 18px;
-      border-radius: 9px;
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    .button.secondary {
-      background: transparent;
+    .update-card h3 {
+      margin: 0;
       color: var(--deep-green);
-      border: 1px solid var(--deep-green);
+      font-size: 29px;
+      line-height: 1.25;
+    }
+
+    .update-card .description {
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .list-label {
+      margin-top: 26px;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .article-list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+    }
+
+    .article-list li {
+      margin: 7px 0;
+      line-height: 1.45;
+    }
+
+    .article-list a {
+      color: var(--text);
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .article-list a:hover {
+      color: var(--green);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .update-link {
+      display: inline-block;
+      margin-top: 28px;
+      color: var(--deep-green);
+      font-size: 17px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .update-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
     }
 
     footer {
@@ -241,20 +249,35 @@
       font-size: 14px;
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 980px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
       .header-inner {
-        flex-direction: column;
         align-items: flex-start;
+        flex-direction: column;
       }
 
-      .article-card {
-        padding: 24px;
+      .hero {
+        padding: 54px 0;
+      }
+
+      .card {
+        padding: 28px;
+      }
+
+      .update-card h3 {
+        font-size: 25px;
       }
     }
   </style>
 </head>
 
 <body>
+
   <header>
     <div class="container header-inner">
       <div class="brand">
@@ -273,139 +296,194 @@
 
   <section class="hero">
     <div class="container">
-      <div class="label">Immigration Updates | 加拿大移民最新动态</div>
-      <h2>Canadian Immigration Updates and Practical Notes</h2>
+      <div class="category">Immigration Updates | 加拿大移民最新动态</div>
+
+      <h2>
+        Canadian Immigration Updates<br>
+        and Practical Notes
+      </h2>
+
       <p>
-        加拿大移民政策动态、申请提醒、案件策略笔记及实务观察。
+        加拿大移民政策更新、申请提醒、案件策略笔记及实务观察。
       </p>
     </div>
   </section>
 
   <main>
     <div class="container">
-      <p class="intro">
-        This page collects practical updates and observations on Canadian immigration policies,
-        application planning, refusals, procedural fairness letters, status maintenance, and related issues.
-      </p>
 
-      <div class="updates-list">
-
-<section class="article-section" id="policy-updates">
-    <h2>Policy Updates | 政策更新</h2>
-    <p class="section-intro">
-      Updates on immigration programs, policy changes, provincial nominee programs, and new application pathways.
-    </p>
-    <p class="section-intro zh">
-      这里整理加拿大移民政策、省提名项目、申请通道及相关规则变化。
-    </p>
-
-<article class="article-card">
-  <div class="article-meta">Policy Updates | 政策更新 · 2026-07-05</div>
-  <h3>收入不够也可能有机会？2026年加拿大超级签证收入要求有重大调整</h3>
-  <p>
-    自2026年3月31日起，加拿大超级签证收入评估方式将更加灵活。邀请人可使用申请前两年中任意一年的收入，或在达到75%门槛后结合申请人收入补足差额。
-  </p>
-  <a class="read-link" href="articles/super-visa-income-2026.html">Read article | 阅读全文</a>
-</article>
-
-<article class="article-card">
-  <div class="article-meta">Policy Updates | 政策更新 · 2026-06-30</div>
-  <h3>工签从来不是移民保证：阿省教育政策转向背后的真正信号</h3>
-  <p>
-    加拿大移民政策、留学选择、申请规划和省提名项目正在发生变化。工签本身并不等于永久居民身份，申请人需要更早理解政策方向和身份风险。
-  </p>
-  <a class="read-link" href="articles/work-permit-not-guarantee-pr.html">Read article | 阅读全文</a>
-</article>
-  
-    <article class="article-card">
-      <div class="article-meta">Policy Updates | 政策更新 · 2026-06-26</div>
-      <h3>安省推出三条新的永久居民申请通道<br>Ontario Launches Three New PR Pathways</h3>
-       <p>
-  安省省提名项目在 Ontario Workforce Priority Stream 下推出三条新的永久居民申请通道，
-  包括 TEER 0–3、TEER 4–5 及自雇医生通道。新通道为部分技术工人、紧缺岗位申请人及符合条件的医生提供了新的省提名申请路径，
-  也反映出安省对劳动力市场需求和特定职业类别的进一步调整。
-</p>
-      <a class="read-link" href="articles/ontario-new-pr-pathways-20260626.html">Read article | 阅读全文</a>
-    </article>
-  </section>
-
-<section class="article-section" id="case-strategy-notes">
-    <h2>Case Strategy Notes | 案件策略笔记</h2>
-    <p class="section-intro">
-      Practical notes on refusal letters, procedural fairness letters, document logic, and case risk analysis.
-    </p>
-    <p class="section-intro zh">
-      这里整理拒签、PFL、补件、文件逻辑、案件风险及申请策略相关内容。
-    </p>
-
-      <article class="article-card">
-        <div class="article-meta">Case Strategy Notes | 案件策略笔记</div>
-        <h3>Why a Genuine Marriage Can Still Be Refused<br>为什么真实婚姻仍会面临被拒风险？</h3>
-        <p>
-  真实婚姻并不代表配偶团聚申请一定自动符合移民法要求。即使关系真实，案件仍可能因为过去未申报家庭成员、曾经存在 common-law 关系、IRPR 117(9)(d) 或 125(1)(d) 排除条款、程序公平信等问题而面临拒签风险。
-                  </p>
-        <a class="read-link" href="articles/why-genuine-marriage-can-still-be-refused.html">Read article | 阅读全文</a>
-      </article>    
-<article class="article-card">
-        <div class="article-meta">Case Strategy Notes | 案件策略笔记</div>
-        <h3>Common-Law vs. Marriage in Canadian Immigration Law<br>Common-Law（事实婚姻/同居伴侣）与 Marriage（结婚）在加拿大移民法中的区别</h3>
-        <p>
-  事实婚姻和结婚都可以作为配偶或伴侣类申请的基础，但法律成立条件、证据重点和案件风险并不相同。本文说明连续同居、婚姻真实性、过去关系历史及 excluded family member 问题在案件策略中的影响。
-</p>
-        <a class="read-link" href="articles/common-law-vs-marriage.html">Read article | 阅读全文</a>
-      </article>        
-    <article class="article-card">
-      <div class="article-meta">Case Strategy Notes | 案件策略笔记</div>
-      <h3>收到 Procedural Fairness Letter 后，千万不要急着解释<br>What to Consider After Receiving a Procedural Fairness Letter</h3>
-      <p>
-  Procedural Fairness Letter 不是普通补件通知，而是代表 IRCC 已经对申请产生实质疑虑。申请人需要先判断 officer 真正关注的问题，再结合事实、证据和法律分析作出有策略的回应。
-</p>
-      <a class="read-link" href="articles/procedural-fairness-letter-response.html">Read article | 阅读全文</a>
-    </article>
-      
-  </section>
-
-<section class="article-section" id="client-reminders">
-    <h2>Client Reminders | 申请提醒</h2>
-    <p class="section-intro">
-      Important reminders about biometrics, deadlines, passport requests, status maintenance, and document submission.
-    </p>
-    <p class="section-intro zh">
-      这里整理申请过程中容易被忽略、但可能影响审理进度或结果的重要提醒。
-    </p>
-
-<article class="article-card">
-  <div class="article-meta">Client Reminders | 申请提醒</div>
-  <h3>商务访问签证（Business Visitor）申请须知<br>Business Visitor Visa Application Reminder</h3>
-  <p>
-  来加拿大参加商务会议、拜访客户、参加展会或进行商务洽谈，并不一定需要申请工作许可。关键在于申请人是否真正符合 Business Visitor 的定义，以及是否能清楚证明访问目的、资金来源和离境计划。
-</p>
-  <a class="read-link" href="articles/business-visitor-visa.html">Read article | 阅读全文</a>
-</article>    
-    <article class="article-card">
-      <div class="article-meta">Client Reminders | 申请提醒</div>
-      <h3>生物信息采集并不总是“一次完成，十年有效”<br>Biometrics Are Not Always “Once and Done”</h3>
-      <p>
-  生物信息是否需要重新采集，取决于申请类型。临时居民申请通常十年有效，但多数永久居民申请通常需要每次重新提供 biometrics。申请人不应简单理解为“一次采集，十年通用”。
-</p>
-      <a class="read-link" href="articles/biometrics-not-always-once-and-done.html">Read article | 阅读全文</a>
-    </article>
-  </section>
-
-</div>
-
-      <div class="note">
-        <p>
-          More Canadian immigration updates will be added here as new articles are published.
-        </p>
-        <p>
-          更多加拿大移民政策动态、申请提醒及实务分析将随着文章发布陆续更新。
-        </p>
+      <div class="intro">
+        Practical updates and observations on Canadian immigration policies, application planning, refusals, procedural fairness letters, status maintenance, and related issues.
       </div>
 
-      <div class="button-row">
-        <a class="button" href="index.html#contact">Contact Ellen | 联系 Ellen</a>
-        <a class="button secondary" href="index.html">Back to Home | 返回首页</a>
+      <div class="updates-note">
+        文章会持续更新。请选择相应栏目查看最新文章或完整目录。
+      </div>
+
+      <div class="cards">
+
+        <!-- Policy Updates -->
+        <div class="card update-card">
+          <div>
+            <a class="update-meta" href="policy-updates.html">
+              近期政策更新 | Policy Updates
+            </a>
+
+            <h3>
+              近期政策更新<br>
+              Recent Policy Updates
+            </h3>
+
+            <p class="description">
+              加拿大移民政策、省提名项目、申请通道及相关规则变化的重要更新。
+            </p>
+
+            <div class="list-label">最新文章</div>
+
+            <ul class="article-list">
+              <li>
+                <a href="articles/senior-manager-draw-20260710.html">
+                  2026年7月10日 高管人员类别抽签392分 →
+                </a>
+              </li>
+
+              <li>
+                <a href="articles/french-language-draw-july-9-2026.html">
+                  2026年7月9日 法语类别抽签420分 →
+                </a>
+              </li>
+
+              <li>
+                <a href="articles/express-entry-cec-draw-20260707.html">
+                  2026年7月7日 CEC 抽签517分 →
+                </a>
+              </li>
+
+              <li>
+                <a href="articles/super-visa-income-2026.html">
+                  2026年超级签证收入要求重大调整 →
+                </a>
+              </li>
+
+              <li>
+                <a href="articles/work-permit-not-guarantee-pr.html">
+                  阿省教育政策传闻背后的真正信号 →
+                </a>
+              </li>
+
+              <li>
+                <a href="articles/ontario-new-pr-pathways-20260626.html">
+                  安省推出三条新的永久居民申请通道 →
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <a class="update-link" href="policy-updates.html">
+            查看完整目录 | View full directory →
+          </a>
+        </div>
+
+        <!-- Case Strategy Notes -->
+        <div class="card update-card">
+          <div>
+            <a class="update-meta" href="case-strategy-notes.html">
+              案件策略笔记 | Strategy Notes
+            </a>
+
+            <h3>
+              案件策略笔记<br>
+              Case Strategy Notes
+            </h3>
+
+            <p class="description">
+              拒签、Procedural Fairness Letter、补件、文件逻辑、案件风险及申请策略。
+            </p>
+
+            <div class="list-label">最新文章</div>
+
+            <ul class="article-list">
+              <li>
+                <a href="articles/excluded-family-member-case-note.html">
+                  什么是 Excluded Family Member—被排除的家庭成员 →
+                </a>
+              </li>
+
+              <li>
+                <a href="articles/why-genuine-marriage-can-still-be-refused.html">
+                  为什么真实婚姻仍会面临被拒风险 →
+                </a>
+              </li>
+
+              <li>
+                <a href="articles/common-law-vs-marriage.html">
+                  事实婚姻与结婚在加拿大移民法中的区别 →
+                </a>
+              </li>
+
+              <li>
+                <a href="articles/procedural-fairness-letter-response.html">
+                  收到程序公平信应该怎么办 →
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <a class="update-link" href="case-strategy-notes.html">
+            查看完整目录 | View full directory →
+          </a>
+        </div>
+
+        <!-- Client Reminders -->
+        <div class="card update-card">
+          <div>
+            <a class="update-meta" href="client-reminders.html">
+              申请重要提醒 | Application Reminders
+            </a>
+
+            <h3>
+              申请重要提醒<br>
+              Important Application Reminders
+            </h3>
+
+            <p class="description">
+              申请过程中容易被忽略、但可能影响审理进度或结果的重要提醒。
+            </p>
+
+            <div class="list-label">最新文章</div>
+
+            <ul class="article-list">
+              <li>
+                <a href="articles/skilled-trades-draw-opportunity.html">
+                  Skilled Trades 抽签再次出现 →
+                </a>
+              </li>
+
+              <li>
+                <a href="articles/express-entry-enter-pool-early.html">
+                  Express Entry 是否应该尽早入池 →
+                </a>
+              </li>
+
+              <li>
+                <a href="articles/business-visitor-visa.html">
+                  商务访问签证申请须知 →
+                </a>
+              </li>
+
+              <li>
+                <a href="articles/biometrics-not-always-once-and-done.html">
+                  生物信息采集不总是“一次完成，十年有效” →
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <a class="update-link" href="client-reminders.html">
+            查看完整目录 | View full directory →
+          </a>
+        </div>
+
       </div>
     </div>
   </main>
@@ -413,5 +491,6 @@
   <footer>
     © 2026 Jie “Ellen” Lin, RCIC. All rights reserved.
   </footer>
+
 </body>
 </html>
