@@ -328,6 +328,33 @@
     img {
       max-width: 100%;
       height: auto;
+    
+    .language-jump {
+  display: inline-block;
+  margin: 0 0 26px;
+  padding: 9px 14px;
+  color: var(--deep-green);
+  background: #f6f8fb;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.language-jump:hover {
+  background: var(--soft-cream);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+#english-version {
+  scroll-margin-top: 24px;
+}
+
+html {
+  scroll-behavior: smooth;
+    
     }
   </style>
 </head>
@@ -386,6 +413,11 @@
           alt="父母及祖父母团聚移民暂停接受新申请，超级签证作为家庭团聚替代方案"
         >
 
+<p>
+  <a class="language-jump" href="#english-version">
+    Read in English ↓
+  </a>
+</p>        
         <div class="article-meta">
           Policy Insights | 政策观察
         </div>
@@ -546,7 +578,7 @@
           </p>
         </div>
 
-        <div class="english-section">
+ <div class="english-section" id="english-version">
 
           <h2>
             Canada Suspends New Parents and Grandparents Sponsorship Applications Until Further Notice
