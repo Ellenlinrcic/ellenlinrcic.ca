@@ -330,22 +330,26 @@
       height: auto;
     
     .language-jump {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   margin: 0 0 26px;
-  padding: 9px 14px;
+  padding: 8px 14px;
   color: var(--deep-green);
-  background: #f6f8fb;
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  background: var(--soft-cream);
+  border: 1px solid var(--warm-gold);
+  border-radius: 999px;
   text-decoration: none;
   font-weight: 800;
   font-size: 14px;
+  box-shadow: 0 6px 16px rgba(18, 52, 59, 0.08);
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .language-jump:hover {
-  background: var(--soft-cream);
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  background: #f4ead9;
+  text-decoration: none;
+  transform: translateY(-1px);
 }
 
 #english-version {
@@ -415,7 +419,8 @@ html {
 
 <p>
   <a class="language-jump" href="#english-version">
-    Read in English ↓
+    Read in English
+<span aria-hidden="true">↓</span>
   </a>
 </p>        
         <div class="article-meta">
