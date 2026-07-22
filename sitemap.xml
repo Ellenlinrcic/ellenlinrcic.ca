@@ -154,4 +154,11 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>  
+
+  <url>
+  <loc>https://ellenlinrcic.ca/articles/aaip-monthly-insights-july-2026.html</loc>
+  <lastmod>2026-07-21</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
 </urlset>
