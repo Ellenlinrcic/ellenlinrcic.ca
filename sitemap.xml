@@ -167,4 +167,17 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>  
+<url>
+  <loc>https://ellenlinrcic.ca/articles/new-worker-arrivals-down-63-2026.html</loc>
+  <lastmod>2026-07-26</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://ellenlinrcic.ca/articles/canada-pr-allocation-first-five-months-2026.html</loc>
+  <lastmod>2026-07-27</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>  
 </urlset>
