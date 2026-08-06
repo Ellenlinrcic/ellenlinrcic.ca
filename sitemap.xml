@@ -215,4 +215,18 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
+
+  <url>
+    <loc>https://ellenlinrcic.ca/articles/why-canada-tightens-immigration-policies.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ellenlinrcic.ca/articles/why-trv-is-getting-harder.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>  
 </urlset>
