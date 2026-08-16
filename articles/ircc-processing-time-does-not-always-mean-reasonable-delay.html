@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KCHE6G6R63"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KCHE6G6R63');
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>还在 IRCC 预计处理时间内，也可能已经等得太久？——Dai 案给申请人的重要提醒 | Still Within IRCC’s Estimated Processing Time — But Already Waiting Too Long?</title>
+
+  <meta
+    name="description"
+    content="IRCC预计处理时间是否等于法律意义上的合理等待时间？本文结合Dai v. Canada, 2026 FC 931，分析Processing Time、长期延误与Mandamus之间的关系。"
+  />
+
+  <style>
+    :root {
+      --deep-green: #12343b;
+      --green: #2d545e;
+      --warm-gold: #d4a373;
+      --cream: #f8f7f4;
+      --soft-cream: #efe9dc;
+      --text: #1f2933;
+      --muted: #5f6b73;
+      --white: #ffffff;
+      --border: #e4ded4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--deep-green);
+      color: var(--white);
+      padding: 22px 0;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: -0.5px;
+    }
+
+    .brand p {
+      margin: 4px 0 0;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .article-hero {
+      background: linear-gradient(135deg, var(--deep-green), var(--green));
+      color: var(--white);
+      padding: 70px 0;
+    }
+
+    .article-hero .category {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .article-hero h2 {
+      max-width: 900px;
+      margin: 0 0 18px;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+    }
+
+    .article-hero p {
+      max-width: 820px;
+      margin: 0 0 8px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 18px;
+    }
+
+    .article-meta {
+      margin-top: 22px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 15px;
+    }
+
+    main {
+      padding: 60px 0;
+    }
+
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 36px;
+      align-items: start;
+    }
+
+    article {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 42px;
+      box-shadow: 0 18px 45px rgba(18, 52, 59, 0.08);
+    }
+
+    article h3 {
+      color: var(--deep-green);
+      font-size: 30px;
+      margin: 0 0 18px;
+      line-height: 1.25;
+    }
+
+    article h4 {
+      color: var(--deep-green);
+      font-size: 22px;
+      margin: 34px 0 12px;
+      line-height: 1.4;
+    }
+
+    article p {
+      margin: 0 0 18px;
+      color: var(--text);
+      font-size: 17px;
+    }
+
+    article ul {
+      margin: 0 0 24px 22px;
+      padding: 0;
+    }
+
+    article li {
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    .zh {
+      color: var(--muted);
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 42px 0;
+    }
+
+    .note {
+      background: var(--cream);
+      border-left: 4px solid var(--warm-gold);
+      padding: 22px;
+      border-radius: 12px;
+      margin: 28px 0;
+    }
+
+    .note p {
+      margin-bottom: 12px;
+    }
+
+    .language-jump {
+      display: inline-block;
+      margin: 4px 0 28px;
+      padding: 11px 17px;
+      background: var(--deep-green);
+      color: var(--white);
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .language-jump:hover {
+      background: var(--green);
+    }
+
+    .english-section {
+      scroll-margin-top: 24px;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 24px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 18px 45px rgba(18, 52, 59, 0.06);
+    }
+
+    .sidebar h4 {
+      margin: 0 0 14px;
+      color: var(--deep-green);
+      font-size: 20px;
+    }
+
+    .sidebar p {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0 0 16px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--deep-green);
+      color: var(--white);
+      padding: 13px 18px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--deep-green);
+      border: 1px solid var(--deep-green);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--deep-green);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    footer {
+      background: var(--deep-green);
+      color: rgba(255, 255, 255, 0.78);
+      padding: 26px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 850px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .article-layout {
+        grid-template-columns: 1fr;
+      }
+
+      article {
+        padding: 28px;
+      }
+
+      .sidebar {
+        position: static;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container header-inner">
+
+      <div class="brand">
+        <h1>Jie “Ellen” Lin, RCIC</h1>
+        <p>Canadian Immigration Consultant | 加拿大持牌移民顾问</p>
+      </div>
+
+      <nav>
+        <a href="../index.html">Home 首页</a>
+        <a href="../index.html#services">Services 服务</a>
+        <a href="../updates.html">Updates 最新动态</a>
+        <a href="../index.html#contact">Contact 联系</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <section class="article-hero">
+    <div class="container">
+
+      <div class="category">
+        Case Strategy Notes | 案件策略笔记
+      </div>
+
+      <h2>
+        还在 IRCC 预计处理时间内，也可能已经等得太久？
+      </h2>
+
+      <p>
+        Dai 案提醒申请人：
+        IRCC 公布的 Processing Time，
+        并不一定等于法律意义上的“合理等待时间”。
+      </p>
+
+      <p>
+        Still Within IRCC’s Estimated Processing Time —
+        But Already Waiting Too Long?
+        What Dai v. Canada Tells Applicants
+      </p>
+
+      <div class="article-meta">
+        Published on August 15, 2026 | 发布日期：2026年8月15日
+      </div>
+
+    </div>
+  </section>
+
+
+  <main>
+    <div class="container article-layout">
+
+      <article>
+
+        <a class="back-link" href="../case-strategy-notes.html">
+          ← Back to Case Strategy Notes | 返回案件策略笔记
+        </a>
+
+        <h3>
+          还在 IRCC 预计处理时间内，也可能已经等得太久？——Dai 案给申请人的重要提醒
+        </h3>
+
+        <a class="language-jump" href="#english-version">
+          Read in English
+        </a>
+
+        <p class="zh">
+          很多加拿大移民申请人在等待时间越来越长之后，
+          都会去 IRCC 网站查询 Processing Time。
+        </p>
+
+        <p class="zh">
+          如果系统显示自己的申请仍然处于预计处理范围内，
+          大多数人的第一反应可能都是：
+          那就只能继续等。
+        </p>
+
+        <p class="zh">
+          但是，加拿大联邦法院最近审理的
+          <strong>Dai v. Canada (Citizenship and Immigration), 2026 FC 931</strong>
+          提出了一个很值得关注的问题：
+        </p>
+
+        <div class="note">
+          <p class="zh">
+            IRCC 自己预计的处理时间，
+            是否就等于法律意义上的“合理等待时间”？
+          </p>
+
+          <p class="zh">
+            答案并不一定。
+          </p>
+        </div>
+
+
+        <h4>已经等了 42 个月，IRCC 却告诉她：可能还要再等 39 个月</h4>
+
+        <p class="zh">
+          Dai 于 2023 年 1 月通过
+          Home Child Care Provider Pilot
+          递交永久居民申请。
+        </p>
+
+        <p class="zh">
+          到了案件进入联邦法院审理阶段，
+          她已经等待大约 42 个月，
+          仍然没有收到最终决定。
+        </p>
+
+        <p class="zh">
+          但有意思的是，
+          她并不是简单地“超过了 IRCC 公布的处理时间”。
+        </p>
+
+        <p class="zh">
+          根据当时 IRCC 提供的 processing time 信息，
+          她前面仍然有大量申请等待处理，
+          预计可能还需要大约 39 个月。
+        </p>
+
+        <p class="zh">
+          换句话说，
+          从 IRCC 的处理系统来看，
+          她的申请仍然在等待队伍中。
+        </p>
+
+        <p class="zh">
+          如果继续按照这个速度处理，
+          从申请递交到最终决定，
+          总等待时间甚至可能超过六年。
+        </p>
+
+        <div class="note">
+          <p class="zh">
+            于是一个非常重要的问题出现了：
+          </p>
+
+          <p class="zh">
+            <strong>
+              既然 IRCC 自己都预计申请人还需要等待 39 个月，
+              为什么 Federal Court 仍然可以认为目前的延误已经不合理？
+            </strong>
+          </p>
+        </div>
+
+
+        <h4>IRCC 的 Processing Time 并不是一个法律上的“安全线”</h4>
+
+        <p class="zh">
+          Dai 案最值得关注的地方就在这里。
+        </p>
+
+        <p class="zh">
+          IRCC 网站公布的 processing time
+          可以帮助申请人了解目前案件大概需要等待多久，
+          但它并不意味着：
+        </p>
+
+        <div class="note">
+          <p class="zh">
+            <strong>
+              只要申请仍然处于 IRCC 预计的处理时间内，
+              所有延误在法律上就一定是合理的。
+            </strong>
+          </p>
+        </div>
+
+        <p class="zh">
+          在 Mandamus 案件中，
+          法院需要判断的并不仅仅是
+          申请有没有超过 IRCC 网站上的预计时间。
+        </p>
+
+        <p class="zh">
+          法院还会进一步考虑：
+        </p>
+
+        <ul class="zh">
+          <li>这个申请为什么需要等待这么久？</li>
+          <li>政府是否能够对如此长期的等待提供合理解释？</li>
+        </ul>
+
+        <p class="zh">
+          这两个问题，
+          与单纯查询 Processing Time
+          并不是一回事。
+        </p>
+
+
+        <h4>Dai 案的问题不仅仅是“积压太严重”</h4>
+
+        <p class="zh">
+          Dai 案还有一个非常重要的背景。
+        </p>
+
+        <p class="zh">
+          Home Child Care Provider Pilot
+          此前受到 Ministerial Instructions 的管理，
+          其中包括申请处理数量和相关安排。
+        </p>
+
+        <p class="zh">
+          但随着 Ministerial Instructions 发生变化，
+          原有的处理机制被撤销，
+          而对于已经进入系统、
+          仍然等待处理的申请，
+          新的安排并没有提供同样清晰的处理框架。
+        </p>
+
+        <p class="zh">
+          法院因此特别关注：
+          IRCC 究竟依据什么机制，
+          让这些申请继续等待如此长的时间？
+        </p>
+
+        <p class="zh">
+          如果政府只是告诉申请人：
+        </p>
+
+        <div class="note">
+          <p class="zh">
+            “你的申请仍然在队伍里，
+            根据目前速度预计还要 39 个月。”
+          </p>
+        </div>
+
+        <p class="zh">
+          这能够说明现实中可能还需要等待多久，
+          却不一定能够解释：
+        </p>
+
+        <div class="note">
+          <p class="zh">
+            <strong>
+              为什么这个具体申请合理地需要等待这么久？
+            </strong>
+          </p>
+        </div>
+
+        <p class="zh">
+          最终，
+          Federal Court 认为有关延误没有得到充分解释，
+          并命令 IRCC 在 60 天内
+          对 Dai 的永久居民申请作出决定。
+        </p>
+
+
+        <h4>这是否意味着 Processing Time 以内也可以去 Federal Court？</h4>
+
+        <p class="zh">
+          不能这样理解。
+        </p>
+
+        <p class="zh">
+          Dai 案并没有建立一个简单规则：
+        </p>
+
+        <div class="note">
+          <p class="zh">
+            “即使没有超过 Processing Time，
+            也可以申请 Mandamus。”
+          </p>
+        </div>
+
+        <p class="zh">
+          Mandamus 是否成立，
+          仍然取决于具体案件。
+        </p>
+
+        <p class="zh">
+          法院会考虑实际等待时间、
+          申请类别、
+          案件复杂程度、
+          延误是否由申请人造成、
+          政府是否提供了合理解释，
+          以及申请人是否还有其他有效的救济方式等因素。
+        </p>
+
+        <p class="zh">
+          Dai 已经等待约 42 个月，
+          而且按照当时 IRCC 的估算，
+          还可能继续等待约 39 个月。
+        </p>
+
+        <p class="zh">
+          再加上这个项目本身特殊的政策和处理背景，
+          法院最终才认为有理由介入。
+        </p>
+
+        <p class="zh">
+          所以，
+          这个案件不能简单套用到
+          所有等待中的移民申请。
+        </p>
+
+
+        <h4>Processing Time 告诉你的，和法院问的，其实是两个问题</h4>
+
+        <p class="zh">
+          这是 Dai 案对普通申请人最有价值的地方。
+        </p>
+
+        <p class="zh">
+          当我们打开 IRCC 网站查询 Processing Time 时，
+          我们实际上是在问：
+        </p>
+
+        <div class="note">
+          <p class="zh">
+            <strong>
+              “按照 IRCC 目前的处理速度，
+              我大概还需要等多久？”
+            </strong>
+          </p>
+        </div>
+
+        <p class="zh">
+          但在 Mandamus 案件中，
+          法院需要回答的问题更接近：
+        </p>
+
+        <div class="note">
+          <p class="zh">
+            <strong>
+              “政府有没有合理理由，
+              让这个申请继续等待这么久？”
+            </strong>
+          </p>
+        </div>
+
+        <p class="zh">
+          两者看起来很相似，
+          却并不是同一个问题。
+        </p>
+
+        <p class="zh">
+          因此，
+          IRCC 公布的 Processing Time
+          当然是评估案件延误的重要参考，
+          但它并不是判断延误是否合理的唯一标准。
+        </p>
+
+
+        <h4>对正在等待申请结果的人有什么启示？</h4>
+
+        <p class="zh">
+          如果申请只是正常等待，
+          或者刚刚超过 IRCC 公布的 Processing Time，
+          当然不意味着应该马上考虑 Federal Court。
+        </p>
+
+        <p class="zh">
+          但对于一些已经等待数年、
+          案件长期没有实质性进展的申请来说，
+          仅仅因为 IRCC 网站仍然显示需要继续等待，
+          也不一定意味着申请人只能无限期地等下去。
+        </p>
+
+        <p class="zh">
+          真正值得了解的是：
+        </p>
+
+        <ul class="zh">
+          <li>案件为什么还没有处理？</li>
+          <li>长期延误是否有具体而合理的解释？</li>
+          <li>IRCC 是否仍然在按照一个明确的处理机制推进这个申请？</li>
+        </ul>
+
+        <p class="zh">
+          如果申请已经出现异常长期的停滞，
+          可以进一步通过 Webform、
+          GCMS notes
+          或其他方式了解案件状态。
+        </p>
+
+        <p class="zh">
+          在适当情况下，
+          也可以咨询加拿大律师，
+          评估是否存在寻求 Mandamus 救济的可能。
+        </p>
+
+        <div class="note">
+          <p class="zh">
+            需要说明的是，
+            Mandamus 属于 Federal Court 司法程序。
+          </p>
+
+          <p class="zh">
+            RCIC 可以协助分析移民申请本身及案件处理情况，
+            但 Federal Court 诉讼需要由
+            具备相应执业资格的加拿大律师处理。
+          </p>
+        </div>
+
+
+        <h4>写在最后</h4>
+
+        <p class="zh">
+          Dai 案最值得记住的，
+          可能不是“42 个月”，
+          也不是“39 个月”。
+        </p>
+
+        <p class="zh">
+          而是这两个数字放在一起所提出的问题：
+        </p>
+
+        <div class="note">
+          <p class="zh">
+            <strong>
+              一个人已经等了 42 个月，
+              政府告诉她还要再等 39 个月——
+              这是否仅仅因为 IRCC 这样预计，
+              就当然属于合理的等待？
+            </strong>
+          </p>
+        </div>
+
+        <p class="zh">
+          Federal Court 在 Dai 案中的回答告诉我们：
+          IRCC 的 Processing Time 很重要，
+          但它并不是判断行政延误是否合理的最终标准。
+        </p>
+
+        <p class="zh">
+          对于长期等待的申请人来说，
+          与其只问：
+          “我有没有超过 Processing Time？”
+        </p>
+
+        <div class="note">
+          <p class="zh">
+            有时候更重要的问题是：
+          </p>
+
+          <p class="zh">
+            <strong>
+              “为什么我的申请需要等这么久？”
+            </strong>
+          </p>
+        </div>
+
+
+        <div class="divider"></div>
+
+
+        <div class="english-section" id="english-version">
+
+          <h3>
+            Still Within IRCC’s Estimated Processing Time —
+            But Already Waiting Too Long?
+            What Dai v. Canada Tells Applicants
+          </h3>
+
+          <p>
+            When a Canadian immigration application takes longer than expected,
+            one of the first things applicants usually do
+            is check IRCC’s online processing time.
+          </p>
+
+          <p>
+            If the system indicates that the application
+            is still within the estimated processing period,
+            most applicants assume there is little they can do
+            other than continue waiting.
+          </p>
+
+          <p>
+            A recent Federal Court decision,
+            <strong>
+              Dai v. Canada (Citizenship and Immigration), 2026 FC 931
+            </strong>,
+            raises an interesting question:
+          </p>
+
+          <div class="note">
+            <p>
+              Does IRCC’s estimated processing time
+              necessarily determine whether a delay
+              is legally reasonable?
+            </p>
+
+            <p>
+              Not necessarily.
+            </p>
+          </div>
+
+
+          <h4>
+            She Had Already Waited 42 Months —
+            and IRCC Estimated Another 39 Months
+          </h4>
+
+          <p>
+            Dai submitted her permanent residence application
+            under the Home Child Care Provider Pilot
+            in January 2023.
+          </p>
+
+          <p>
+            By the time the matter reached the Federal Court,
+            approximately 42 months had passed
+            without a final decision.
+          </p>
+
+          <p>
+            What makes this case particularly interesting
+            is that this was not simply a situation
+            where the applicant had exceeded
+            IRCC’s published processing time.
+          </p>
+
+          <p>
+            Based on the processing information available at the time,
+            IRCC estimated that she could still have
+            approximately 39 more months to wait.
+          </p>
+
+          <p>
+            In other words,
+            from the perspective of IRCC’s processing system,
+            her application was still in the queue.
+          </p>
+
+          <p>
+            If processing continued at that pace,
+            the total period between submission
+            and a final decision could potentially exceed six years.
+          </p>
+
+          <div class="note">
+            <p>
+              This raises an important question:
+            </p>
+
+            <p>
+              <strong>
+                If IRCC itself estimated that another 39 months
+                of waiting could be expected,
+                why could the Federal Court nevertheless find
+                that the delay had already become unreasonable?
+              </strong>
+            </p>
+          </div>
+
+
+          <h4>IRCC Processing Times Are Not a Legal “Safe Zone”</h4>
+
+          <p>
+            This is perhaps the most important point
+            arising from Dai.
+          </p>
+
+          <p>
+            IRCC’s published processing times
+            help applicants understand how long applications
+            may currently take.
+          </p>
+
+          <p>
+            But they do not necessarily mean that:
+          </p>
+
+          <div class="note">
+            <p>
+              <strong>
+                Any delay falling within IRCC’s estimated processing period
+                is automatically reasonable as a matter of law.
+              </strong>
+            </p>
+          </div>
+
+          <p>
+            In a mandamus application,
+            the Court is not limited to asking
+            whether the applicant has exceeded
+            the processing time displayed on IRCC’s website.
+          </p>
+
+          <p>
+            A more fundamental question may be:
+          </p>
+
+          <div class="note">
+            <p>
+              <strong>
+                Why has this particular application taken so long,
+                and has the government adequately justified the delay?
+              </strong>
+            </p>
+          </div>
+
+          <p>
+            That is different from simply asking
+            how long IRCC currently estimates
+            an application will take.
+          </p>
+
+
+          <h4>The Issue in Dai Was More Than Just a Large Backlog</h4>
+
+          <p>
+            There was another important aspect of the case.
+          </p>
+
+          <p>
+            The Home Child Care Provider Pilot
+            had been governed by Ministerial Instructions
+            that affected how applications were processed,
+            including annual intake and processing arrangements.
+          </p>
+
+          <p>
+            Those instructions subsequently changed.
+          </p>
+
+          <p>
+            The Court examined what happened
+            to applications that remained in the processing inventory
+            following those changes
+            and whether there continued to be
+            a sufficiently clear basis for the lengthy delay.
+          </p>
+
+          <p>
+            This distinction matters.
+          </p>
+
+          <p>
+            Telling an applicant:
+          </p>
+
+          <div class="note">
+            <p>
+              “Based on the current queue,
+              you may have another 39 months to wait”
+            </p>
+          </div>
+
+          <p>
+            may provide an estimate
+            of how long the applicant is likely to wait in practice.
+          </p>
+
+          <p>
+            But it does not necessarily answer
+            a different question:
+          </p>
+
+          <div class="note">
+            <p>
+              <strong>
+                Why is it reasonable for this particular application
+                to require such a lengthy period
+                before a decision is made?
+              </strong>
+            </p>
+          </div>
+
+          <p>
+            Ultimately,
+            the Federal Court was not satisfied
+            that the delay had been adequately justified
+            and ordered IRCC to make a decision
+            on Dai’s permanent residence application
+            within 60 days.
+          </p>
+
+
+          <h4>
+            Does This Mean You Can Seek Mandamus
+            While Still Within IRCC’s Processing Time?
+          </h4>
+
+          <p>
+            Not necessarily.
+          </p>
+
+          <p>
+            Dai should not be interpreted
+            as creating a general rule
+            that applicants can seek mandamus
+            simply because they are unhappy
+            with the length of processing,
+            even if they remain within IRCC’s estimated timeline.
+          </p>
+
+          <p>
+            Mandamus is a discretionary judicial remedy,
+            and whether a delay is unreasonable
+            depends on the circumstances
+            of the individual case.
+          </p>
+
+          <p>
+            Relevant considerations may include:
+          </p>
+
+          <ul>
+            <li>the actual length of the delay;</li>
+            <li>the nature of the immigration program;</li>
+            <li>the complexity of the application;</li>
+            <li>whether the applicant contributed to the delay;</li>
+            <li>the reasons provided by the government; and</li>
+            <li>whether other adequate remedies remain available.</li>
+          </ul>
+
+          <p>
+            Dai had already waited approximately 42 months
+            and, based on the information available at the time,
+            potentially faced another 39 months of waiting.
+          </p>
+
+          <p>
+            The particular processing history
+            and policy framework of the caregiver program
+            were also important to the Court’s analysis.
+          </p>
+
+          <p>
+            The decision therefore should not be automatically applied
+            to every immigration application
+            experiencing a long processing time.
+          </p>
+
+
+          <h4>
+            IRCC’s Processing Time and the Court’s Question
+            Are Not Exactly the Same
+          </h4>
+
+          <p>
+            This is perhaps the most useful lesson
+            from Dai for applicants.
+          </p>
+
+          <p>
+            When we check IRCC’s processing time,
+            we are essentially asking:
+          </p>
+
+          <div class="note">
+            <p>
+              <strong>
+                “Based on IRCC’s current processing pace,
+                approximately how much longer might I have to wait?”
+              </strong>
+            </p>
+          </div>
+
+          <p>
+            In a mandamus case,
+            however,
+            the Court may need to consider
+            a different question:
+          </p>
+
+          <div class="note">
+            <p>
+              <strong>
+                “Does the government have an adequate justification
+                for requiring this applicant
+                to continue waiting for this length of time?”
+              </strong>
+            </p>
+          </div>
+
+          <p>
+            The two questions are related,
+            but they are not the same.
+          </p>
+
+          <p>
+            IRCC’s published processing time
+            can certainly be relevant
+            when assessing delay,
+            but it is not necessarily the sole measure
+            of whether a delay is reasonable.
+          </p>
+
+
+          <h4>
+            What Does This Mean for Applicants
+            Who Have Been Waiting a Long Time?
+          </h4>
+
+          <p>
+            An application that is proceeding normally—
+            or has only recently exceeded
+            IRCC’s published processing time—
+            does not automatically justify Federal Court proceedings.
+          </p>
+
+          <p>
+            However,
+            where an application has remained unresolved for years
+            with little meaningful progress,
+            the fact that IRCC’s website
+            still indicates a lengthy processing period
+            does not necessarily mean
+            that the applicant must simply continue waiting indefinitely.
+          </p>
+
+          <p>
+            The more useful questions may be:
+          </p>
+
+          <ul>
+            <li>Why has the application not been finalized?</li>
+            <li>
+              Is there a specific and reasonable explanation
+              for the prolonged delay?
+            </li>
+            <li>
+              Is the application still moving
+              through a clearly defined processing framework?
+            </li>
+          </ul>
+
+          <p>
+            Applicants experiencing unusually lengthy delays
+            may consider obtaining more information
+            through IRCC Webform inquiries,
+            GCMS notes,
+            or other available channels.
+          </p>
+
+          <p>
+            Where the delay becomes exceptional,
+            legal advice may also be appropriate
+            to assess whether mandamus could be available.
+          </p>
+
+          <div class="note">
+            <p>
+              It is important to note
+              that mandamus is a Federal Court remedy.
+            </p>
+
+            <p>
+              An RCIC may assist in reviewing
+              the underlying immigration application
+              and its processing history,
+              but Federal Court proceedings
+              must be handled by a lawyer
+              authorized to practise before the Court.
+            </p>
+          </div>
+
+
+          <h4>Final Thoughts</h4>
+
+          <p>
+            Perhaps the most striking part of Dai
+            is not the 42 months already waited,
+            or even the 39 months
+            that IRCC estimated might still remain.
+          </p>
+
+          <p>
+            It is the question created
+            when those two numbers are considered together:
+          </p>
+
+          <div class="note">
+            <p>
+              <strong>
+                If an applicant has already waited 42 months
+                and IRCC says another 39 months may still be required,
+                does that waiting period become reasonable
+                simply because it appears
+                in IRCC’s processing estimate?
+              </strong>
+            </p>
+          </div>
+
+          <p>
+            Dai provides an important reminder
+            that IRCC’s processing time is relevant,
+            but it is not necessarily
+            the final legal measure
+            of whether an administrative delay is reasonable.
+          </p>
+
+          <p>
+            For applicants facing an exceptionally long wait,
+            the most important question may therefore
+            not always be:
+          </p>
+
+          <div class="note">
+            <p>
+              <strong>
+                “Am I outside IRCC’s processing time?”
+              </strong>
+            </p>
+
+            <p>
+              Sometimes,
+              the better question is:
+            </p>
+
+            <p>
+              <strong>
+                “Why does my application need to take this long?”
+              </strong>
+            </p>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <aside class="sidebar">
+
+        <h4>Still within IRCC’s processing time?</h4>
+
+        <p>
+          IRCC’s estimated processing time is an important reference,
+          but it is not necessarily the only factor
+          when assessing whether an exceptionally long delay
+          is reasonable.
+        </p>
+
+        <p class="zh">
+          即使申请仍在 IRCC 预计处理时间内，
+          如果已经出现异常长期的停滞，
+          仍然需要进一步了解延误原因、
+          案件是否有实质进展，
+          以及 IRCC 是否能够提供具体而合理的解释。
+        </p>
+
+        <a class="button" href="../index.html#contact">
+          Contact Ellen | 联系 Ellen
+        </a>
+
+        <a class="button secondary" href="../case-strategy-notes.html">
+          More Case Notes | 更多案件笔记
+        </a>
+
+      </aside>
+
+    </div>
+  </main>
+
+
+  <footer>
+    © 2026 Jie “Ellen” Lin, RCIC. All rights reserved.
+  </footer>
+
+</body>
+</html>
