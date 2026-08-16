@@ -236,4 +236,19 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>  
+
+<url>
+  <loc>https://ellenlinrcic.ca/articles/ircc-processing-time-does-not-always-mean-reasonable-delay.html</loc>
+  <lastmod>2026-08-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://ellenlinrcic.ca/articles/what-to-do-when-ircc-takes-too-long.html</loc>
+  <lastmod>2026-08-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+  
 </urlset>
