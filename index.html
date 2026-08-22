@@ -349,6 +349,11 @@
   line-height: 1.35;
 }
 
+/* 首页文章卡片只显示最新七篇 */
+#updates .article-list li:nth-child(n + 8) {
+  display: none;
+}
+
 .article-list a {
  color: var(--text);
   font-weight: 800;
