@@ -212,9 +212,19 @@
       color: rgba(255,255,255,0.9);
     }
     
-    .hero-card li:last-child {
-      border-bottom: none;
-    }
+    .hero-card li a {
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.hero-card li:last-child {
+  border-bottom: none;
+}
+.hero-card li a:hover {
+  color: var(--warm-gold);
+}
 
     .trust-strip {
       background: var(--white);
@@ -673,18 +683,43 @@ button *,
 
 <aside class="hero-card">
   <h3>服务项目 | Areas of Service</h3>
+
   <ul>
-    <li>永久居民申请 | Permanent Residence</li>
+    <li>
+      <a href="permanent-residence.html">
+        永久居民申请 | Permanent Residence
+      </a>
+    </li>
 
-    <li>省提名申请 | Provincial Nominee Programs</li>
+    <li>
+      <a href="provincial-nominee-programs.html">
+        省提名申请 | Provincial Nominee Programs
+      </a>
+    </li>
 
-    <li>学习许可与留学规划 | Study Permits & Education Planning</li>
+    <li>
+      <a href="study-permits.html">
+        学习许可与留学规划 | Study Permits & Education Planning
+      </a>
+    </li>
 
-    <li>工作许可与雇主支持 | Work Permits & Employer Support</li>
+    <li>
+      <a href="work-permits.html">
+        工作许可与雇主支持 | Work Permits & Employer Support
+      </a>
+    </li>
 
-    <li>访客签证与临时身份 | Visitor Visas & Temporary Status</li>
+    <li>
+      <a href="visitor-visas.html">
+        访客签证与临时身份 | Visitor Visas & Temporary Status
+      </a>
+    </li>
 
-    <li>拒签与复杂案件 | Refusals & Complex Cases</li>
+    <li>
+      <a href="refusals-complex-cases.html">
+        拒签与复杂案件 | Refusals & Complex Cases
+      </a>
+    </li>
   </ul>
 </aside>
         
