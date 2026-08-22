@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-KCHE6G6R63"
+  ></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+
+    gtag("config", "G-KCHE6G6R63");
+  </script>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    加拿大联邦快速通道 Express Entry | Ellen Lin, RCIC
+  </title>
+
+  <meta
+    name="description"
+    content="加拿大 Express Entry 联邦快速通道介绍，包括 Canadian Experience Class、Federal Skilled Worker Program、Federal Skilled Trades Program、CRS评分及类别定向抽选。"
+  />
+
+  <link
+    rel="canonical"
+    href="https://ellenlinrcic.ca/express-entry.html"
+  />
+
+  <meta
+    property="og:title"
+    content="加拿大联邦快速通道 Express Entry | Ellen Lin, RCIC"
+  />
+
+  <meta
+    property="og:description"
+    content="了解加拿大 Express Entry、CEC、FSWP、FSTP、CRS评分、类别定向抽选及资格评估。"
+  />
+
+  <meta
+    property="og:type"
+    content="website"
+  />
+
+  <meta
+    property="og:url"
+    content="https://ellenlinrcic.ca/express-entry.html"
+  />
+
+  <style>
+    :root {
+      --deep-green: #12343b;
+      --green: #2d545e;
+      --warm-gold: #d4a373;
+      --cream: #f8f7f4;
+      --soft-cream: #efe9dc;
+      --white: #ffffff;
+      --text: #263238;
+      --muted: #68757a;
+      --border: #e6e1d8;
+      --shadow: 0 12px 30px rgba(18, 52, 59, 0.08);
+      --radius: 20px;
+      --max-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        "PingFang SC",
+        "Hiragino Sans GB",
+        "Microsoft YaHei",
+        sans-serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--deep-green);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .header-inner {
+      width: min(calc(100% - 40px), var(--max-width));
+      min-height: 88px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .brand {
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 27px;
+      line-height: 1.2;
+      font-weight: 750;
+    }
+
+    .brand p {
+      margin: 5px 0 0;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 13px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    nav a {
+      color: rgba(255, 255, 255, 0.88);
+      text-decoration: none;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    nav a:hover {
+      color: var(--warm-gold);
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--max-width));
+      margin: 0 auto;
+    }
+
+    section {
+      scroll-margin-top: 110px;
+    }
+
+    .page-hero {
+      padding: 72px 0 55px;
+      background: linear-gradient(
+        135deg,
+        #f8f7f4 0%,
+        #efe9dc 100%
+      );
+    }
+
+    .breadcrumb {
+      margin-bottom: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .breadcrumb a {
+      color: var(--green);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--warm-gold);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 15px;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .page-hero h2 {
+      max-width: 900px;
+      margin: 0 0 20px;
+      color: var(--deep-green);
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.15;
+    }
+
+    .hero-intro {
+      max-width: 900px;
+    }
+
+    .hero-intro p {
+      margin: 0 0 14px;
+      font-size: 17px;
+    }
+
+    .hero-intro .en {
+      color: var(--muted);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 47px;
+      padding: 11px 19px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button.primary {
+      background: var(--deep-green);
+      color: var(--white);
+    }
+
+    .button.primary:hover {
+      background: var(--green);
+    }
+
+    .button.secondary {
+      border: 1px solid var(--deep-green);
+      color: var(--deep-green);
+      background: transparent;
+    }
+
+    .button.secondary:hover {
+      background: rgba(18, 52, 59, 0.06);
+    }
+
+    .intro-section,
+    .program-section,
+    .crs-section,
+    .assessment-section,
+    .insights-section {
+      padding: 70px 0;
+    }
+
+    .program-section,
+    .assessment-section {
+      background: var(--soft-cream);
+    }
+
+    .section-title {
+      max-width: 900px;
+      margin-bottom: 30px;
+    }
+
+    .section-title h3 {
+      margin: 0 0 12px;
+      color: var(--deep-green);
+      font-size: 32px;
+      line-height: 1.3;
+    }
+
+    .section-title p {
+      margin: 0 0 9px;
+      color: var(--muted);
+    }
+
+    .content-box {
+      padding: 30px 32px;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--warm-gold);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .content-box p {
+      margin: 0 0 14px;
+    }
+
+    .content-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .program-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 360px;
+      padding: 25px 24px 22px;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--warm-gold);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .program-tag {
+      display: inline-block;
+      align-self: flex-start;
+      margin-bottom: 15px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: var(--soft-cream);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .program-card h4 {
+      margin: 0 0 12px;
+      color: var(--deep-green);
+      font-size: 21px;
+      line-height: 1.3;
+    }
+
+    .program-card p {
+      margin: 0 0 11px;
+      font-size: 14px;
+    }
+
+    .program-card .zh {
+      color: var(--muted);
+    }
+
+    .highlight-box {
+      margin-top: 28px;
+      padding: 30px 32px;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--warm-gold);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .highlight-box h3 {
+      margin: 0 0 12px;
+      color: var(--deep-green);
+      font-size: 26px;
+    }
+
+    .highlight-box p {
+      margin: 0 0 12px;
+    }
+
+    .assessment-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .panel {
+      padding: 27px 28px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .panel h4 {
+      margin: 0 0 15px;
+      color: var(--deep-green);
+      font-size: 21px;
+    }
+
+    .panel ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .panel li {
+      margin-bottom: 9px;
+    }
+
+    .insight-box {
+      padding: 30px 32px;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--warm-gold);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .insight-box h3 {
+      margin: 0 0 12px;
+      color: var(--deep-green);
+      font-size: 26px;
+    }
+
+    .insight-box p {
+      margin: 0 0 12px;
+    }
+
+    .insight-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      margin-top: 12px;
+    }
+
+    .insight-link {
+      display: inline-block;
+      color: var(--green);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .insight-link:hover {
+      color: var(--warm-gold);
+    }
+
+    .contact-section {
+      padding: 72px 0;
+      background: var(--deep-green);
+      color: var(--white);
+    }
+
+    .contact-box {
+      max-width: 860px;
+    }
+
+    .contact-box h3 {
+      margin: 0 0 14px;
+      font-size: 31px;
+    }
+
+    .contact-box p {
+      margin: 0 0 12px;
+      color: rgba(255, 255, 255, 0.87);
+    }
+
+    .contact-box a {
+      color: var(--warm-gold);
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      color: var(--white);
+    }
+
+    .contact-button {
+      display: inline-flex;
+      margin-top: 15px;
+      padding: 12px 19px;
+      border: 1px solid var(--warm-gold);
+      border-radius: 10px;
+      font-weight: 700;
+    }
+
+    footer {
+      padding: 29px 0 35px;
+      background: #0e292e;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    footer p {
+      margin: 0 0 8px;
+      font-size: 13px;
+    }
+
+    .disclaimer {
+      margin-top: 15px;
+      color: rgba(255, 255, 255, 0.65);
+      font-size: 12px;
+    }
+
+    @media (max-width: 980px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 0;
+      }
+
+      nav {
+        justify-content: flex-start;
+        gap: 13px 18px;
+      }
+
+      .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 680px) {
+      .page-hero,
+      .intro-section,
+      .program-section,
+      .crs-section,
+      .assessment-section,
+      .insights-section,
+      .contact-section {
+        padding: 55px 0;
+      }
+
+      .cards,
+      .assessment-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .program-card {
+        min-height: auto;
+      }
+
+      .section-title h3 {
+        font-size: 28px;
+      }
+
+      .brand h1 {
+        font-size: 23px;
+      }
+
+      .hero-intro p {
+        font-size: 16px;
+      }
+
+      .content-box,
+      .highlight-box,
+      .insight-box,
+      .panel {
+        padding: 23px 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a
+        class="brand"
+        href="index.html"
+      >
+        <h1>Jie “Ellen” Lin, RCIC</h1>
+
+        <p>
+          Canadian Immigration Consultant |
+          加拿大持牌移民顾问
+        </p>
+      </a>
+
+      <nav>
+
+        <a href="index.html#about">
+          About 关于我
+        </a>
+
+        <a href="index.html#services">
+          Services 服务
+        </a>
+
+        <a href="index.html#updates">
+          Updates 最新动态
+        </a>
+
+        <a href="index.html#why">
+          Why Ellen 为什么选择我
+        </a>
+
+        <a href="index.html#contact">
+          Contact 联系
+        </a>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="page-hero">
+      <div class="container">
+
+        <div class="breadcrumb">
+
+          <a href="index.html">
+            首页 Home
+          </a>
+
+          &nbsp;/&nbsp;
+
+          <a href="permanent-residence.html">
+            永久居民申请 Permanent Residence
+          </a>
+
+          &nbsp;/&nbsp;
+
+          联邦快速通道 Express Entry
+
+        </div>
+
+        <span class="eyebrow">
+          联邦经济类永久居民 |
+          Federal Economic Immigration
+        </span>
+
+        <h2>
+          联邦快速通道<br>
+          Express Entry
+        </h2>
+
+        <div class="hero-intro">
+
+          <p>
+            Express Entry 是加拿大联邦政府管理部分经济类
+            永久居民申请的在线系统。
+            符合条件的申请人可以根据年龄、学历、语言能力、
+            加拿大及海外工作经验等因素建立 Express Entry Profile，
+            进入候选池并参与永久居民邀请。
+          </p>
+
+          <p class="en">
+            Express Entry is an online system used by the federal
+            government to manage applications under several economic
+            immigration programs. Eligible candidates may create an
+            Express Entry profile and enter the pool, where they are
+            ranked based on factors such as age, education,
+            language ability, and Canadian or international
+            work experience.
+          </p>
+
+        </div>
+
+        <div class="hero-actions">
+
+          <a
+            class="button primary"
+            href="#programs"
+          >
+            查看 Express Entry 项目 |
+            Explore EE Programs
+          </a>
+
+          <a
+            class="button secondary"
+            href="consultation.html?service=Express%20Entry%20%2F%20联邦快速通道"
+          >
+            预约资格评估 |
+            Book an Assessment
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- WHAT IS EXPRESS ENTRY -->
+
+    <section class="intro-section">
+      <div class="container">
+
+        <div class="section-title">
+
+          <h3>
+            什么是 Express Entry？ |
+            What Is Express Entry?
+          </h3>
+
+        </div>
+
+        <div class="content-box">
+
+          <p>
+            Express Entry 本身并不是一个单独的移民项目，
+            而是加拿大联邦政府用于管理部分经济类永久居民申请的系统。
+            申请人首先需要符合至少一个由 Express Entry 管理的
+            联邦移民项目要求，才能建立有效的 Express Entry Profile。
+          </p>
+
+          <p>
+            Express Entry 目前管理三个主要联邦经济类移民项目：
+            Canadian Experience Class（CEC）、
+            Federal Skilled Worker Program（FSWP）
+            和 Federal Skilled Trades Program（FSTP）。
+          </p>
+
+          <p>
+            符合条件的候选人进入 Express Entry Pool 后，
+            会根据 Comprehensive Ranking System（CRS）
+            获得综合排名分数。
+            IRCC 会通过不同类型的邀请轮次，
+            向符合相关条件且具有竞争力的候选人
+            发出永久居民申请邀请
+            Invitation to Apply（ITA）。
+          </p>
+
+          <p>
+            Express Entry is not a separate immigration program.
+            It is a management system for several federal economic
+            immigration programs. Candidates must first qualify
+            under at least one eligible program before entering
+            the Express Entry pool. Candidates are then ranked
+            under the Comprehensive Ranking System and may receive
+            an Invitation to Apply for permanent residence.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROGRAMS -->
+
+    <section
+      id="programs"
+      class="program-section"
+    >
+      <div class="container">
+
+        <div class="section-title">
+
+          <h3>
+            Express Entry 管理的三个项目 |
+            Programs Managed Through Express Entry
+          </h3>
+
+          <p>
+            三个项目对工作经验、语言能力、
+            职业背景和其他资格要求并不相同。
+          </p>
+
+        </div>
+
+        <div class="cards">
+
+
+          <!-- CEC -->
+
+          <div class="program-card">
+
+            <span class="program-tag">
+              Canadian Experience Class
+            </span>
+
+            <h4>
+              加拿大经验类<br>
+              Canadian Experience Class
+            </h4>
+
+            <p>
+              Designed for candidates who have qualifying
+              skilled work experience in Canada and meet
+              the applicable language and program requirements.
+            </p>
+
+            <p class="zh">
+              适合已经在加拿大取得符合要求的技术工作经验，
+              并满足相应语言及其他项目条件的申请人。
+            </p>
+
+            <p class="zh">
+              评估时通常需要重点分析加拿大工作经验是否符合要求、
+              NOC / TEER 分类、岗位职责、工作时间、
+              语言成绩及整体 Express Entry 竞争力。
+            </p>
+
+          </div>
+
+
+          <!-- FSWP -->
+
+          <div class="program-card">
+
+            <span class="program-tag">
+              Federal Skilled Worker Program
+            </span>
+
+            <h4>
+              联邦技术移民<br>
+              Federal Skilled Worker Program
+            </h4>
+
+            <p>
+              Designed for skilled workers with qualifying
+              work experience, education and language ability
+              who meet the Federal Skilled Worker Program
+              eligibility requirements.
+            </p>
+
+            <p class="zh">
+              适合拥有符合要求的技术工作经验、学历及语言能力，
+              并满足 Federal Skilled Worker Program
+              资格要求的申请人。
+            </p>
+
+            <p class="zh">
+              除 Express Entry CRS 竞争力外，
+              还需要先判断申请人是否满足 FSWP
+              本身的项目资格要求。
+            </p>
+
+          </div>
+
+
+          <!-- FSTP -->
+
+          <div class="program-card">
+
+            <span class="program-tag">
+              Federal Skilled Trades Program
+            </span>
+
+            <h4>
+              联邦技工移民<br>
+              Federal Skilled Trades Program
+            </h4>
+
+            <p>
+              Designed for eligible skilled trades workers
+              who meet the occupational, work experience,
+              language and other applicable program requirements.
+            </p>
+
+            <p class="zh">
+              适合从事符合要求的技工职业，
+              并满足相关工作经验、语言及其他项目条件的申请人。
+            </p>
+
+            <p class="zh">
+              技工类申请需要特别注意职业是否属于符合要求的范围，
+              以及申请人是否满足该项目的其他具体资格条件。
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- CATEGORY-BASED -->
+
+        <div class="highlight-box">
+
+          <h3>
+            类别定向抽选 |
+            Category-Based Selection
+          </h3>
+
+          <p>
+            Express Entry 的邀请并不一定只按照总体 CRS 分数
+            从高到低进行。
+            IRCC 也可以根据加拿大当前的经济和劳动力市场优先方向，
+            对具有特定职业背景、工作经验、法语能力
+            或其他符合指定类别条件的候选人进行类别定向抽选。
+          </p>
+
+          <p>
+            因此，即使两名申请人的 CRS 分数相近，
+            他们获得邀请的机会也可能因为职业、
+            语言能力、工作经验及所符合的抽选类别而不同。
+          </p>
+
+          <p>
+            Express Entry invitations may also be issued through
+            category-based selection. Candidates may be selected
+            based on specific occupational backgrounds,
+            work experience, French-language ability,
+            or other priorities established by IRCC.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CRS -->
+
+    <section class="crs-section">
+      <div class="container">
+
+        <div class="section-title">
+
+          <h3>
+            我的 CRS 分数够吗？ |
+            Is My CRS Score Competitive?
+          </h3>
+
+        </div>
+
+        <div class="content-box">
+
+          <p>
+            CRS 分数是评估 Express Entry 竞争力的重要因素，
+            但不能只看一个总分就判断是否一定有机会获得邀请。
+          </p>
+
+          <p>
+            实际竞争力需要结合近期邀请轮次、
+            申请人符合的 Express Entry 项目、
+            类别定向抽选资格、职业背景、
+            英语或法语能力、加拿大工作经验、
+            学历及其他加分因素进行综合分析。
+          </p>
+
+          <p>
+            对一些申请人而言，
+            提高语言成绩、增加加拿大工作经验、
+            获得法语成绩、改善学历因素，
+            或寻找其他适用的移民方向，
+            都可能改变整体申请策略。
+          </p>
+
+          <p>
+            A CRS score should not be considered in isolation.
+            Competitiveness depends on the type of invitation round,
+            the program or category a candidate qualifies under,
+            language ability, occupation, work experience,
+            education, and other ranking factors.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ASSESSMENT -->
+
+    <section class="assessment-section">
+      <div class="container">
+
+        <div class="section-title">
+
+          <h3>
+            Express Entry 资格评估 |
+            Express Entry Assessment
+          </h3>
+
+          <p>
+            一个完整的 Express Entry 评估，
+            不只是计算 CRS 分数，
+            还需要先判断申请人是否符合进入系统的资格，
+            以及哪一种申请策略更适合目前的情况。
+          </p>
+
+        </div>
+
+        <div class="assessment-grid">
+
+          <div class="panel">
+
+            <h4>
+              主要评估因素 |
+              Key Factors
+            </h4>
+
+            <ul>
+
+              <li>
+                年龄 |
+                Age
+              </li>
+
+              <li>
+                学历及学历认证 |
+                Education and educational credential assessment
+              </li>
+
+              <li>
+                英语及法语成绩 |
+                English and French language results
+              </li>
+
+              <li>
+                加拿大工作经验 |
+                Canadian work experience
+              </li>
+
+              <li>
+                海外工作经验 |
+                International work experience
+              </li>
+
+              <li>
+                NOC / TEER 与岗位职责 |
+                NOC / TEER classification and job duties
+              </li>
+
+              <li>
+                CRS 综合排名 |
+                Comprehensive Ranking System score
+              </li>
+
+              <li>
+                当前加拿大身份 |
+                Current immigration status
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="panel">
+
+            <h4>
+              我可以协助的内容 |
+              Available Services
+            </h4>
+
+            <ul>
+
+              <li>
+                Express Entry 资格评估 |
+                Express Entry eligibility assessment
+              </li>
+
+              <li>
+                CEC / FSWP / FSTP 项目分析 |
+                Program eligibility analysis
+              </li>
+
+              <li>
+                CRS 分数及竞争力分析 |
+                CRS score and competitiveness review
+              </li>
+
+              <li>
+                NOC / TEER 及工作经验分析 |
+                Occupational and work experience assessment
+              </li>
+
+              <li>
+                Category-Based Selection 资格分析 |
+                Category-based selection assessment
+              </li>
+
+              <li>
+                Express Entry Profile 准备 |
+                Express Entry profile preparation
+              </li>
+
+              <li>
+                ITA 后永久居民申请 |
+                Permanent residence application after ITA
+              </li>
+
+              <li>
+                文件审查及复杂问题分析 |
+                Document review and complex case analysis
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- INSIGHTS -->
+
+    <section class="insights-section">
+      <div class="container">
+
+        <div class="insight-box">
+
+          <h3>
+            Express Entry 政策与抽选动态 |
+            Express Entry Policy & Invitation Trends
+          </h3>
+
+          <p>
+            Express Entry 的抽选类别、邀请分数、
+            政策优先方向和资格要求可能随时发生变化。
+            与具体抽选、职业类别及政策变化有关的内容，
+            可在网站的政策观察与申请分析栏目中查看。
+          </p>
+
+          <p>
+            Express Entry invitation patterns,
+            category priorities and program requirements may change.
+            Current policy observations and application analysis
+            are available in the website’s article sections.
+          </p>
+
+          <div class="insight-links">
+
+            <a
+              class="insight-link"
+              href="policy-updates.html"
+            >
+              查看政策观察 |
+              Read Policy Insights →
+            </a>
+
+            <a
+              class="insight-link"
+              href="application-insights.html"
+            >
+              查看申请分析 |
+              Read Application Insights →
+            </a>
+
+            <a
+              class="insight-link"
+              href="case-strategy-notes.html"
+            >
+              查看案件策略笔记 |
+              Read Case Strategy Notes →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section
+      id="contact"
+      class="contact-section"
+    >
+      <div class="container">
+
+        <div class="contact-box">
+
+          <h3>
+            预约 Express Entry 资格评估 |
+            Book an Express Entry Assessment
+          </h3>
+
+          <p>
+            如果您希望了解自己是否符合 Express Entry，
+            可以提供您的年龄、学历、语言成绩、
+            加拿大及海外工作经验、目前加拿大身份，
+            以及已有的 CRS 分数或 Express Entry Profile 情况。
+          </p>
+
+          <p>
+            If you would like to assess your Express Entry options,
+            please provide a brief overview of your age,
+            education, language results, Canadian and international
+            work experience, current immigration status,
+            and any existing Express Entry profile or CRS score.
+          </p>
+
+          <p>
+            Email |
+
+            <a href="mailto:info@ellenlinrcic.ca">
+              info@ellenlinrcic.ca
+            </a>
+          </p>
+
+          <a
+            class="contact-button"
+            href="consultation.html?service=Express%20Entry%20%2F%20联邦快速通道"
+          >
+            预约资格评估 |
+            Request an Assessment
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="container">
+
+      <p>
+        <strong>
+          Jie “Ellen” Lin, RCIC
+        </strong>
+      </p>
+
+      <p>
+        Canadian Immigration Consultant |
+        加拿大持牌移民顾问
+      </p>
+
+      <p>
+        Richmond, British Columbia, Canada
+      </p>
+
+      <p>
+        © 2026 Jie “Ellen” Lin, RCIC.
+        All rights reserved.
+      </p>
+
+      <div class="disclaimer">
+
+        <p>
+          The information on this website is provided for general
+          information only and does not constitute immigration advice
+          for any specific case. Immigration programs, application
+          requirements, invitation rounds, and eligibility criteria
+          may change.
+        </p>
+
+        <p>
+          本网站内容仅供一般信息参考，
+          不构成针对任何具体个案的移民建议。
+          Express Entry 项目要求、抽选类别、
+          邀请分数及资格标准可能发生变化，
+          具体情况应结合申请人的个人背景进行评估。
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
