@@ -2,63 +2,29 @@
 <html lang="en">
 <head>
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-KCHE6G6R63"
-  ></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KCHE6G6R63"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag("js", new Date());
-
-    gtag("config", "G-KCHE6G6R63");
-  </script>
+  gtag('config', 'G-KCHE6G6R63');
+</script>
 
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-
-  <title>
-    Express Entry 相关文章与抽选动态 | Ellen Lin, RCIC
-  </title>
+  <title>Express Entry Insights | 联邦快速通道相关文章</title>
 
   <meta
     name="description"
-    content="Express Entry相关文章、CEC抽选、类别定向抽选、法语类别、Skilled Trades、CRS趋势及加拿大联邦快速通道申请分析。"
+    content="Express Entry insights by Jie Ellen Lin, RCIC, covering CEC draws, category-based selection, French-language draws, CRS trends, skilled immigration pathways, and application strategy."
   />
 
   <link
     rel="canonical"
     href="https://ellenlinrcic.ca/express-entry-insights.html"
-  />
-
-  <meta
-    property="og:title"
-    content="Express Entry 相关文章与抽选动态 | Ellen Lin, RCIC"
-  />
-
-  <meta
-    property="og:description"
-    content="查看加拿大 Express Entry、CEC、类别定向抽选、法语类别、Skilled Trades 及申请策略相关文章。"
-  />
-
-  <meta
-    property="og:type"
-    content="website"
-  />
-
-  <meta
-    property="og:url"
-    content="https://ellenlinrcic.ca/express-entry-insights.html"
   />
 
   <style>
@@ -68,428 +34,205 @@
       --warm-gold: #d4a373;
       --cream: #f8f7f4;
       --soft-cream: #efe9dc;
+      --text: #1f2933;
+      --muted: #5f6b73;
       --white: #ffffff;
-      --text: #263238;
-      --muted: #68757a;
-      --border: #e6e1d8;
-      --shadow: 0 12px 30px rgba(18, 52, 59, 0.08);
-      --radius: 20px;
-      --max-width: 1180px;
+      --border: #e4ded4;
     }
 
     * {
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       margin: 0;
-      background: var(--cream);
+      font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Arial,
-        "PingFang SC",
-        "Hiragino Sans GB",
-        "Microsoft YaHei",
-        sans-serif;
-      line-height: 1.75;
-    }
-
-    a {
-      color: inherit;
+      background: var(--cream);
+      line-height: 1.7;
     }
 
     header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
       background: var(--deep-green);
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+      color: var(--white);
+      padding: 22px 0;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: 0 auto;
     }
 
     .header-inner {
-      width: min(calc(100% - 40px), var(--max-width));
-      min-height: 88px;
-      margin: 0 auto;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 28px;
-    }
-
-    .brand {
-      color: var(--white);
-      text-decoration: none;
+      align-items: center;
+      gap: 20px;
     }
 
     .brand h1 {
       margin: 0;
-      font-size: 27px;
-      line-height: 1.2;
-      font-weight: 750;
+      font-size: 24px;
+      letter-spacing: -0.5px;
     }
 
     .brand p {
-      margin: 5px 0 0;
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 13px;
+      margin: 4px 0 0;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.82);
     }
 
     nav {
       display: flex;
-      align-items: center;
       gap: 22px;
       flex-wrap: wrap;
-      justify-content: flex-end;
+      font-size: 14px;
     }
 
     nav a {
-      color: rgba(255, 255, 255, 0.88);
+      color: var(--white);
       text-decoration: none;
-      font-size: 14px;
-      white-space: nowrap;
+      font-weight: 700;
     }
 
     nav a:hover {
-      color: var(--warm-gold);
+      text-decoration: underline;
+      text-underline-offset: 4px;
     }
 
-    .container {
-      width: min(calc(100% - 40px), var(--max-width));
-      margin: 0 auto;
-    }
-
-    .page-hero {
-      padding: 72px 0 55px;
-      background: linear-gradient(
-        135deg,
-        #f8f7f4 0%,
-        #efe9dc 100%
-      );
-    }
-
-    .breadcrumb {
-      margin-bottom: 22px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .breadcrumb a {
-      color: var(--green);
-      text-decoration: none;
-    }
-
-    .breadcrumb a:hover {
-      color: var(--warm-gold);
-    }
-
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 15px;
-      color: var(--green);
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .page-hero h2 {
-      max-width: 900px;
-      margin: 0 0 20px;
-      color: var(--deep-green);
-      font-size: clamp(34px, 5vw, 52px);
-      line-height: 1.15;
-    }
-
-    .hero-intro {
-      max-width: 900px;
-    }
-
-    .hero-intro p {
-      margin: 0 0 14px;
-      font-size: 17px;
-    }
-
-    .hero-intro .en {
-      color: var(--muted);
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 26px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 47px;
-      padding: 11px 19px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 700;
-      transition:
-        background 0.2s ease,
-        color 0.2s ease,
-        transform 0.2s ease;
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-    }
-
-    .button.primary {
-      background: var(--deep-green);
+    .directory-hero {
+      background: linear-gradient(135deg, var(--deep-green), var(--green));
       color: var(--white);
+      padding: 76px 0;
     }
 
-    .button.primary:hover {
-      background: var(--green);
-    }
-
-    .button.secondary {
-      border: 1px solid var(--deep-green);
-      color: var(--deep-green);
-      background: transparent;
-    }
-
-    .button.secondary:hover {
-      background: rgba(18, 52, 59, 0.06);
-    }
-
-    .articles-section {
-      padding: 70px 0 78px;
-    }
-
-    .section-title {
-      max-width: 900px;
-      margin-bottom: 30px;
-    }
-
-    .section-title h3 {
-      margin: 0 0 12px;
-      color: var(--deep-green);
-      font-size: 32px;
-      line-height: 1.3;
-    }
-
-    .section-title p {
-      margin: 0 0 9px;
-      color: var(--muted);
-    }
-
-    .articles-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
-    }
-
-    .article-card {
-      display: flex;
-      flex-direction: column;
-      min-height: 300px;
-      padding: 26px 25px 23px;
-      border: 1px solid var(--border);
-      border-left: 4px solid var(--warm-gold);
-      border-radius: var(--radius);
-      background: var(--white);
-      color: var(--text);
-      text-decoration: none;
-      box-shadow: var(--shadow);
-      transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        border-color 0.2s ease;
-    }
-
-    .article-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 18px 38px rgba(18, 52, 59, 0.13);
-      border-left-color: var(--deep-green);
-    }
-
-    .article-tag {
+    .directory-hero .category {
       display: inline-block;
-      align-self: flex-start;
-      margin-bottom: 15px;
+      padding: 7px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .directory-hero h2 {
+      max-width: 900px;
+      margin: 0 0 18px;
+      font-size: clamp(36px, 5vw, 60px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+    }
+
+    .directory-hero p {
+      max-width: 840px;
+      margin: 0 0 10px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 18px;
+    }
+
+    main {
+      padding: 60px 0 70px;
+      background: var(--soft-cream);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--deep-green);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .article-directory {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 16px;
+    }
+
+    .article-directory li {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(18, 52, 59, 0.07);
+      padding: 24px 28px;
+    }
+
+    .title-zh {
+      display: block;
+      font-size: 23px;
+      font-weight: 800;
+      line-height: 1.35;
+      color: var(--deep-green);
+    }
+
+    .title-en {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .article-note {
+      display: block;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--deep-green);
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 14px;
       padding: 5px 10px;
       border-radius: 999px;
       background: var(--soft-cream);
-      color: var(--green);
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .article-date {
-      margin-bottom: 8px;
-      color: var(--muted);
+      color: var(--deep-green);
       font-size: 13px;
-    }
-
-    .article-card h4 {
-      margin: 0 0 13px;
-      color: var(--deep-green);
-      font-size: 21px;
-      line-height: 1.4;
-    }
-
-    .article-card p {
-      margin: 0 0 11px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .article-link {
-      margin-top: auto;
-      padding-top: 15px;
-      color: var(--green);
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .service-section {
-      padding: 70px 0;
-      background: var(--soft-cream);
-    }
-
-    .service-box {
-      padding: 30px 32px;
-      border: 1px solid var(--border);
-      border-left: 5px solid var(--warm-gold);
-      border-radius: var(--radius);
-      background: var(--white);
-      box-shadow: var(--shadow);
-    }
-
-    .service-box h3 {
-      margin: 0 0 12px;
-      color: var(--deep-green);
-      font-size: 27px;
-    }
-
-    .service-box p {
-      margin: 0 0 12px;
-    }
-
-    .service-link {
-      display: inline-block;
-      margin-top: 8px;
-      color: var(--green);
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .service-link:hover {
-      color: var(--warm-gold);
-    }
-
-    .contact-section {
-      padding: 72px 0;
-      background: var(--deep-green);
-      color: var(--white);
-    }
-
-    .contact-box {
-      max-width: 860px;
-    }
-
-    .contact-box h3 {
-      margin: 0 0 14px;
-      font-size: 31px;
-    }
-
-    .contact-box p {
-      margin: 0 0 12px;
-      color: rgba(255, 255, 255, 0.87);
-    }
-
-    .contact-box a {
-      color: var(--warm-gold);
-      text-decoration: none;
-    }
-
-    .contact-box a:hover {
-      color: var(--white);
-    }
-
-    .contact-button {
-      display: inline-flex;
-      margin-top: 15px;
-      padding: 12px 19px;
-      border: 1px solid var(--warm-gold);
-      border-radius: 10px;
       font-weight: 700;
     }
 
     footer {
-      padding: 29px 0 35px;
-      background: #0e292e;
-      color: rgba(255, 255, 255, 0.8);
+      background: var(--deep-green);
+      color: rgba(255, 255, 255, 0.78);
+      padding: 26px 0;
+      text-align: center;
+      font-size: 14px;
     }
 
-    footer p {
-      margin: 0 0 8px;
-      font-size: 13px;
-    }
-
-    .disclaimer {
-      margin-top: 15px;
-      color: rgba(255, 255, 255, 0.65);
-      font-size: 12px;
-    }
-
-    @media (max-width: 980px) {
+    @media (max-width: 760px) {
       .header-inner {
         align-items: flex-start;
         flex-direction: column;
-        padding: 18px 0;
       }
 
-      nav {
-        justify-content: flex-start;
-        gap: 13px 18px;
-      }
-    }
-
-    @media (max-width: 680px) {
-      .page-hero,
-      .articles-section,
-      .service-section,
-      .contact-section {
-        padding: 55px 0;
+      .directory-hero {
+        padding: 56px 0;
       }
 
-      .articles-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .article-card {
-        min-height: auto;
-      }
-
-      .section-title h3 {
-        font-size: 28px;
-      }
-
-      .brand h1 {
-        font-size: 23px;
-      }
-
-      .hero-intro p {
-        font-size: 16px;
-      }
-
-      .service-box {
-        padding: 23px 21px;
+      .title-zh {
+        font-size: 20px;
       }
     }
   </style>
@@ -498,461 +241,165 @@
 <body>
 
   <header>
-    <div class="header-inner">
+    <div class="container header-inner">
 
-      <a
-        class="brand"
-        href="index.html"
-      >
+      <div class="brand">
         <h1>Jie “Ellen” Lin, RCIC</h1>
-
-        <p>
-          Canadian Immigration Consultant |
-          加拿大持牌移民顾问
-        </p>
-      </a>
+        <p>Canadian Immigration Consultant | 加拿大持牌移民顾问</p>
+      </div>
 
       <nav>
-
-        <a href="index.html#about">
-          About 关于我
-        </a>
-
-        <a href="index.html#services">
-          Services 服务
-        </a>
-
-        <a href="index.html#updates">
-          Updates 最新动态
-        </a>
-
-        <a href="index.html#why">
-          Why Ellen 为什么选择我
-        </a>
-
-        <a href="index.html#contact">
-          Contact 联系
-        </a>
-
+        <a href="index.html">Home 首页</a>
+        <a href="index.html#services">Services 服务</a>
+        <a href="updates.html">Updates 最新动态</a>
+        <a href="index.html#contact">Contact 联系</a>
       </nav>
 
     </div>
   </header>
 
 
-  <main>
+  <section class="directory-hero">
+    <div class="container">
 
-    <!-- HERO -->
-
-    <section class="page-hero">
-      <div class="container">
-
-        <div class="breadcrumb">
-
-          <a href="index.html">
-            首页 Home
-          </a>
-
-          &nbsp;/&nbsp;
-
-          <a href="permanent-residence.html">
-            永久居民申请 Permanent Residence
-          </a>
-
-          &nbsp;/&nbsp;
-
-          <a href="express-entry.html">
-            Express Entry
-          </a>
-
-          &nbsp;/&nbsp;
-
-          Express Entry 相关文章
-
-        </div>
-
-        <span class="eyebrow">
-          Express Entry Insights
-        </span>
-
-        <h2>
-          Express Entry 相关文章<br>
-          Express Entry Insights
-        </h2>
-
-        <div class="hero-intro">
-
-          <p>
-            本页面汇总与加拿大 Express Entry 联邦快速通道相关的
-            政策更新、抽选动态及申请分析，
-            包括 Canadian Experience Class、类别定向抽选、
-            法语类别、Skilled Trades、CRS 竞争力及其他
-            Express Entry 相关议题。
-          </p>
-
-          <p class="en">
-            This page brings together articles and updates related
-            to Canada’s Express Entry system, including Canadian
-            Experience Class draws, category-based selection,
-            French-language invitations, skilled trades,
-            CRS competitiveness, and application strategy.
-          </p>
-
-        </div>
-
-        <div class="hero-actions">
-
-          <a
-            class="button primary"
-            href="#articles"
-          >
-            查看相关文章 |
-            Browse Articles
-          </a>
-
-          <a
-            class="button secondary"
-            href="express-entry.html"
-          >
-            返回 Express Entry 服务页 |
-            Express Entry Services
-          </a>
-
-        </div>
-
+      <div class="category">
+        Express Entry Insights | 联邦快速通道相关文章
       </div>
-    </section>
+
+      <h2>
+        Express Entry Insights<br>
+        联邦快速通道相关文章
+      </h2>
+
+      <p>
+        Practical analysis of Express Entry invitation rounds,
+        CRS trends, Canadian Experience Class, category-based selection,
+        French-language draws, and federal economic immigration strategy.
+      </p>
+
+      <p>
+        本栏目汇总加拿大 Express Entry 联邦快速通道相关的抽选动态、
+        CRS 分数变化、加拿大经验类、类别定向抽选、法语类别及
+        联邦经济类移民申请分析。
+      </p>
+
+    </div>
+  </section>
 
 
-    <!-- ARTICLES -->
+  <main>
+    <div class="container">
 
-    <section
-      id="articles"
-      class="articles-section"
-    >
-      <div class="container">
-
-        <div class="section-title">
-
-          <h3>
-            最新 Express Entry 文章 |
-            Express Entry Articles
-          </h3>
-
-          <p>
-            以下文章涉及 Express Entry 抽选、
-            项目资格、类别定向及申请策略。
-            新的相关内容将持续加入本页面。
-          </p>
-
-        </div>
+      <a
+        class="back-link"
+        href="express-entry.html"
+      >
+        ← Back to Express Entry | 返回联邦快速通道
+      </a>
 
 
-        <div class="articles-grid">
+      <ul class="article-directory">
 
 
-          <!-- ARTICLE 1 -->
+        <!-- 2026-07-10 -->
+
+        <li>
+
+          <span class="title-zh">
+            高级管理人员类别分数降至392分：
+            加拿大正在优先保留哪些人才？
+          </span>
+
+          <span class="title-en">
+            Senior Manager Category CRS Drops to 392:
+            What Kind of Talent Is Canada Prioritizing?
+          </span>
+
+          <span class="article-note">
+            2026年7月10日，Express Entry高级管理人员类别发出500份邀请，
+            最低CRS分数降至392分。本文分析这一类别的适用范围，
+            以及加拿大为何正在优先保留具备本地高级管理经验的人才。
+          </span>
 
           <a
-            class="article-card"
-            href="articles/express-entry-cec-draw-20260707.html"
+            class="read-more"
+            href="articles/senior-manager-draw-20260710.html"
           >
-
-            <span class="article-tag">
-              CEC Draw
-            </span>
-
-            <div class="article-date">
-              July 7, 2026
-            </div>
-
-            <h4>
-              Express Entry 加拿大经验类抽选 |
-              Canadian Experience Class Draw
-            </h4>
-
-            <p>
-              关注 Canadian Experience Class
-              邀请轮次、CRS 分数及加拿大工作经验申请人的
-              Express Entry 机会。
-            </p>
-
-            <span class="article-link">
-              阅读文章 | Read Article →
-            </span>
-
+            Read Article | 阅读全文 →
           </a>
 
-
-          <!-- ARTICLE 2 -->
-
-          <a
-            class="article-card"
-            href="articles/express-entry-enter-pool-early.html"
-          >
-
-            <span class="article-tag">
-              Express Entry Strategy
-            </span>
-
-            <div class="article-date">
-              July 7, 2026
-            </div>
-
-            <h4>
-              为什么符合条件后应考虑尽早进入 Express Entry Pool？
-            </h4>
-
-            <p>
-              分析 Express Entry 建档时机，
-              以及为什么申请人不一定需要等到
-              “理想 CRS 分数”以后才进入候选池。
-            </p>
-
-            <span class="article-link">
-              阅读文章 | Read Article →
-            </span>
-
-          </a>
+        </li>
 
 
-          <!-- ARTICLE 3 -->
+        <!-- 2026-07-09 -->
+
+        <li>
+
+          <span class="title-zh">
+            同周相差97分：
+            法语类别抽签一次发出5,000份邀请
+          </span>
+
+          <span class="title-en">
+            A 97-Point Gap in the Same Week:
+            French-Language Draw Issues 5,000 Invitations
+          </span>
+
+          <span class="article-note">
+            2026年7月9日，IRCC进行法语能力类别Express Entry抽签，
+            发出5,000份邀请，最低CRS分数为420分，
+            与同周CEC抽签相差97分。
+          </span>
 
           <a
-            class="article-card"
+            class="read-more"
             href="articles/french-language-draw-july-9-2026.html"
           >
-
-            <span class="article-tag">
-              French-Language Category
-            </span>
-
-            <div class="article-date">
-              July 11, 2026
-            </div>
-
-            <h4>
-              Express Entry 法语类别抽选 |
-              French-Language Category Draw
-            </h4>
-
-            <p>
-              了解法语能力如何影响 Express Entry
-              类别定向抽选机会，以及法语申请人在
-              当前联邦经济移民体系中的潜在优势。
-            </p>
-
-            <span class="article-link">
-              阅读文章 | Read Article →
-            </span>
-
+            Read Article | 阅读全文 →
           </a>
 
+        </li>
 
-          <!-- ARTICLE 4 -->
+
+        <!-- 2026-07-07 -->
+
+        <li>
+
+          <span class="title-zh">
+            EE继续定向境内申请人：
+            2026年7月7日 CEC 抽签517分
+          </span>
+
+          <span class="title-en">
+            Express Entry CEC Draw:
+            CRS 517 and 2,000 Invitations
+          </span>
+
+          <span class="article-note">
+            2026年7月7日，IRCC针对 CEC 候选人发出2,000份邀请，
+            最低CRS分数为517分。
+            本文分析本轮抽签对境内申请人、
+            工签持有人和PGWP持有人的意义。
+          </span>
 
           <a
-            class="article-card"
-            href="articles/skilled-trades-draw-opportunity.html"
+            class="read-more"
+            href="articles/express-entry-cec-draw-20260707.html"
           >
-
-            <span class="article-tag">
-              Skilled Trades
-            </span>
-
-            <div class="article-date">
-              July 9, 2026
-            </div>
-
-            <h4>
-              Skilled Trades 抽签再次出现：
-              技工类申请人真的迎来机会了吗？
-            </h4>
-
-            <p>
-              分析 Skilled Trades 类别抽选，
-              以及哪些职业和申请人可能真正符合
-              Express Entry 技工类别相关机会。
-            </p>
-
-            <span class="article-link">
-              阅读文章 | Read Article →
-            </span>
-
+            Read Article | 阅读全文 →
           </a>
 
-
-          <!-- ARTICLE 5 -->
-
-          <a
-            class="article-card"
-            href="articles/skilled-trades-immigration-opportunities.html"
-          >
-
-            <span class="article-tag">
-              Skilled Trades
-            </span>
-
-            <div class="article-date">
-              July 18, 2026
-            </div>
-
-            <h4>
-              加拿大技工类移民机会 |
-              Skilled Trades Immigration Opportunities
-            </h4>
-
-            <p>
-              从职业背景、Express Entry
-              及当前技术工种需求角度，
-              分析技工类申请人的潜在永久居民方向。
-            </p>
-
-            <span class="article-link">
-              阅读文章 | Read Article →
-            </span>
-
-          </a>
+        </li>
 
 
-        </div>
+      </ul>
 
-      </div>
-    </section>
-
-
-    <!-- EXPRESS ENTRY SERVICE -->
-
-    <section class="service-section">
-      <div class="container">
-
-        <div class="service-box">
-
-          <h3>
-            需要评估自己的 Express Entry 机会？
-          </h3>
-
-          <p>
-            Express Entry 的申请机会不能只看某一次抽选分数。
-            还需要结合申请人的 CEC、FSWP 或 FSTP 资格、
-            CRS 分数、工作经验、职业类别、英语或法语能力，
-            以及可能符合的类别定向抽选进行综合分析。
-          </p>
-
-          <p>
-            如果您希望先了解 Express Entry 的基本结构、
-            项目类别及评估方式，可以返回 Express Entry 服务页面。
-          </p>
-
-          <a
-            class="service-link"
-            href="express-entry.html"
-          >
-            查看 Express Entry 服务介绍 |
-            Explore Express Entry Services →
-          </a>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- CONTACT -->
-
-    <section class="contact-section">
-      <div class="container">
-
-        <div class="contact-box">
-
-          <h3>
-            预约 Express Entry 资格评估 |
-            Book an Express Entry Assessment
-          </h3>
-
-          <p>
-            如果您希望了解自己是否符合 Express Entry，
-            可以提供您的年龄、学历、语言成绩、
-            加拿大及海外工作经验、目前加拿大身份，
-            以及已有的 CRS 分数或 Express Entry Profile 情况。
-          </p>
-
-          <p>
-            If you would like to assess your Express Entry options,
-            please provide a brief overview of your age,
-            education, language results, Canadian and international
-            work experience, current immigration status,
-            and any existing Express Entry profile or CRS score.
-          </p>
-
-          <p>
-            Email |
-
-            <a href="mailto:info@ellenlinrcic.ca">
-              info@ellenlinrcic.ca
-            </a>
-          </p>
-
-          <a
-            class="contact-button"
-            href="consultation.html?service=Express%20Entry%20%2F%20联邦快速通道"
-          >
-            预约资格评估 |
-            Request an Assessment
-          </a>
-
-        </div>
-
-      </div>
-    </section>
-
+    </div>
   </main>
 
 
   <footer>
-    <div class="container">
-
-      <p>
-        <strong>
-          Jie “Ellen” Lin, RCIC
-        </strong>
-      </p>
-
-      <p>
-        Canadian Immigration Consultant |
-        加拿大持牌移民顾问
-      </p>
-
-      <p>
-        Richmond, British Columbia, Canada
-      </p>
-
-      <p>
-        © 2026 Jie “Ellen” Lin, RCIC.
-        All rights reserved.
-      </p>
-
-      <div class="disclaimer">
-
-        <p>
-          The information on this website is provided for general
-          information only and does not constitute immigration advice
-          for any specific case. Express Entry programs,
-          invitation rounds, category priorities, and eligibility
-          requirements may change.
-        </p>
-
-        <p>
-          本网站内容仅供一般信息参考，
-          不构成针对任何具体个案的移民建议。
-          Express Entry 项目要求、抽选类别、
-          邀请分数及政策优先方向可能发生变化，
-          具体情况应结合申请人的个人背景进行评估。
-        </p>
-
-      </div>
-
-    </div>
+    © 2026 Jie “Ellen” Lin, RCIC. All rights reserved.
   </footer>
 
 </body>
