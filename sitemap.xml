@@ -299,4 +299,16 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>  
+
+  <url>
+  <loc>https://ellenlinrcic.ca/articles/2026-2027-canadian-immigration-outlook.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://ellenlinrcic.ca/articles/pgwp-student-hunger-strike-2026.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>  
 </urlset>
