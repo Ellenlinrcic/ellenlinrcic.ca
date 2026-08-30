@@ -33,7 +33,7 @@
 
   <meta
     name="description"
-    content="加拿大Study Permit学习许可资格评估表，包括申请人基本资料、学校课程、教育背景、资金情况、移民历史及学习计划。"
+    content="加拿大学习许可资格评估表，包括申请人基本资料、学校课程、教育背景、资金情况、移民历史、家庭情况及学习计划。"
   />
 
   <link
@@ -306,12 +306,6 @@
       min-height: 95px;
     }
 
-    .help-text {
-      margin-top: 2px;
-      color: var(--muted);
-      font-size: 12px;
-    }
-
     .checkbox-group {
       display: grid;
       gap: 10px;
@@ -350,10 +344,6 @@
       font-size: 13px;
     }
 
-    .privacy-box p:last-child {
-      margin-bottom: 0;
-    }
-
     .submit-area {
       text-align: center;
     }
@@ -370,12 +360,18 @@
       font-weight: 700;
       transition:
         transform 0.2s ease,
-        background 0.2s ease;
+        background 0.2s ease,
+        opacity 0.2s ease;
     }
 
-    .submit-button:hover {
+    .submit-button:hover:not(:disabled) {
       transform: translateY(-2px);
       background: var(--green);
+    }
+
+    .submit-button:disabled {
+      cursor: default;
+      opacity: 0.78;
     }
 
     .submit-note {
@@ -383,6 +379,33 @@
       margin: 12px auto 0;
       color: var(--muted);
       font-size: 12px;
+    }
+
+    .form-success {
+      display: none;
+      margin-top: 24px;
+      padding: 20px 22px;
+      border: 1px solid #d4e6dc;
+      border-radius: 14px;
+      background: #eaf3ef;
+      color: #1f6b4f;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    .form-error {
+      display: none;
+      margin-top: 24px;
+      padding: 20px 22px;
+      border: 1px solid #edd3d3;
+      border-radius: 14px;
+      background: #fbefef;
+      color: #8a3838;
+      font-size: 15px;
+      line-height: 1.7;
+      text-align: left;
     }
 
     footer {
@@ -453,7 +476,6 @@
 
 </head>
 
-
 <body>
 
   <header>
@@ -475,7 +497,6 @@
         </p>
 
       </a>
-
 
       <nav>
 
@@ -505,7 +526,6 @@
 
   </header>
 
-
   <main>
 
     <section class="page-hero">
@@ -530,17 +550,14 @@
 
         </div>
 
-
         <span class="eyebrow">
           Study Permit Assessment
         </span>
-
 
         <h2>
           学习许可资格评估<br>
           Study Permit Assessment
         </h2>
-
 
         <p>
           请填写以下资料，以便对您的学习许可申请背景进行初步了解。
@@ -560,11 +577,9 @@
 
     </section>
 
-
     <section class="form-section">
 
       <div class="container">
-
 
         <div class="form-intro">
 
@@ -584,13 +599,13 @@
 
         </div>
 
-
         <form
+          id="studyPermitForm"
           action="https://formspree.io/f/xppzqqqy"
           method="POST"
         >
 
-          <!-- BASIC INFORMATION -->
+          <!-- 1 BASIC INFORMATION -->
 
           <div class="form-group">
 
@@ -603,9 +618,7 @@
               请提供主要申请人的基本联系资料。
             </p>
 
-
             <div class="field-grid">
-
 
               <div class="field">
 
@@ -627,7 +640,6 @@
 
               </div>
 
-
               <div class="field">
 
                 <label for="email">
@@ -648,7 +660,6 @@
 
               </div>
 
-
               <div class="field">
 
                 <label for="phone">
@@ -666,7 +677,6 @@
                 />
 
               </div>
-
 
               <div class="field">
 
@@ -688,7 +698,6 @@
 
               </div>
 
-
               <div class="field">
 
                 <label for="citizenship">
@@ -706,7 +715,6 @@
                 />
 
               </div>
-
 
               <div class="field">
 
@@ -728,13 +736,11 @@
 
               </div>
 
-
             </div>
 
           </div>
 
-
-          <!-- STATUS -->
+          <!-- 2 STATUS -->
 
           <div class="form-group">
 
@@ -743,9 +749,7 @@
               Immigration Status
             </h3>
 
-
             <div class="field-grid">
-
 
               <div class="field">
 
@@ -766,38 +770,37 @@
                     Please select
                   </option>
 
-                  <option>
+                  <option value="Outside Canada">
                     Outside Canada
                   </option>
 
-                  <option>
+                  <option value="Visitor">
                     Visitor
                   </option>
 
-                  <option>
+                  <option value="Student">
                     Student
                   </option>
 
-                  <option>
+                  <option value="Worker">
                     Worker
                   </option>
 
-                  <option>
+                  <option value="Maintained Status">
                     Maintained Status
                   </option>
 
-                  <option>
+                  <option value="No Current Status">
                     No Current Status
                   </option>
 
-                  <option>
+                  <option value="Other">
                     Other
                   </option>
 
                 </select>
 
               </div>
-
 
               <div class="field">
 
@@ -816,7 +819,6 @@
                 />
 
               </div>
-
 
               <div class="field full">
 
@@ -837,13 +839,11 @@
 
               </div>
 
-
             </div>
 
           </div>
 
-
-          <!-- SCHOOL -->
+          <!-- 3 SCHOOL -->
 
           <div class="form-group">
 
@@ -852,9 +852,7 @@
               School & Program
             </h3>
 
-
             <div class="field-grid">
-
 
               <div class="field">
 
@@ -877,22 +875,21 @@
                     Please select
                   </option>
 
-                  <option>
+                  <option value="Yes">
                     Yes
                   </option>
 
-                  <option>
+                  <option value="No">
                     No
                   </option>
 
-                  <option>
+                  <option value="Application in progress">
                     Application in progress
                   </option>
 
                 </select>
 
               </div>
-
 
               <div class="field">
 
@@ -912,7 +909,6 @@
 
               </div>
 
-
               <div class="field">
 
                 <label for="program">
@@ -930,7 +926,6 @@
                 />
 
               </div>
-
 
               <div class="field">
 
@@ -951,42 +946,41 @@
                     Please select
                   </option>
 
-                  <option>
+                  <option value="Elementary / Secondary School">
                     Elementary / Secondary School
                   </option>
 
-                  <option>
+                  <option value="Certificate">
                     Certificate
                   </option>
 
-                  <option>
+                  <option value="Diploma">
                     Diploma
                   </option>
 
-                  <option>
+                  <option value="Bachelor Degree">
                     Bachelor Degree
                   </option>
 
-                  <option>
+                  <option value="Post-Graduate Certificate / Diploma">
                     Post-Graduate Certificate / Diploma
                   </option>
 
-                  <option>
+                  <option value="Master Degree">
                     Master Degree
                   </option>
 
-                  <option>
+                  <option value="Doctoral Degree">
                     Doctoral Degree
                   </option>
 
-                  <option>
+                  <option value="Other">
                     Other
                   </option>
 
                 </select>
 
               </div>
-
 
               <div class="field">
 
@@ -1005,7 +999,6 @@
                 />
 
               </div>
-
 
               <div class="field">
 
@@ -1026,13 +1019,11 @@
 
               </div>
 
-
             </div>
 
           </div>
 
-
-          <!-- EDUCATION -->
+          <!-- 4 EDUCATION -->
 
           <div class="form-group">
 
@@ -1041,9 +1032,7 @@
               Education & Employment History
             </h3>
 
-
             <div class="field-grid">
-
 
               <div class="field">
 
@@ -1062,7 +1051,6 @@
                 />
 
               </div>
-
 
               <div class="field">
 
@@ -1084,7 +1072,6 @@
 
               </div>
 
-
               <div class="field full">
 
                 <label for="history">
@@ -1103,13 +1090,11 @@
 
               </div>
 
-
             </div>
 
           </div>
 
-
-          <!-- FINANCES -->
+          <!-- 5 FINANCES -->
 
           <div class="form-group">
 
@@ -1118,9 +1103,7 @@
               Financial Information
             </h3>
 
-
             <div class="field-grid">
-
 
               <div class="field">
 
@@ -1141,7 +1124,6 @@
 
               </div>
 
-
               <div class="field">
 
                 <label for="tuition-paid">
@@ -1160,7 +1142,6 @@
 
               </div>
 
-
               <div class="field">
 
                 <label for="funds">
@@ -1178,7 +1159,6 @@
                 />
 
               </div>
-
 
               <div class="field">
 
@@ -1199,38 +1179,37 @@
                     Please select
                   </option>
 
-                  <option>
+                  <option value="Self">
                     Self
                   </option>
 
-                  <option>
+                  <option value="Parents">
                     Parents
                   </option>
 
-                  <option>
+                  <option value="Spouse">
                     Spouse
                   </option>
 
-                  <option>
+                  <option value="Relative">
                     Relative
                   </option>
 
-                  <option>
+                  <option value="Scholarship / School Funding">
                     Scholarship / School Funding
                   </option>
 
-                  <option>
+                  <option value="Loan">
                     Loan
                   </option>
 
-                  <option>
+                  <option value="Other">
                     Other
                   </option>
 
                 </select>
 
               </div>
-
 
               <div class="field full">
 
@@ -1250,13 +1229,11 @@
 
               </div>
 
-
             </div>
 
           </div>
 
-
-          <!-- IMMIGRATION HISTORY -->
+          <!-- 6 IMMIGRATION HISTORY -->
 
           <div class="form-group">
 
@@ -1265,9 +1242,7 @@
               Immigration & Refusal History
             </h3>
 
-
             <div class="field-grid">
-
 
               <div class="field">
 
@@ -1291,18 +1266,17 @@
                     Please select
                   </option>
 
-                  <option>
+                  <option value="No">
                     No
                   </option>
 
-                  <option>
+                  <option value="Yes">
                     Yes
                   </option>
 
                 </select>
 
               </div>
-
 
               <div class="field">
 
@@ -1322,7 +1296,6 @@
                 />
 
               </div>
-
 
               <div class="field full">
 
@@ -1344,13 +1317,11 @@
 
               </div>
 
-
             </div>
 
           </div>
 
-
-          <!-- FAMILY -->
+          <!-- 7 FAMILY -->
 
           <div class="form-group">
 
@@ -1359,9 +1330,7 @@
               Family Circumstances
             </h3>
 
-
             <div class="field-grid">
-
 
               <div class="field">
 
@@ -1382,30 +1351,29 @@
                     Please select
                   </option>
 
-                  <option>
+                  <option value="Single">
                     Single
                   </option>
 
-                  <option>
+                  <option value="Married">
                     Married
                   </option>
 
-                  <option>
+                  <option value="Common-law">
                     Common-law
                   </option>
 
-                  <option>
+                  <option value="Divorced / Separated">
                     Divorced / Separated
                   </option>
 
-                  <option>
+                  <option value="Other">
                     Other
                   </option>
 
                 </select>
 
               </div>
-
 
               <div class="field">
 
@@ -1426,22 +1394,21 @@
                     Please select
                   </option>
 
-                  <option>
+                  <option value="No">
                     No
                   </option>
 
-                  <option>
+                  <option value="Yes">
                     Yes
                   </option>
 
-                  <option>
+                  <option value="Not sure">
                     Not sure
                   </option>
 
                 </select>
 
               </div>
-
 
               <div class="field full">
 
@@ -1462,13 +1429,11 @@
 
               </div>
 
-
             </div>
 
           </div>
 
-
-          <!-- STUDY PLAN -->
+          <!-- 8 STUDY PLAN -->
 
           <div class="form-group">
 
@@ -1477,9 +1442,7 @@
               Study Purpose & Future Plans
             </h3>
 
-
             <div class="field-grid">
-
 
               <div class="field full">
 
@@ -1498,7 +1461,6 @@
 
               </div>
 
-
               <div class="field full">
 
                 <label for="future-plan">
@@ -1516,13 +1478,11 @@
 
               </div>
 
-
             </div>
 
           </div>
 
-
-          <!-- SERVICE -->
+          <!-- 9 SERVICE -->
 
           <div class="form-group">
 
@@ -1531,9 +1491,7 @@
               Service Requested
             </h3>
 
-
             <div class="checkbox-group">
-
 
               <div class="checkbox-row">
 
@@ -1551,7 +1509,6 @@
 
               </div>
 
-
               <div class="checkbox-row">
 
                 <input
@@ -1567,7 +1524,6 @@
                 </label>
 
               </div>
-
 
               <div class="checkbox-row">
 
@@ -1585,7 +1541,6 @@
 
               </div>
 
-
               <div class="checkbox-row">
 
                 <input
@@ -1602,9 +1557,7 @@
 
               </div>
 
-
             </div>
-
 
             <div
               class="field"
@@ -1627,7 +1580,6 @@
             </div>
 
           </div>
-
 
           <!-- CONSENT -->
 
@@ -1664,15 +1616,11 @@
 
           </div>
 
-
-          <!-- FORM SUBJECT -->
-
           <input
             type="hidden"
             name="_subject"
             value="New Study Permit Assessment"
           />
-
 
           <!-- SUBMIT -->
 
@@ -1692,8 +1640,27 @@
               如需要进一步文件，我会另行通知。
             </p>
 
-          </div>
+            <div
+              id="form-success"
+              class="form-success"
+            >
+              学习许可评估表已成功提交！我会在审阅后与您联系。
+              <br>
+              Your Study Permit Assessment has been submitted successfully.
+            </div>
 
+            <div
+              id="form-error"
+              class="form-error"
+            >
+              表格暂时无法提交。请稍后再试，
+              或发送邮件至 info@ellenlinrcic.ca。
+              <br>
+              The form could not be submitted. Please try again later
+              or email info@ellenlinrcic.ca.
+            </div>
+
+          </div>
 
         </form>
 
@@ -1702,7 +1669,6 @@
     </section>
 
   </main>
-
 
   <footer>
 
@@ -1733,7 +1699,6 @@
         All rights reserved.
       </p>
 
-
       <div class="disclaimer">
 
         <p>
@@ -1756,49 +1721,98 @@
   </footer>
 
   <script>
-  const form = document.querySelector("form");
 
-  form.addEventListener("submit", async function (event) {
-    event.preventDefault();
+    const studyPermitForm =
+      document.getElementById("studyPermitForm");
 
-    const submitButton = form.querySelector(".submit-button");
-    const originalButtonText = submitButton.innerHTML;
+    const submitButton =
+      studyPermitForm.querySelector(".submit-button");
 
-    submitButton.disabled = true;
-    submitButton.innerHTML = "正在提交 | Submitting...";
+    const successMessage =
+      document.getElementById("form-success");
 
-    const formData = new FormData(form);
+    const errorMessage =
+      document.getElementById("form-error");
 
-    try {
-      const response = await fetch(form.action, {
-        method: "POST",
-        body: formData,
-        headers: {
-          "Accept": "application/json"
+    studyPermitForm.addEventListener(
+      "submit",
+      async function (event) {
+
+        event.preventDefault();
+
+        successMessage.style.display = "none";
+        errorMessage.style.display = "none";
+
+        submitButton.disabled = true;
+        submitButton.innerHTML =
+          "正在提交 | Submitting...";
+
+        try {
+
+          const response = await fetch(
+            studyPermitForm.action,
+            {
+              method: "POST",
+              body: new FormData(studyPermitForm),
+              headers: {
+                "Accept": "application/json"
+              }
+            }
+          );
+
+          if (response.ok) {
+
+            studyPermitForm.reset();
+
+            submitButton.innerHTML =
+              "已提交 | Submitted";
+
+            successMessage.style.display =
+              "block";
+
+            successMessage.scrollIntoView({
+              behavior: "smooth",
+              block: "center"
+            });
+
+          } else {
+
+            submitButton.disabled = false;
+
+            submitButton.innerHTML =
+              "提交资格评估表 | Submit Assessment";
+
+            errorMessage.style.display =
+              "block";
+
+            errorMessage.scrollIntoView({
+              behavior: "smooth",
+              block: "center"
+            });
+
+          }
+
+        } catch (error) {
+
+          submitButton.disabled = false;
+
+          submitButton.innerHTML =
+            "提交资格评估表 | Submit Assessment";
+
+          errorMessage.style.display =
+            "block";
+
+          errorMessage.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+          });
+
         }
-      });
 
-      if (response.ok) {
-        window.location.href = "thank-you.html";
-      } else {
-        alert(
-          "表格暂时无法提交，请稍后再试，或发送邮件至 info@ellenlinrcic.ca。\n\n" +
-          "The form could not be submitted. Please try again later or email info@ellenlinrcic.ca."
-        );
-
-        submitButton.disabled = false;
-        submitButton.innerHTML = originalButtonText;
       }
-    } catch (error) {
-      alert(
-        "网络连接出现问题，请稍后再试，或发送邮件至 info@ellenlinrcic.ca。\n\n" +
-        "There was a network problem. Please try again later or email info@ellenlinrcic.ca."
-      );
+    );
 
-      submitButton.disabled = false;
-      submitButton.innerHTML = originalButtonText;
-    }
-  });
-</script>
+  </script>
+
 </body>
 </html>
