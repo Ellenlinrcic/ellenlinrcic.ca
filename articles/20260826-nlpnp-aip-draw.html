@@ -58,6 +58,10 @@
       line-height: 1.75;
     }
 
+    a {
+      color: inherit;
+    }
+
     header {
       background: var(--deep-green);
       color: var(--white);
@@ -74,11 +78,13 @@
       justify-content: space-between;
       align-items: center;
       gap: 20px;
+      flex-wrap: wrap;
     }
 
     .brand h1 {
       margin: 0;
       font-size: 24px;
+      letter-spacing: -0.5px;
     }
 
     .brand p {
@@ -100,152 +106,257 @@
       font-weight: 700;
     }
 
-    .article-hero {
-      background: linear-gradient(
-        135deg,
-        var(--deep-green),
-        var(--green)
-      );
-      color: var(--white);
-      padding: 70px 0;
+    nav a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
     }
 
-    .category {
+    .article-hero {
+      background: linear-gradient(135deg, var(--deep-green), var(--green));
+      color: var(--white);
+      padding: 74px 0 76px;
+    }
+
+    .article-hero .category {
       display: inline-block;
       padding: 7px 14px;
-      margin-bottom: 20px;
-      border: 1px solid rgba(255,255,255,0.28);
+      border: 1px solid rgba(255, 255, 255, 0.25);
       border-radius: 999px;
+      color: rgba(255, 255, 255, 0.88);
       font-size: 14px;
+      margin-bottom: 22px;
+      text-decoration: none;
+    }
+
+    .article-hero .category:hover {
+      background: rgba(255, 255, 255, 0.08);
     }
 
     .article-hero h2 {
-      max-width: 920px;
+      max-width: 1000px;
       margin: 0 0 18px;
-      font-size: clamp(34px, 5vw, 54px);
+      font-size: clamp(34px, 4.6vw, 52px);
       line-height: 1.16;
+      letter-spacing: -1px;
     }
 
-    .subtitle {
+    .article-hero .subtitle {
       max-width: 900px;
-      margin-bottom: 14px;
-      font-size: 20px;
-      color: rgba(255,255,255,0.88);
+      margin: 0 0 14px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 19px;
+      line-height: 1.6;
     }
 
-    .date {
-      color: rgba(255,255,255,0.72);
-      font-size: 14px;
+    .article-date {
+      margin-top: 20px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 15px;
     }
 
     main {
-      padding: 58px 0 72px;
+      background: var(--soft-cream);
+      padding: 54px 0 70px;
     }
 
     .article-layout {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 300px;
-      gap: 38px;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 34px;
       align-items: start;
     }
 
     .article-card {
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 20px;
+      border-radius: 18px;
       padding: 34px;
-      box-shadow: 0 12px 30px rgba(18, 52, 59, 0.07);
+      box-shadow: 0 16px 38px rgba(18, 52, 59, 0.07);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--deep-green);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .article-meta {
+      color: var(--warm-gold);
+      font-weight: 800;
+      font-size: 14px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    article h1 {
+      margin: 0 0 18px;
+      color: var(--deep-green);
+      font-size: clamp(26px, 3vw, 34px);
+      line-height: 1.28;
+      letter-spacing: -0.3px;
+    }
+
+    article h2 {
+      margin: 42px 0 14px;
+      color: var(--deep-green);
+      font-size: 26px;
+      line-height: 1.35;
+      border-left: 5px solid var(--warm-gold);
+      padding-left: 14px;
+    }
+
+    article h3 {
+      margin: 34px 0 12px;
+      color: var(--deep-green);
+      font-size: 22px;
+      line-height: 1.35;
+    }
+
+    article p {
+      margin: 0 0 18px;
+      font-size: 17px;
+    }
+
+    article ul,
+    article ol {
+      margin: 0 0 22px 0;
+      padding-left: 22px;
+    }
+
+    article li {
+      margin-bottom: 10px;
+      font-size: 17px;
     }
 
     .hero-image {
       width: 100%;
       display: block;
-      margin-bottom: 30px;
-      border-radius: 16px;
-    }
-
-    .article-card h3 {
-      margin: 32px 0 13px;
-      color: var(--deep-green);
-      font-size: 27px;
-      line-height: 1.35;
-    }
-
-    .article-card h3:first-of-type {
-      margin-top: 10px;
-    }
-
-    .article-card p {
-      margin: 0 0 17px;
-    }
-
-    .article-card ul {
-      margin: 10px 0 22px;
-      padding-left: 24px;
-    }
-
-    .article-card li {
-      margin-bottom: 8px;
+      border-radius: 14px;
+      margin: 26px 0 32px;
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 28px rgba(18, 52, 59, 0.08);
     }
 
     .note-box {
-      margin: 24px 0;
-      padding: 20px 22px;
-      background: var(--soft-cream);
+      background: #f6f8fb;
+      border: 1px solid #dce6ef;
       border-left: 5px solid var(--warm-gold);
       border-radius: 12px;
+      padding: 20px 22px;
+      margin: 28px 0;
     }
 
-    .language-link {
-      display: inline-block;
-      margin: 20px 0 5px;
-      color: var(--green);
+    .note-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 30px;
+      font-size: 16px;
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+
+    .data-table th {
+      background: var(--deep-green);
+      color: var(--white);
+    }
+
+    .data-table tr:nth-child(even) {
+      background: #f8fafb;
+    }
+
+    .data-table td:last-child {
       font-weight: 800;
+      color: var(--deep-green);
+    }
+
+    .language-jump {
+      display: inline-block;
+      margin: 6px 0 20px;
+      padding: 11px 17px;
+      background: var(--deep-green);
+      color: var(--white);
+      border-radius: 8px;
       text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .language-jump:hover {
+      background: var(--green);
+    }
+
+    .english-section {
+      margin-top: 58px;
+      padding-top: 36px;
+      border-top: 2px solid var(--border);
+      scroll-margin-top: 24px;
     }
 
     .sidebar {
-      position: sticky;
-      top: 30px;
-      padding: 25px;
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 18px;
-      box-shadow: 0 12px 30px rgba(18, 52, 59, 0.07);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 12px 30px rgba(18, 52, 59, 0.06);
+      position: sticky;
+      top: 24px;
     }
 
     .sidebar h3 {
-      margin: 0 0 13px;
       color: var(--deep-green);
-      font-size: 21px;
+      margin: 0 0 14px;
+      font-size: 20px;
+      line-height: 1.35;
     }
 
     .sidebar p {
-      margin: 0 0 16px;
+      margin: 0 0 14px;
       color: var(--muted);
+      font-size: 15px;
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 11px 16px;
+      background: var(--deep-green);
+      color: var(--white);
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 800;
       font-size: 14px;
     }
 
-    .cta {
-      display: inline-block;
-      padding: 11px 16px;
-      border-radius: 9px;
-      background: var(--deep-green);
-      color: var(--white);
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 14px;
+    .contact-button:hover {
+      background: var(--green);
     }
 
     footer {
       background: var(--deep-green);
-      color: rgba(255,255,255,0.78);
+      color: rgba(255, 255, 255, 0.78);
+      padding: 26px 0;
       text-align: center;
-      padding: 27px 0;
       font-size: 14px;
     }
 
-    @media (max-width: 860px) {
+    @media (max-width: 900px) {
       .article-layout {
         grid-template-columns: 1fr;
       }
@@ -253,20 +364,25 @@
       .sidebar {
         position: static;
       }
-
-      .header-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 640px) {
       .article-card {
-        padding: 23px 20px;
+        padding: 24px;
       }
 
-      .article-hero {
-        padding: 52px 0;
+      article p,
+      article li {
+        font-size: 16px;
+      }
+
+      .data-table {
+        font-size: 14px;
+      }
+
+      .data-table th,
+      .data-table td {
+        padding: 10px;
       }
     }
   </style>
@@ -274,335 +390,514 @@
 
 <body>
 
-<header>
-  <div class="container header-inner">
+  <header>
+    <div class="container header-inner">
 
-    <div class="brand">
-      <h1>Jie “Ellen” Lin, RCIC</h1>
-      <p>
-        Canadian Immigration Consultant |
-        加拿大持牌移民顾问
-      </p>
-    </div>
-
-    <nav>
-      <a href="../index.html">Home 首页</a>
-      <a href="../index.html#services">Services 服务</a>
-      <a href="../updates.html">Updates 最新动态</a>
-      <a href="../index.html#contact">Contact 联系</a>
-    </nav>
-
-  </div>
-</header>
-
-
-<section class="article-hero">
-  <div class="container">
-
-    <div class="category">
-      Provincial Nominee Program |
-      省提名最新动态
-    </div>
-
-    <h2>
-      纽芬兰与拉布拉多省再次发出140份移民邀请
-    </h2>
-
-    <div class="subtitle">
-      Newfoundland and Labrador Issues 140 Immigration Invitations
-      in Latest Draw
-    </div>
-
-    <div class="date">
-      Published August 26, 2026
-    </div>
-
-  </div>
-</section>
-
-
-<main>
-  <div class="container article-layout">
-
-    <article class="article-card">
-
-      <img
-        class="hero-image"
-        src="../images/NewfoundlandPNP_Draw_Reusable.jpg"
-        alt="Newfoundland and Labrador Provincial Nominee Program NLPNP immigration draw"
-      />
-
-      <p>
-        纽芬兰与拉布拉多省于2026年8月26日进行了新一轮
-        经济移民邀请，共发出140份
-        Invitation to Apply（ITA）。
-      </p>
-
-      <div class="note-box">
-        <strong>本轮邀请：</strong>
-
-        <ul>
-          <li>
-            Newfoundland and Labrador Provincial Nominee Program
-            （NLPNP）：94份
-          </li>
-
-          <li>
-            Atlantic Immigration Program（AIP）：46份
-          </li>
-        </ul>
+      <div class="brand">
+        <h1>Jie “Ellen” Lin, RCIC</h1>
+        <p>Canadian Immigration Consultant | 加拿大持牌移民顾问</p>
       </div>
 
+      <nav>
+        <a href="../index.html">Home 首页</a>
+        <a href="../index.html#services">Services 服务</a>
+        <a href="../index.html#updates">Updates 最新动态</a>
+        <a href="../index.html#contact">Contact 联系</a>
+      </nav>
 
-      <h3>
-        这是8月份第三轮邀请
-      </h3>
-
-      <p>
-        值得注意的是，这是纽芬兰与拉布拉多省
-        2026年8月份进行的第三轮经济移民邀请。
-      </p>
-
-      <p>
-        8月10日，该省发出208份邀请，
-        其中186份属于NLPNP，
-        22份属于Atlantic Immigration Program。
-      </p>
-
-      <p>
-        8月18日，该省再次发出122份邀请，
-        全部属于NLPNP。
-      </p>
-
-      <p>
-        到了8月26日，
-        AIP再次获得46个邀请名额。
-      </p>
+    </div>
+  </header>
 
 
-      <h3>
-        今年抽选节奏明显加快
-      </h3>
-
-      <p>
-        纽芬兰与拉布拉多省自2025年开始采用
-        Expression of Interest（EOI）
-        模式管理经济类移民申请。
-      </p>
-
-      <p>
-        进入2026年后，
-        该省持续通过批次方式发出邀请，
-        仅8月份就已经进行了三轮。
-      </p>
-
-
-      <h3>
-        不能只看“多少分可以被邀请”
-      </h3>
-
-      <p>
-        与Express Entry等打分制项目不同，
-        纽芬兰与拉布拉多省公布的抽选结果
-        并没有提供最低EOI分数，
-        也没有公布完整的获邀职业名单。
-      </p>
-
-      <p>
-        因此，申请人不能简单通过
-        “多少分可以被邀请”
-        来判断自己的机会。
-      </p>
-
-      <p>
-        更重要的是申请人的职业、
-        当地就业情况、雇主，
-        以及申请是否符合该省当前的
-        劳动力市场优先方向。
-      </p>
-
-
-      <h3>
-        NLPNP和AIP值得同时评估
-      </h3>
-
-      <p>
-        对于已经获得纽芬兰与拉布拉多省
-        雇主Job Offer的外国工人来说，
-        NLPNP和Atlantic Immigration Program
-        可能都值得进行评估。
-      </p>
-
-      <p>
-        在制定永久居民申请策略时，
-        不应只关注其中一个项目，
-        而应结合申请人的职位、
-        雇主、工作经验及具体资格，
-        比较两种途径是否存在适用机会。
-      </p>
-
+  <section class="article-hero">
+    <div class="container">
 
       <a
-        class="language-link"
-        href="#english"
+        class="category"
+        href="../provincial-nominee-programs.html"
       >
-        Read in English ↓
+        ← Provincial Nominee Programs | 返回省提名项目
       </a>
 
+      <h2>
+        纽芬兰与拉布拉多省再次发出140份移民邀请
+      </h2>
 
-      <div id="english">
+      <p class="subtitle">
+        8月26日NLPNP发出94份邀请，
+        Atlantic Immigration Program发出46份邀请
+      </p>
 
-        <h3>
-          Newfoundland and Labrador Issues 140 Immigration Invitations
-          in Latest Draw
-        </h3>
+      <p class="subtitle">
+        Newfoundland and Labrador Issues 140 Immigration Invitations
+        in Latest Draw
+      </p>
+
+      <div class="article-date">
+        Published on August 26, 2026 | 发布日期：2026年8月26日
+      </div>
+
+    </div>
+  </section>
+
+
+  <main>
+    <div class="container article-layout">
+
+      <article class="article-card">
+
+        <a
+          class="back-link"
+          href="../provincial-nominee-programs.html"
+        >
+          ← 返回省提名项目 |
+          Back to Provincial Nominee Programs
+        </a>
+
+        <div class="article-meta">
+          NLPNP & AIP | Provincial Immigration
+        </div>
+
+        <h1>
+          纽芬兰与拉布拉多省再次发出140份移民邀请
+        </h1>
+
+        <a
+          class="language-jump"
+          href="#english-version"
+        >
+          Read in English
+        </a>
+
+        <img
+          class="hero-image"
+          src="../images/NewfoundlandPNP_Draw_Reusable.jpg"
+          alt="Newfoundland and Labrador Provincial Nominee Program NLPNP and Atlantic Immigration Program AIP draw"
+        />
 
         <p>
-          Newfoundland and Labrador conducted another
-          economic immigration selection round on
-          August 26, 2026, issuing a total of
-          140 Invitations to Apply (ITAs).
+          纽芬兰与拉布拉多省于2026年8月26日进行了
+          新一轮经济移民邀请，
+          共发出140份Invitation to Apply（ITA）。
         </p>
 
         <div class="note-box">
-
-          <strong>The invitations were divided as follows:</strong>
+          <p>
+            <strong>本轮邀请分配：</strong>
+          </p>
 
           <ul>
             <li>
-              Newfoundland and Labrador Provincial Nominee Program
-              (NLPNP): 94
+              <strong>NLPNP：</strong>
+              94份
             </li>
 
             <li>
-              Atlantic Immigration Program (AIP): 46
+              <strong>Atlantic Immigration Program（AIP）：</strong>
+              46份
             </li>
           </ul>
-
         </div>
 
 
+        <h2>
+          这是8月份第三轮邀请
+        </h2>
+
+        <p>
+          值得注意的是，
+          这是纽芬兰与拉布拉多省
+          在2026年8月份进行的第三轮经济移民邀请。
+        </p>
+
+        <p>
+          8月10日，
+          该省共发出208份邀请，
+          其中186份属于NLPNP，
+          22份属于AIP。
+        </p>
+
+        <p>
+          8月18日，
+          该省又发出122份邀请，
+          全部属于NLPNP。
+        </p>
+
+        <p>
+          到了8月26日，
+          AIP再次获得46个邀请名额。
+        </p>
+
+        <table class="data-table">
+
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>NLPNP</th>
+              <th>AIP</th>
+              <th>总邀请数</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>2026年8月10日</td>
+              <td>186</td>
+              <td>22</td>
+              <td>208</td>
+            </tr>
+
+            <tr>
+              <td>2026年8月18日</td>
+              <td>122</td>
+              <td>0</td>
+              <td>122</td>
+            </tr>
+
+            <tr>
+              <td>2026年8月26日</td>
+              <td>94</td>
+              <td>46</td>
+              <td>140</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+
+        <h2>
+          今年抽选节奏明显加快
+        </h2>
+
+        <p>
+          纽芬兰与拉布拉多省自2025年开始采用
+          Expression of Interest（EOI）
+          模式管理经济类移民申请。
+        </p>
+
+        <p>
+          进入2026年后，
+          该省持续通过批次方式发出邀请。
+        </p>
+
+        <p>
+          仅在2026年8月份，
+          就已经进行了三轮邀请。
+        </p>
+
+        <p>
+          这种较为频繁的邀请节奏，
+          对已经具备当地工作机会
+          或符合省级劳动力市场需求的申请人来说，
+          值得持续关注。
+        </p>
+
+
+        <h2>
+          纽芬兰与拉布拉多省没有公布最低EOI分数
+        </h2>
+
+        <p>
+          与Express Entry等打分制项目不同，
+          纽芬兰与拉布拉多省公布的抽选结果
+          并没有提供最低EOI分数，
+          也没有公布完整的职业名单。
+        </p>
+
+        <p>
+          因此，
+          申请人不能简单通过
+          “多少分可以被邀请”
+          来判断自己的机会。
+        </p>
+
+        <div class="note-box">
+          <p>
+            对申请人而言，
+            更重要的是自己的职业、
+            当地就业情况、雇主，
+            以及申请是否符合
+            纽芬兰与拉布拉多省当前的
+            劳动力市场优先方向。
+          </p>
+        </div>
+
+
+        <h2>
+          有当地Job Offer，NLPNP和AIP值得同时评估
+        </h2>
+
+        <p>
+          对已经获得纽芬兰与拉布拉多省雇主
+          Job Offer的外国工人来说，
+          NLPNP和Atlantic Immigration Program
+          都可能值得进一步评估。
+        </p>
+
+        <p>
+          两个项目虽然都可能帮助申请人
+          取得加拿大永久居民身份，
+          但申请条件、雇主要求和申请路径并不完全相同。
+        </p>
+
+        <p>
+          因此，
+          在制定移民策略的时候，
+          不应该只关注其中一个项目。
+        </p>
+
+        <p>
+          更合理的做法是结合申请人的职业、
+          工作经验、当地Job Offer、
+          雇主情况及整体移民背景，
+          比较NLPNP和AIP
+          是否分别存在适用机会。
+        </p>
+
+
+        <!-- ENGLISH VERSION -->
+
+        <div
+          class="english-section"
+          id="english-version"
+        >
+
+          <h2>
+            Newfoundland and Labrador Issues 140 Immigration Invitations
+            in Latest Draw
+          </h2>
+
+          <p>
+            Newfoundland and Labrador conducted another
+            economic immigration selection round
+            on August 26, 2026,
+            issuing a total of 140 Invitations to Apply (ITAs).
+          </p>
+
+          <div class="note-box">
+
+            <p>
+              <strong>The invitations were divided as follows:</strong>
+            </p>
+
+            <ul>
+
+              <li>
+                <strong>
+                  Newfoundland and Labrador Provincial Nominee Program
+                  (NLPNP):
+                </strong>
+                94
+              </li>
+
+              <li>
+                <strong>
+                  Atlantic Immigration Program (AIP):
+                </strong>
+                46
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <h3>
+            Third Invitation Round in August
+          </h3>
+
+          <p>
+            This was already the province’s
+            third invitation round in August.
+          </p>
+
+          <p>
+            On August 10,
+            Newfoundland and Labrador issued
+            208 invitations,
+            including 186 under the NLPNP
+            and 22 under the AIP.
+          </p>
+
+          <p>
+            Another 122 invitations
+            were issued on August 18,
+            all under the NLPNP.
+          </p>
+
+          <p>
+            The August 26 selection
+            brought the AIP back into
+            the province’s latest invitation round,
+            with 46 AIP invitations issued.
+          </p>
+
+          <table class="data-table">
+
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>NLPNP</th>
+                <th>AIP</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>August 10, 2026</td>
+                <td>186</td>
+                <td>22</td>
+                <td>208</td>
+              </tr>
+
+              <tr>
+                <td>August 18, 2026</td>
+                <td>122</td>
+                <td>0</td>
+                <td>122</td>
+              </tr>
+
+              <tr>
+                <td>August 26, 2026</td>
+                <td>94</td>
+                <td>46</td>
+                <td>140</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+
+          <h3>
+            Newfoundland and Labrador Continues Frequent Selections
+          </h3>
+
+          <p>
+            Newfoundland and Labrador introduced
+            an Expression of Interest (EOI) model
+            for its economic immigration programs
+            in 2025.
+          </p>
+
+          <p>
+            The province has continued to issue
+            invitations in batches throughout 2026,
+            with three selection rounds
+            taking place in August alone.
+          </p>
+
+
+          <h3>
+            No Published Minimum EOI Score
+          </h3>
+
+          <p>
+            Unlike some points-based immigration programs,
+            Newfoundland and Labrador does not publish
+            a minimum EOI score
+            or a complete list of occupations
+            selected in each round.
+          </p>
+
+          <p>
+            Applicants therefore should not assess
+            their chances based on a single expected
+            “cut-off score.”
+          </p>
+
+          <div class="note-box">
+            <p>
+              Occupation,
+              employment in the province,
+              the employer,
+              and alignment with Newfoundland and Labrador’s
+              current labour market priorities
+              can all affect an applicant’s prospects.
+            </p>
+          </div>
+
+
+          <h3>
+            NLPNP and AIP May Both Be Worth Assessing
+          </h3>
+
+          <p>
+            For foreign workers
+            who already have a job offer
+            from a Newfoundland and Labrador employer,
+            both the NLPNP
+            and the Atlantic Immigration Program
+            may be worth assessing
+            when developing an immigration strategy.
+          </p>
+
+          <p>
+            The two programs have different
+            eligibility requirements,
+            employer requirements
+            and application processes.
+          </p>
+
+          <p>
+            Applicants should therefore consider
+            their occupation,
+            work experience,
+            job offer,
+            employer
+            and overall immigration circumstances
+            when determining which pathway
+            may be appropriate.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <aside class="sidebar">
+
         <h3>
-          Third Invitation Round in August
+          有纽芬兰与拉布拉多省Job Offer？
         </h3>
 
         <p>
-          This was already the province’s third
-          invitation round in August.
+          如果您已经获得
+          Newfoundland and Labrador
+          当地雇主的Job Offer，
+          NLPNP和Atlantic Immigration Program
+          都可能值得评估。
         </p>
 
         <p>
-          On August 10, the province issued
-          208 invitations, including
-          186 under the NLPNP and
-          22 under the AIP.
+          可以结合您的职业、
+          Job Offer、雇主、
+          工作经验、语言能力
+          及当前加拿大身份，
+          比较两种移民途径。
         </p>
 
-        <p>
-          Another 122 NLPNP invitations
-          were issued on August 18.
-        </p>
+        <a
+          class="contact-button"
+          href="../consultation.html?service=NLPNP%20and%20AIP%20Assessment"
+        >
+          预约NLPNP / AIP评估 |
+          Book an Assessment
+        </a>
 
-        <p>
-          The August 26 round brought the AIP
-          back into the province’s latest selection,
-          with 46 AIP invitations issued.
-        </p>
+      </aside>
 
-
-        <h3>
-          Newfoundland and Labrador Continues Frequent Selections
-        </h3>
-
-        <p>
-          Newfoundland and Labrador introduced an
-          Expression of Interest (EOI) model
-          for its economic immigration programs in 2025.
-        </p>
-
-        <p>
-          The province has continued to issue
-          invitations in batches throughout 2026,
-          with three selection rounds taking place
-          in August alone.
-        </p>
+    </div>
+  </main>
 
 
-        <h3>
-          There Is No Published EOI Cut-Off Score
-        </h3>
-
-        <p>
-          Unlike some points-based immigration programs,
-          Newfoundland and Labrador does not publish
-          a minimum EOI score or a complete list
-          of occupations selected in each round.
-        </p>
-
-        <p>
-          Applicants therefore should not assess
-          their chances based on a single expected
-          “cut-off score.”
-        </p>
-
-        <p>
-          Occupation, employment in the province,
-          the employer and alignment with
-          Newfoundland and Labrador’s current
-          labour market priorities can all affect
-          an applicant’s prospects.
-        </p>
-
-
-        <h3>
-          NLPNP and AIP May Both Be Worth Assessing
-        </h3>
-
-        <p>
-          For foreign workers who already have
-          a job offer from a Newfoundland and Labrador employer,
-          both the NLPNP and the Atlantic Immigration Program
-          may be worth assessing when developing
-          an immigration strategy.
-        </p>
-
-      </div>
-
-    </article>
-
-
-    <aside class="sidebar">
-
-      <h3>
-        有纽芬兰与拉布拉多省Job Offer？
-      </h3>
-
-      <p>
-        NLPNP和Atlantic Immigration Program
-        的申请条件和策略并不完全相同。
-        如果已经获得当地雇主工作机会，
-        可以结合职业、雇主、
-        工作经验和当前身份
-        同时评估两种途径。
-      </p>
-
-      <a
-        class="cta"
-        href="../consultation.html?service=NLPNP%20and%20AIP%20Assessment"
-      >
-        预约资格评估 |
-        Book an Assessment
-      </a>
-
-    </aside>
-
-  </div>
-</main>
-
-
-<footer>
-  © 2026 Jie “Ellen” Lin, RCIC. All rights reserved.
-</footer>
+  <footer>
+    © 2026 Jie “Ellen” Lin, RCIC. All rights reserved.
+  </footer>
 
 </body>
 </html>
