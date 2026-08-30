@@ -325,4 +325,32 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>  
+
+<url>
+  <loc>https://ellenlinrcic.ca/articles/20260820-pei-pnp-draw.html</loc>
+  <lastmod>2026-08-30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://ellenlinrcic.ca/articles/20260826-nlpnp-aip-draw.html</loc>
+  <lastmod>2026-08-30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://ellenlinrcic.ca/articles/20260827-manitoba-pnp-draw.html</loc>
+  <lastmod>2026-08-30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://ellenlinrcic.ca/articles/study-permit-fund-requirements-september-2026.html</loc>
+  <lastmod>2026-08-30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>  
 </urlset>
