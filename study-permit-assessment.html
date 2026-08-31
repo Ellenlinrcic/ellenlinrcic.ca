@@ -16,7 +16,6 @@
     }
 
     gtag("js", new Date());
-
     gtag("config", "G-KCHE6G6R63");
   </script>
 
@@ -28,12 +27,12 @@
   />
 
   <title>
-    首次学习许可申请评估 | Initial Study Permit Assessment | Ellen Lin, RCIC
+    加拿大留学与首次学习许可评估 | Study Permit & School Admission | Ellen Lin, RCIC
   </title>
 
   <meta
     name="description"
-    content="加拿大首次学习许可申请评估表，包括申请人基本资料、学校课程、教育背景、资金情况、移民历史、家庭情况及学习计划。"
+    content="加拿大留学与首次学习许可评估，包括学校及专业选择、学校申请、学习许可、教育背景、语言成绩、留学预算、资金来源及未来学习和职业规划。"
   />
 
   <link
@@ -284,9 +283,6 @@
       color: var(--text);
       font: inherit;
       font-size: 15px;
-      transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
     }
 
     input:focus,
@@ -298,12 +294,16 @@
     }
 
     textarea {
-      min-height: 125px;
+      min-height: 120px;
       resize: vertical;
     }
 
     .short-textarea {
-      min-height: 95px;
+      min-height: 90px;
+    }
+
+    .required {
+      color: #a44141;
     }
 
     .checkbox-group {
@@ -328,20 +328,11 @@
       font-weight: 500;
     }
 
-    .required {
-      color: #a44141;
-    }
-
     .privacy-box {
       padding: 21px 23px;
       border: 1px solid var(--border);
       border-radius: 14px;
       background: var(--soft-cream);
-    }
-
-    .privacy-box p {
-      margin: 0 0 9px;
-      font-size: 13px;
     }
 
     .submit-area {
@@ -358,15 +349,11 @@
       cursor: pointer;
       font-size: 16px;
       font-weight: 700;
-      transition:
-        transform 0.2s ease,
-        background 0.2s ease,
-        opacity 0.2s ease;
     }
 
     .submit-button:hover:not(:disabled) {
-      transform: translateY(-2px);
       background: var(--green);
+      transform: translateY(-2px);
     }
 
     .submit-button:disabled {
@@ -473,7 +460,6 @@
     }
 
   </style>
-
 </head>
 
 <body>
@@ -546,31 +532,31 @@
 
           &nbsp;/&nbsp;
 
-          首次学习许可申请评估
+          首次留学及学习许可评估
 
         </div>
 
         <span class="eyebrow">
-          Study Permit Assessment
+          School Admission & Study Permit Assessment
         </span>
 
         <h2>
-          首次学习许可申请评估<br>
-          Initial Study Permit Assessment
+          加拿大留学与首次学习许可评估<br>
+          School Admission & Initial Study Permit Assessment
         </h2>
 
         <p>
-          请填写以下资料，以便对您的学习许可申请背景进行初步了解。
-          表格内容将帮助我了解您的教育背景、学校及课程、
-          资金情况、加拿大身份、移民历史以及未来学习计划。
+          如果您正在考虑到加拿大留学，无论是否已经取得学校录取通知书，
+          都可以通过本表格提供您的教育背景、目标课程、语言情况、
+          留学预算及未来规划，以便初步评估学校申请及学习许可方向。
         </p>
 
         <p class="en">
-          Please provide the information below so that I can better
-          understand your study permit circumstances, including your
-          education, proposed studies, financial situation,
-          immigration status, previous immigration history,
-          and future plans.
+          If you are planning to study in Canada, whether or not you already
+          have a Letter of Acceptance, please provide information about your
+          education, preferred program, language ability, study budget,
+          and future plans for a preliminary assessment of school admission
+          and study permit options.
         </p>
 
       </div>
@@ -585,16 +571,14 @@
 
           <p>
             <strong>
-              填写此表格并不会建立顾问与客户关系。
+              本表格用于初步了解您的留学和学习许可需求。
             </strong>
-            在正式接受委托前，我可能需要进一步审阅文件、
-            进行咨询或完成个案评估。
+            填写本表格不会建立顾问与客户关系。
           </p>
 
           <p>
-            Completing this form does not create a consultant-client
-            relationship. Further consultation or document review
-            may be required before representation is accepted.
+            This form is for preliminary assessment purposes only.
+            Completing this form does not create a consultant-client relationship.
           </p>
 
         </div>
@@ -605,7 +589,7 @@
           method="POST"
         >
 
-          <!-- 1 BASIC INFORMATION -->
+          <!-- 1 PERSONAL INFORMATION -->
 
           <div class="form-group">
 
@@ -613,10 +597,6 @@
               1. 基本资料 |
               Personal Information
             </h3>
-
-            <p class="section-note">
-              请提供主要申请人的基本联系资料。
-            </p>
 
             <div class="field-grid">
 
@@ -740,116 +720,13 @@
 
           </div>
 
-          <!-- 2 STATUS -->
+          <!-- 2 SCHOOL PLANNING -->
 
           <div class="form-group">
 
             <h3>
-              2. 加拿大身份 |
-              Immigration Status
-            </h3>
-
-            <div class="field-grid">
-
-              <div class="field">
-
-                <label for="status">
-                  目前加拿大身份
-
-                  <span class="label-en">
-                    Current Canadian Immigration Status
-                  </span>
-                </label>
-
-                <select
-                  id="status"
-                  name="Current Canadian Status"
-                >
-
-                  <option value="">
-                    Please select
-                  </option>
-
-                  <option value="Outside Canada">
-                    Outside Canada
-                  </option>
-
-                  <option value="Visitor">
-                    Visitor
-                  </option>
-
-                  <option value="Student">
-                    Student
-                  </option>
-
-                  <option value="Worker">
-                    Worker
-                  </option>
-
-                  <option value="Maintained Status">
-                    Maintained Status
-                  </option>
-
-                  <option value="No Current Status">
-                    No Current Status
-                  </option>
-
-                  <option value="Other">
-                    Other
-                  </option>
-
-                </select>
-
-              </div>
-
-              <div class="field">
-
-                <label for="status-expiry">
-                  当前身份到期日
-
-                  <span class="label-en">
-                    Current Status Expiry Date
-                  </span>
-                </label>
-
-                <input
-                  type="date"
-                  id="status-expiry"
-                  name="Current Status Expiry Date"
-                />
-
-              </div>
-
-              <div class="field full">
-
-                <label for="status-details">
-                  如目前在加拿大，请说明您的身份及近期身份历史
-
-                  <span class="label-en">
-                    If you are currently in Canada, please describe
-                    your current and recent immigration status
-                  </span>
-                </label>
-
-                <textarea
-                  class="short-textarea"
-                  id="status-details"
-                  name="Canadian Status Details"
-                ></textarea>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <!-- 3 SCHOOL -->
-
-          <div class="form-group">
-
-            <h3>
-              3. 学校与课程 |
-              School & Program
+              2. 学校申请与留学计划 |
+              School Admission & Study Planning
             </h3>
 
             <div class="field-grid">
@@ -857,17 +734,17 @@
               <div class="field">
 
                 <label for="loa">
-                  是否已经取得录取通知书 LOA？
+                  是否已经取得加拿大院校录取通知书？
                   <span class="required">*</span>
 
                   <span class="label-en">
-                    Do you already have a Letter of Acceptance?
+                    Do you already have a Canadian Letter of Acceptance?
                   </span>
                 </label>
 
                 <select
                   id="loa"
-                  name="Letter of Acceptance"
+                  name="Canadian Letter of Acceptance"
                   required
                 >
 
@@ -883,8 +760,8 @@
                     No
                   </option>
 
-                  <option value="Application in progress">
-                    Application in progress
+                  <option value="School application in progress">
+                    School application in progress
                   </option>
 
                 </select>
@@ -893,53 +770,90 @@
 
               <div class="field">
 
-                <label for="school">
-                  学校名称
+                <label for="school-help">
+                  是否需要协助申请学校？
+                  <span class="required">*</span>
 
                   <span class="label-en">
-                    School Name
-                  </span>
-                </label>
-
-                <input
-                  type="text"
-                  id="school"
-                  name="School Name"
-                />
-
-              </div>
-
-              <div class="field">
-
-                <label for="program">
-                  课程名称
-
-                  <span class="label-en">
-                    Program of Study
-                  </span>
-                </label>
-
-                <input
-                  type="text"
-                  id="program"
-                  name="Program of Study"
-                />
-
-              </div>
-
-              <div class="field">
-
-                <label for="level">
-                  课程级别
-
-                  <span class="label-en">
-                    Program Level
+                    Do you need assistance with school admission?
                   </span>
                 </label>
 
                 <select
-                  id="level"
-                  name="Program Level"
+                  id="school-help"
+                  name="School Admission Assistance Needed"
+                  required
+                >
+
+                  <option value="">
+                    Please select
+                  </option>
+
+                  <option value="Yes">
+                    Yes
+                  </option>
+
+                  <option value="No">
+                    No
+                  </option>
+
+                  <option value="Not sure">
+                    Not sure
+                  </option>
+
+                </select>
+
+              </div>
+
+              <div class="field">
+
+                <label for="preferred-location">
+                  希望就读的省份或城市
+
+                  <span class="label-en">
+                    Preferred Province or City
+                  </span>
+                </label>
+
+                <input
+                  type="text"
+                  id="preferred-location"
+                  name="Preferred Province or City"
+                />
+
+              </div>
+
+              <div class="field">
+
+                <label for="preferred-program">
+                  希望就读的专业或课程
+
+                  <span class="label-en">
+                    Preferred Program or Field of Study
+                  </span>
+                </label>
+
+                <input
+                  type="text"
+                  id="preferred-program"
+                  name="Preferred Program or Field of Study"
+                />
+
+              </div>
+
+              <div class="field">
+
+                <label for="program-level">
+                  希望申请的学历层级
+
+                  <span class="label-en">
+                    Preferred Program Level
+                  </span>
+                </label>
+
+                <select
+                  id="program-level"
+                  name="Preferred Program Level"
                 >
 
                   <option value="">
@@ -974,8 +888,8 @@
                     Doctoral Degree
                   </option>
 
-                  <option value="Other">
-                    Other
+                  <option value="Not sure">
+                    Not sure
                   </option>
 
                 </select>
@@ -985,37 +899,37 @@
               <div class="field">
 
                 <label for="start-date">
-                  预计开学日期
+                  希望入学时间
 
                   <span class="label-en">
-                    Expected Start Date
-                  </span>
-                </label>
-
-                <input
-                  type="date"
-                  id="start-date"
-                  name="Expected Start Date"
-                />
-
-              </div>
-
-              <div class="field">
-
-                <label for="duration">
-                  课程长度
-
-                  <span class="label-en">
-                    Program Duration
+                    Preferred Intake
                   </span>
                 </label>
 
                 <input
                   type="text"
-                  id="duration"
-                  name="Program Duration"
-                  placeholder="e.g. 2 years"
+                  id="start-date"
+                  name="Preferred Intake"
+                  placeholder="e.g. September 2027"
                 />
+
+              </div>
+
+              <div class="field full">
+
+                <label for="target-schools">
+                  如已有目标学校，请列出
+
+                  <span class="label-en">
+                    If you already have preferred schools, please list them
+                  </span>
+                </label>
+
+                <textarea
+                  class="short-textarea"
+                  id="target-schools"
+                  name="Preferred Schools"
+                ></textarea>
 
               </div>
 
@@ -1023,13 +937,13 @@
 
           </div>
 
-          <!-- 4 EDUCATION -->
+          <!-- 3 EDUCATION -->
 
           <div class="form-group">
 
             <h3>
-              4. 教育及工作背景 |
-              Education & Employment History
+              3. 教育与语言背景 |
+              Education & Language Background
             </h3>
 
             <div class="field-grid">
@@ -1038,6 +952,7 @@
 
                 <label for="education">
                   最高学历
+                  <span class="required">*</span>
 
                   <span class="label-en">
                     Highest Level of Education
@@ -1048,6 +963,25 @@
                   type="text"
                   id="education"
                   name="Highest Education"
+                  required
+                />
+
+              </div>
+
+              <div class="field">
+
+                <label for="field-study">
+                  专业
+
+                  <span class="label-en">
+                    Field of Study
+                  </span>
+                </label>
+
+                <input
+                  type="text"
+                  id="field-study"
+                  name="Previous Field of Study"
                 />
 
               </div>
@@ -1072,14 +1006,67 @@
 
               </div>
 
+              <div class="field">
+
+                <label for="language-test">
+                  是否已有英语或法语成绩？
+
+                  <span class="label-en">
+                    Do you have an English or French language test?
+                  </span>
+                </label>
+
+                <select
+                  id="language-test"
+                  name="Language Test Available"
+                >
+
+                  <option value="">
+                    Please select
+                  </option>
+
+                  <option value="Yes">
+                    Yes
+                  </option>
+
+                  <option value="No">
+                    No
+                  </option>
+
+                  <option value="Preparing">
+                    Preparing
+                  </option>
+
+                </select>
+
+              </div>
+
+              <div class="field full">
+
+                <label for="language-details">
+                  如已有语言成绩，请提供考试名称及成绩
+
+                  <span class="label-en">
+                    If available, please provide the test type and scores
+                  </span>
+                </label>
+
+                <textarea
+                  class="short-textarea"
+                  id="language-details"
+                  name="Language Test Details"
+                ></textarea>
+
+              </div>
+
               <div class="field full">
 
                 <label for="history">
-                  请简要说明最近五年的学习及工作经历
+                  请简单说明最近五年的学习及工作经历
 
                   <span class="label-en">
-                    Please briefly describe your study and
-                    employment history during the last five years
+                    Please briefly describe your study and employment history
+                    during the last five years
                   </span>
                 </label>
 
@@ -1094,50 +1081,32 @@
 
           </div>
 
-          <!-- 5 FINANCES -->
+          <!-- 4 FINANCES -->
 
           <div class="form-group">
 
             <h3>
-              5. 资金情况 |
-              Financial Information
+              4. 留学预算与资金情况 |
+              Study Budget & Financial Information
             </h3>
 
             <div class="field-grid">
 
               <div class="field">
 
-                <label for="tuition">
-                  每年学费
+                <label for="budget">
+                  每年可接受的留学预算
 
                   <span class="label-en">
-                    Annual Tuition
+                    Approximate Annual Study Budget
                   </span>
                 </label>
 
                 <input
                   type="text"
-                  id="tuition"
-                  name="Annual Tuition"
-                  placeholder="e.g. CAD 25,000"
-                />
-
-              </div>
-
-              <div class="field">
-
-                <label for="tuition-paid">
-                  已支付学费
-
-                  <span class="label-en">
-                    Tuition Already Paid
-                  </span>
-                </label>
-
-                <input
-                  type="text"
-                  id="tuition-paid"
-                  name="Tuition Already Paid"
+                  id="budget"
+                  name="Approximate Annual Study Budget"
+                  placeholder="e.g. CAD 40,000"
                 />
 
               </div>
@@ -1145,17 +1114,17 @@
               <div class="field">
 
                 <label for="funds">
-                  可用于留学的资金总额
+                  目前可用于留学的资金总额
 
                   <span class="label-en">
-                    Total Available Funds
+                    Total Funds Available for Studies
                   </span>
                 </label>
 
                 <input
                   type="text"
                   id="funds"
-                  name="Total Available Funds"
+                  name="Total Funds Available"
                 />
 
               </div>
@@ -1211,10 +1180,45 @@
 
               </div>
 
+              <div class="field">
+
+                <label for="tuition-paid">
+                  如已有学校录取，是否已经支付学费？
+
+                  <span class="label-en">
+                    If admitted, have you paid any tuition?
+                  </span>
+                </label>
+
+                <select
+                  id="tuition-paid"
+                  name="Tuition Paid"
+                >
+
+                  <option value="">
+                    Please select
+                  </option>
+
+                  <option value="Yes">
+                    Yes
+                  </option>
+
+                  <option value="No">
+                    No
+                  </option>
+
+                  <option value="Not applicable">
+                    Not applicable
+                  </option>
+
+                </select>
+
+              </div>
+
               <div class="field full">
 
                 <label for="fund-details">
-                  请简要说明资金来源
+                  请简单说明主要资金来源
 
                   <span class="label-en">
                     Please briefly explain the source of funds
@@ -1233,13 +1237,13 @@
 
           </div>
 
-          <!-- 6 IMMIGRATION HISTORY -->
+          <!-- 5 IMMIGRATION HISTORY -->
 
           <div class="form-group">
 
             <h3>
-              6. 移民及拒签历史 |
-              Immigration & Refusal History
+              5. 签证及拒签历史 |
+              Visa & Immigration History
             </h3>
 
             <div class="field-grid">
@@ -1251,8 +1255,7 @@
                   <span class="required">*</span>
 
                   <span class="label-en">
-                    Have you ever had a Canadian immigration
-                    application refused?
+                    Have you ever had a Canadian visa or permit refused?
                   </span>
                 </label>
 
@@ -1280,114 +1283,17 @@
 
               <div class="field">
 
-                <label for="refusal-count">
-                  如有，拒签次数
+                <label for="other-visas">
+                  是否曾申请过加拿大签证或许可？
 
                   <span class="label-en">
-                    Number of Refusals
-                  </span>
-                </label>
-
-                <input
-                  type="number"
-                  id="refusal-count"
-                  name="Number of Refusals"
-                  min="0"
-                />
-
-              </div>
-
-              <div class="field full">
-
-                <label for="immigration-history">
-                  请说明重要的签证、学签、工签、
-                  拒签或身份历史
-
-                  <span class="label-en">
-                    Please describe any significant visa,
-                    study permit, work permit, refusal,
-                    or immigration history
-                  </span>
-                </label>
-
-                <textarea
-                  id="immigration-history"
-                  name="Immigration History"
-                ></textarea>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <!-- 7 FAMILY -->
-
-          <div class="form-group">
-
-            <h3>
-              7. 家庭情况 |
-              Family Circumstances
-            </h3>
-
-            <div class="field-grid">
-
-              <div class="field">
-
-                <label for="marital-status">
-                  婚姻状况
-
-                  <span class="label-en">
-                    Marital Status
+                    Have you previously applied for any Canadian visa or permit?
                   </span>
                 </label>
 
                 <select
-                  id="marital-status"
-                  name="Marital Status"
-                >
-
-                  <option value="">
-                    Please select
-                  </option>
-
-                  <option value="Single">
-                    Single
-                  </option>
-
-                  <option value="Married">
-                    Married
-                  </option>
-
-                  <option value="Common-law">
-                    Common-law
-                  </option>
-
-                  <option value="Divorced / Separated">
-                    Divorced / Separated
-                  </option>
-
-                  <option value="Other">
-                    Other
-                  </option>
-
-                </select>
-
-              </div>
-
-              <div class="field">
-
-                <label for="family-accompanying">
-                  是否有配偶或子女计划同行？
-
-                  <span class="label-en">
-                    Will your spouse or children accompany you?
-                  </span>
-                </label>
-
-                <select
-                  id="family-accompanying"
-                  name="Accompanying Family Members"
+                  id="other-visas"
+                  name="Previous Canadian Application"
                 >
 
                   <option value="">
@@ -1402,29 +1308,24 @@
                     Yes
                   </option>
 
-                  <option value="Not sure">
-                    Not sure
-                  </option>
-
                 </select>
 
               </div>
 
               <div class="field full">
 
-                <label for="family-details">
-                  如有家属同行，请简单说明
+                <label for="immigration-history">
+                  如有重要的签证、拒签或移民记录，请简单说明
 
                   <span class="label-en">
-                    Please provide brief details of accompanying
-                    family members
+                    Please briefly describe any significant visa,
+                    refusal, or immigration history
                   </span>
                 </label>
 
                 <textarea
-                  class="short-textarea"
-                  id="family-details"
-                  name="Family Details"
+                  id="immigration-history"
+                  name="Immigration History"
                 ></textarea>
 
               </div>
@@ -1433,12 +1334,12 @@
 
           </div>
 
-          <!-- 8 STUDY PLAN -->
+          <!-- 6 STUDY PURPOSE -->
 
           <div class="form-group">
 
             <h3>
-              8. 学习目的与未来计划 |
+              6. 留学目的与未来规划 |
               Study Purpose & Future Plans
             </h3>
 
@@ -1446,17 +1347,17 @@
 
               <div class="field full">
 
-                <label for="why-program">
-                  为什么选择这个学校和课程？
+                <label for="why-canada">
+                  为什么考虑到加拿大留学？
 
                   <span class="label-en">
-                    Why have you chosen this school and program?
+                    Why are you considering studying in Canada?
                   </span>
                 </label>
 
                 <textarea
-                  id="why-program"
-                  name="Reason for School and Program"
+                  id="why-canada"
+                  name="Reason for Studying in Canada"
                 ></textarea>
 
               </div>
@@ -1464,16 +1365,16 @@
               <div class="field full">
 
                 <label for="future-plan">
-                  完成课程以后有什么计划？
+                  完成学业以后有什么计划？
 
                   <span class="label-en">
-                    What are your plans after completing the program?
+                    What are your plans after completing your studies?
                   </span>
                 </label>
 
                 <textarea
                   id="future-plan"
-                  name="Post Graduation Plan"
+                  name="Future Plans"
                 ></textarea>
 
               </div>
@@ -1482,13 +1383,13 @@
 
           </div>
 
-          <!-- 9 SERVICE -->
+          <!-- 7 SERVICES -->
 
           <div class="form-group">
 
             <h3>
-              9. 希望获得的服务 |
-              Service Requested
+              7. 希望获得的服务 |
+              Services Requested
             </h3>
 
             <div class="checkbox-group">
@@ -1497,14 +1398,14 @@
 
                 <input
                   type="checkbox"
-                  id="service-assessment"
+                  id="school-service"
                   name="Service Requested"
-                  value="Eligibility Assessment"
+                  value="School Admission Assistance"
                 />
 
-                <label for="service-assessment">
-                  首次学习许可申请评估 |
-                  Study Permit Eligibility Assessment
+                <label for="school-service">
+                  学校及课程选择 / 学校申请 |
+                  School & Program Selection / Admission Assistance
                 </label>
 
               </div>
@@ -1513,14 +1414,14 @@
 
                 <input
                   type="checkbox"
-                  id="service-full"
+                  id="study-permit-service"
                   name="Service Requested"
-                  value="Full Application Representation"
+                  value="Study Permit Application"
                 />
 
-                <label for="service-full">
-                  完整学习许可申请代理 |
-                  Full Study Permit Application Representation
+                <label for="study-permit-service">
+                  学习许可申请 |
+                  Study Permit Application
                 </label>
 
               </div>
@@ -1529,30 +1430,30 @@
 
                 <input
                   type="checkbox"
-                  id="service-review"
+                  id="full-planning"
+                  name="Service Requested"
+                  value="School Admission and Study Permit Planning"
+                />
+
+                <label for="full-planning">
+                  学校申请 + 学习许可整体规划 |
+                  School Admission + Study Permit Planning
+                </label>
+
+              </div>
+
+              <div class="checkbox-row">
+
+                <input
+                  type="checkbox"
+                  id="review-service"
                   name="Service Requested"
                   value="Application Review"
                 />
 
-                <label for="service-review">
-                  已准备申请文件，需要审查 |
+                <label for="review-service">
+                  已自行准备，需要文件审查 |
                   Review of a Self-Prepared Application
-                </label>
-
-              </div>
-
-              <div class="checkbox-row">
-
-                <input
-                  type="checkbox"
-                  id="service-refusal"
-                  name="Service Requested"
-                  value="Previous Refusal Assessment"
-                />
-
-                <label for="service-refusal">
-                  曾经被拒签，需要分析 |
-                  Assessment Following a Previous Refusal
                 </label>
 
               </div>
@@ -1598,15 +1499,14 @@
               <label for="consent">
 
                 我确认以上资料据我所知真实完整，
-                并同意 Ellen Lin, RCIC 为回应我的咨询而
-                收集和审阅我在本表格中提供的信息。
+                并同意 Ellen Lin, RCIC 为回应我的咨询而审阅本表格中的信息。
 
                 <br><br>
 
-                I confirm that the information provided above is
-                accurate to the best of my knowledge and consent to
-                Ellen Lin, RCIC reviewing the information for the
-                purpose of responding to my inquiry.
+                I confirm that the information provided is accurate
+                to the best of my knowledge and consent to Ellen Lin, RCIC
+                reviewing the information for the purpose of responding
+                to my inquiry.
 
                 <span class="required">*</span>
 
@@ -1619,7 +1519,7 @@
           <input
             type="hidden"
             name="_subject"
-            value="New Study Permit Assessment"
+            value="New School Admission and Study Permit Assessment"
           />
 
           <!-- SUBMIT -->
@@ -1630,23 +1530,23 @@
               class="submit-button"
               type="submit"
             >
-              提交资格评估表 |
+              提交留学及学签评估表 |
               Submit Assessment
             </button>
 
             <p class="submit-note">
-              请勿在此表格中提供护照号码、
-              信用卡号码、银行账号或其他不必要的敏感个人信息。
-              如需要进一步文件，我会另行通知。
+              请勿在此表格中提供护照号码、银行账号、
+              信用卡号码或其他不必要的敏感个人信息。
             </p>
 
             <div
               id="form-success"
               class="form-success"
             >
-              学习许可评估表已成功提交！我会在审阅后与您联系。
+              留学及学习许可评估表已成功提交！我会在审阅后与您联系。
               <br>
-              Your Study Permit Assessment has been submitted successfully.
+              Your School Admission and Study Permit Assessment
+              has been submitted successfully.
             </div>
 
             <div
@@ -1702,10 +1602,9 @@
       <div class="disclaimer">
 
         <p>
-          The information submitted through this form is for
-          preliminary assessment purposes only. Submission of this
-          form does not create a consultant-client relationship
-          and does not constitute immigration advice.
+          The information submitted through this form is for preliminary
+          assessment purposes only. Submission of this form does not create
+          a consultant-client relationship and does not constitute immigration advice.
         </p>
 
         <p>
@@ -1780,15 +1679,10 @@
             submitButton.disabled = false;
 
             submitButton.innerHTML =
-              "提交资格评估表 | Submit Assessment";
+              "提交留学及学签评估表 | Submit Assessment";
 
             errorMessage.style.display =
               "block";
-
-            errorMessage.scrollIntoView({
-              behavior: "smooth",
-              block: "center"
-            });
 
           }
 
@@ -1797,15 +1691,10 @@
           submitButton.disabled = false;
 
           submitButton.innerHTML =
-            "提交资格评估表 | Submit Assessment";
+            "提交留学及学签评估表 | Submit Assessment";
 
           errorMessage.style.display =
             "block";
-
-          errorMessage.scrollIntoView({
-            behavior: "smooth",
-            block: "center"
-          });
 
         }
 
