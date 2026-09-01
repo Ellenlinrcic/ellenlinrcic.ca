@@ -361,10 +361,35 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Study Permit Assessment -->
+  <url>
+    <loc>https://ellenlinrcic.ca/study-permit-assessment.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Study Permit Extension Assessment -->
+  <url>
+    <loc>https://ellenlinrcic.ca/study-permit-extension-assessment.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Student Status Restoration Assessment -->
+  <url>
+    <loc>https://ellenlinrcic.ca/student-status-restoration-assessment.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Study Permit Refusal Assessment -->
   <url>
     <loc>https://ellenlinrcic.ca/study-permit-refusal-assessment.html</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <priority>0.7</priority>
+  </url>  
 </urlset>
