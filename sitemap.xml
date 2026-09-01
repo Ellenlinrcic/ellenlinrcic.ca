@@ -353,4 +353,18 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>  
+
+    <url>
+    <loc>https://ellenlinrcic.ca/articles/study-permit-refused-reapply-or-reconsideration.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ellenlinrcic.ca/study-permit-refusal-assessment.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
