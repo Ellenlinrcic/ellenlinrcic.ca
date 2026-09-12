@@ -341,12 +341,29 @@
 .article-list {
   list-style: none;
   padding: 0;
-  margin: 6px 0 0;
+  margin: 10px 0 0;
 }
 
 .article-list li {
-  padding: 3px 0;
-  line-height: 1.35;
+  padding: 12px 0;
+  line-height: 1.45;
+  border-bottom: 1px solid #e4ded4;
+}
+
+.article-list li:first-child {
+  padding-top: 6px;
+}
+
+.article-list li:last-child {
+  border-bottom: none;
+}
+
+.article-list a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+font-weight: 400;  
 }
 
 /* 首页文章卡片只显示最新七篇 */
