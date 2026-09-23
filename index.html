@@ -459,72 +459,187 @@ font-weight: 400;
       border: 1px solid var(--border);
       border-radius: 18px;
       padding: 38px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
       box-shadow: 0 12px 32px rgba(0,0,0,0.055);
     }
 
-    .contact-box h3 {
-      margin-top: 0;
+    .contact-heading {
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    .contact-heading h3 {
+      margin: 0 0 8px;
       color: var(--deep-green);
       font-size: 30px;
     }
 
-    .contact-item {
-      margin: 16px 0;
+    .contact-heading p {
+      margin: 0;
+      color: var(--muted);
     }
 
-    .contact-item strong {
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.85fr;
+      gap: 26px;
+      align-items: stretch;
+    }
+
+    .contact-details,
+    .contact-social {
+      border-radius: 14px;
+      padding: 26px;
+    }
+
+    .contact-details {
+      background: var(--cream);
+      border: 1px solid var(--border);
+    }
+
+    .contact-social {
+      background: var(--deep-green);
+      color: var(--white);
+    }
+
+    .contact-company {
+      margin: 0 0 20px;
+      color: var(--deep-green);
+      font-size: 21px;
+      line-height: 1.35;
+    }
+
+    .contact-row {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 12px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-row:last-of-type {
+      border-bottom: none;
+    }
+
+    .contact-row strong {
       display: block;
       color: var(--deep-green);
-      margin-bottom: 3px;
     }
 
-    .linkedin-contact {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      margin-top: 24px;
-    }
-
-    .linkedin-qr-link {
-      display: inline-block;
-      flex: 0 0 auto;
-      line-height: 0;
-    }
-
-    .linkedin-qr {
-      width: 132px;
-      height: 132px;
-      padding: 7px;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(18, 52, 59, 0.1);
-    }
-
-    .linkedin-contact p {
-      margin: 4px 0;
-    }
-
-    .linkedin-contact a:not(.linkedin-qr-link) {
+    .contact-row a {
       color: var(--green);
       font-weight: 700;
       text-decoration: none;
     }
 
-    .linkedin-contact a:not(.linkedin-qr-link):hover {
+    .contact-row a:hover {
       text-decoration: underline;
       text-underline-offset: 4px;
     }
 
-    .note {
-      background: #f8f7f4;
-      border-left: 4px solid var(--warm-gold);
-      padding: 16px 18px;
-      border-radius: 8px;
-      color: var(--muted);
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .contact-action {
+      display: inline-block;
+      padding: 11px 15px;
+      border-radius: 7px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .contact-action:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(18, 52, 59, 0.12);
+    }
+
+    .contact-action.primary {
+      background: var(--deep-green);
+      color: var(--white);
+    }
+
+    .contact-action.map {
+      background: var(--warm-gold);
+      color: #111;
+    }
+
+    .contact-social h4 {
+      margin: 0 0 8px;
+      color: var(--white);
+      font-size: 21px;
+    }
+
+    .contact-social > p {
+      margin: 0 0 20px;
+      color: rgba(255,255,255,0.82);
+    }
+
+    .social-qr-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      align-items: start;
+    }
+
+    .social-qr-card {
+      text-align: center;
+    }
+
+    .social-qr-link {
+      display: inline-block;
+      line-height: 0;
+    }
+
+    .social-qr-image {
+      width: 128px;
+      max-width: 100%;
+      height: auto;
+      padding: 6px;
+      background: var(--white);
+      border: 1px solid rgba(255,255,255,0.55);
+      border-radius: 10px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+    }
+
+    .social-qr-card h5 {
+      margin: 10px 0 3px;
+      color: var(--white);
+      font-size: 15px;
+    }
+
+    .social-qr-card p {
+      margin: 10px 0 8px;
+      color: rgba(255,255,255,0.86);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .social-qr-card a:not(.social-qr-link) {
+      color: #ffe6c7;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .social-qr-card a:not(.social-qr-link):hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .appointment-note {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.18);
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+    }
+
+    .appointment-note p {
+      margin: 7px 0;
     }
 
     footer {
@@ -555,7 +670,7 @@ font-weight: 400;
     @media (max-width: 900px) {
       .hero-inner,
       .two-col,
-      .contact-box {
+      .contact-grid {
         grid-template-columns: 1fr;
       }
 
@@ -602,13 +717,18 @@ font-weight: 400;
         padding: 24px;
       }
 
-      .linkedin-contact {
-        align-items: flex-start;
+      .contact-row {
+        grid-template-columns: 1fr;
+        gap: 3px;
       }
 
-      .linkedin-qr {
-        width: 116px;
-        height: 116px;
+      .social-qr-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .social-qr-image {
+        width: 150px;
       }
     }
 
@@ -1424,73 +1544,104 @@ button *,
     <section id="contact" class="contact-section">
       <div class="container">
         <div class="contact-box">
-          <div>
+          <div class="contact-heading">
             <h3>Contact | 联系方式</h3>
             <p>
-              Consultations are available by appointment.
+              Contact Ellen &amp; Kay Associates Consulting Ltd. to arrange an appointment.
+              咨询服务需提前预约，欢迎通过电话或电子邮件联系我们。
             </p>
-            <p>
-              咨询服务需提前预约。
-            </p>
+          </div>
 
-            <div class="contact-item">
-              <strong>Email | 邮箱</strong>
-              <span>info@ellenlinrcic.ca</span>
-            </div>
+          <div class="contact-grid">
+            <div class="contact-details">
+              <h4 class="contact-company">Ellen &amp; Kay Associates Consulting Ltd.</h4>
 
-           <a class="button email" href="mailto:info@ellenlinrcic.ca">Email Ellen | 发送邮件</a>
+              <div class="contact-row">
+                <strong>Phone | 电话</strong>
+                <a href="tel:+16042795600">(604) 279-5600</a>
+              </div>
 
-            <div class="contact-item">
-              <strong>Location | 地点</strong>
-              <span>Richmond, British Columbia, Canada<br>加拿大 BC 省 Richmond</span>
-            </div>
+              <div class="contact-row">
+                <strong>Email | 邮箱</strong>
+                <a href="mailto:info@ellenlinrcic.ca">info@ellenlinrcic.ca</a>
+              </div>
 
-            <div class="contact-item">
-              <strong>Languages | 服务语言</strong>
-              <span>English and Mandarin Chinese<br>英文、普通话</span>
-            </div>
+              <div class="contact-row">
+                <strong>Office | 地址</strong>
+                <span>305–4940 No. 3 Road<br>Richmond, BC V6X 3A5<br>Canada</span>
+              </div>
 
-            <div class="linkedin-contact">
-              <a
-                class="linkedin-qr-link"
-                href="https://www.linkedin.com/in/ellenlincanada/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit Ellen Lin on LinkedIn"
-              >
-                <img
-                  class="linkedin-qr"
-                  src="images/ellen-linkedin-qr.png"
-                  alt="LinkedIn QR code for Ellen Lin"
-                  width="132"
-                  height="132"
-                />
-              </a>
-              <div>
-                <strong>LinkedIn</strong>
-                <p>Connect with Ellen on LinkedIn</p>
-                <p>扫描二维码，在 LinkedIn 上关注 Ellen</p>
+              <div class="contact-row">
+                <strong>Languages | 语言</strong>
+                <span>English and Mandarin Chinese<br>英文、普通话</span>
+              </div>
+
+              <div class="contact-actions">
+                <a class="contact-action primary" href="tel:+16042795600">Call Now | 致电</a>
+                <a class="contact-action primary" href="mailto:info@ellenlinrcic.ca">Email Ellen | 发送邮件</a>
                 <a
-                  href="https://www.linkedin.com/in/ellenlincanada/"
+                  class="contact-action map"
+                  href="https://www.google.com/maps/place/Ellen+%26+Kay+Associates+Consulting+Ltd./@49.1777135,-123.1382387,17z/data=!3m2!4b1!5s0x5486753277cfafe9:0x8a2633ffde4c80b5!4m6!3m5!1s0x5486752e6a68bc09:0x3d810b76349e41b6!8m2!3d49.17771!4d-123.1356638!16s%2Fg%2F11c6v5x8rj?entry=ttu&amp;g_ep=EgoyMDI2MDkyMC4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View LinkedIn Profile | 查看 LinkedIn 主页
+                  View on Google Maps | 地图导航
                 </a>
               </div>
             </div>
-          </div>
 
-          <div class="note">
-            <p>
-  Please email <strong>info@ellenlinrcic.ca</strong> with a brief description of your immigration matter,
-  current status, deadline, and the type of assistance you are seeking.
-</p>
-<p>
-  请发送邮件至 <strong>info@ellenlinrcic.ca</strong>，并简要说明您的移民事项、目前身份、
-  重要截止日期，以及希望获得的协助类型。
-</p>
-            
+            <div class="contact-social">
+              <h4>Connect With Ellen | 联系 Ellen</h4>
+              <p>Scan a QR code to connect through LinkedIn or WeChat.</p>
+
+              <div class="social-qr-grid">
+                <div class="social-qr-card">
+                  <a
+                    class="social-qr-link"
+                    href="https://www.linkedin.com/in/ellenlincanada/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit Ellen Lin on LinkedIn"
+                  >
+                    <img
+                      class="social-qr-image"
+                      src="images/ellen-linkedin-qr.png"
+                      alt="LinkedIn QR code for Ellen Lin"
+                      width="128"
+                      height="128"
+                    />
+                  </a>
+                  <h5>LinkedIn</h5>
+                  <p>关注 Ellen 的 LinkedIn</p>
+                  <a
+                    href="https://www.linkedin.com/in/ellenlincanada/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Profile | 查看主页
+                  </a>
+                </div>
+
+                <div class="social-qr-card">
+                  <span class="social-qr-link">
+                    <img
+                      class="social-qr-image"
+                      src="images/ellen-wechat-qr.jpg"
+                      alt="WeChat QR code for Ellen Lin"
+                      width="128"
+                      height="172"
+                    />
+                  </span>
+                  <h5>WeChat | 微信</h5>
+                  <p>扫描二维码添加 Ellen 微信</p>
+                </div>
+              </div>
+
+              <div class="appointment-note">
+                <p>Please include a brief description of your immigration matter, current status, and any important deadline.</p>
+                <p>联系时请简要说明您的移民事项、目前身份及重要截止日期。</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
