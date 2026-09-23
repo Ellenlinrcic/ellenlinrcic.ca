@@ -450,56 +450,6 @@ font-weight: 400;
       margin-top: 12px;
     }
 
-    .why {
-      background: var(--cream);
-    }
-
-    .why-box {
-      background: var(--deep-green);
-      color: var(--white);
-      border-radius: 18px;
-      padding: 40px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 34px;
-      box-shadow: 0 16px 38px rgba(0,0,0,0.12);
-    }
-
-    .why-box h3 {
-      color: var(--white);
-      margin-top: 0;
-      font-size: 30px;
-    }
-
-    .why-box p {
-      color: rgba(255,255,255,0.88);
-    }
-
-    .why-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .why-list li {
-      padding: 11px 0 11px 30px;
-      position: relative;
-      border-bottom: 1px solid rgba(255,255,255,0.12);
-      color: rgba(255,255,255,0.9);
-    }
-
-    .why-list li:last-child {
-      border-bottom: none;
-    }
-
-    .why-list li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: var(--warm-gold);
-      font-weight: bold;
-    }
-
     .contact-section {
       background: var(--soft-cream);
     }
@@ -567,7 +517,6 @@ font-weight: 400;
     @media (max-width: 900px) {
       .hero-inner,
       .two-col,
-      .why-box,
       .contact-box {
         grid-template-columns: 1fr;
       }
@@ -611,7 +560,6 @@ font-weight: 400;
 
       .panel,
       .card,
-      .why-box,
       .contact-box {
         padding: 24px;
       }
@@ -638,7 +586,6 @@ section#updates {
 #about,
 #services,
 #updates,
-#why,
 #contact {
   scroll-margin-top: 100px;
 } 
@@ -666,7 +613,6 @@ button *,
   <a href="#about">About Ellen 关于 Ellen</a>
   <a href="#services">Services 服务</a>
   <a href="#updates">Updates 最新动态</a>
-  <a href="#why">Why Ellen 为什么选择 Ellen</a>
   <a href="#contact">Contact 联系</a>
 </nav>
   </header>
@@ -1428,35 +1374,6 @@ button *,
   </div>
 </section>
     
-    <section id="why" class="why">
-      <div class="container">
-        <div class="why-box">
-          <div>
-            <h3>Why Work With Ellen <br> 为什么选择 Ellen</h3>
-            <p>
-              Every client’s background, objectives, immigration history, timeline, and risk factors
-              are different. Ellen develops a case-specific immigration plan based on the client’s
-              individual circumstances rather than applying the same solution to every case.
-            </p>
-            <p>
-              每位客户的个人背景、申请目标、移民记录、时间安排和风险因素都不相同。
-              Ellen会根据客户的具体情况综合分析，制定个性化移民方案，用全面整体
-              的文件来展示每一份申请。
-            </p>
-          </div>
-
-          <ul class="why-list">
-            <li>Personalized immigration planning | 根据个人背景制定移民方案</li>
-            <li>Clear assessment before filing | 递交前的清晰评估</li>
-            <li>Practical strategy based on real case experience | 基于实际案件经验的务实策略</li>
-            <li>Careful document review and organization | 细致的文件审查与整理</li>
-            <li>Bilingual communication in English and Chinese | 中英文双语沟通</li>
-            <li>Attention to risks, inconsistencies, and refusal concerns | 提前分析风险点、矛盾点及拒签隐患</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <section id="contact" class="contact-section">
       <div class="container">
         <div class="contact-box">
