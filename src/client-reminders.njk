@@ -1,0 +1,406 @@
+---
+permalink: client-reminders.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KCHE6G6R63"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KCHE6G6R63');
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Client Reminders | 申请提醒</title>
+  <meta name="description" content="Client reminders by Jie Ellen Lin, RCIC, covering Canadian immigration application reminders, biometrics, business visitor applications, document submission, deadlines, and status maintenance." />
+
+  <style>
+    :root {
+      --deep-green: #12343b;
+      --green: #2d545e;
+      --warm-gold: #d4a373;
+      --cream: #f8f7f4;
+      --soft-cream: #efe9dc;
+      --text: #1f2933;
+      --muted: #5f6b73;
+      --white: #ffffff;
+      --border: #e4ded4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--deep-green);
+      color: var(--white);
+      padding: 22px 0;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: -0.5px;
+    }
+
+    .brand p {
+      margin: 4px 0 0;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .directory-hero {
+      background: linear-gradient(135deg, var(--deep-green), var(--green));
+      color: var(--white);
+      padding: 76px 0;
+    }
+
+    .directory-hero .category {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .directory-hero h2 {
+      max-width: 900px;
+      margin: 0 0 18px;
+      font-size: clamp(36px, 5vw, 60px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+    }
+
+    .directory-hero p {
+      max-width: 840px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 18px;
+    }
+
+    main {
+      padding: 60px 0 70px;
+      background: var(--soft-cream);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--deep-green);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .article-directory {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 16px;
+    }
+
+    .article-directory li {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(18, 52, 59, 0.07);
+      padding: 24px 28px;
+    }
+
+    .title-zh {
+      display: block;
+      font-size: 23px;
+      font-weight: 800;
+      line-height: 1.35;
+      color: var(--deep-green);
+    }
+
+    .title-en {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .article-note {
+      display: block;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--deep-green);
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    footer {
+      background: var(--deep-green);
+      color: rgba(255, 255, 255, 0.78);
+      padding: 26px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .directory-hero {
+        padding: 56px 0;
+      }
+
+      .title-zh {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Jie “Ellen” Lin, RCIC</h1>
+        <p>Canadian Immigration Consultant | 加拿大持牌移民顾问</p>
+      </div>
+
+      <nav>
+        <a href="index.html">Home 首页</a>
+        <a href="index.html#services">Services 服务</a>
+        <a href="updates.html">Updates 最新动态</a>
+        <a href="index.html#contact">Contact 联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="directory-hero">
+    <div class="container">
+      <div class="category">重要申请提示 | Application Insights</div>
+<h2>重要申请提示<br>Application Insights</h2>
+      <p>
+        Practical insights into visa and immigration programs, helping applicants understand their applications and commonly overlooked issues.
+      </p>
+      <p>
+        本栏目分析不同签证及移民项目的特点、适用人群及申请重点，并提醒容易被忽略的重要事项。
+      </p>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+      <a class="back-link" href="updates.html">← Back to Immigration Updates | 返回移民最新动态</a>
+
+      <ul class="article-directory">
+{% for post in collections.articles | reverse %}{% if post.data.category == "client-reminders" %}
+<li><span class="title-zh">{{ post.data.title | escape }}</span>
+{% if post.data.titleEn %}<span class="title-en">{{ post.data.titleEn | escape }}</span>{% endif %}
+<span class="article-note">{{ post.data.description | escape }}</span>
+<a class="read-more" href="{{ post.url }}">阅读全文 →</a></li>
+{% endif %}{% endfor %}
+<li>
+
+  <span class="title-zh">
+    加拿大签证 Biometrics 是什么？录过指纹还需要再录吗？
+  </span>
+
+  <span class="article-note">
+    加拿大签证、学签、工签或永久居民申请是否需要录指纹？
+    了解 Biometrics 的10年有效期、PR申请规则，
+    以及收到 BIL 后需要注意的事项。
+  </span>
+
+  <a
+    class="read-more"
+    href="articles/20260913-canada-biometrics-fingerprints-validity.html"
+  >
+    阅读全文 →
+  </a>
+
+</li>        
+        <li>
+
+  <span class="title-zh">
+    学签被拒后怎么办？重新申请还是申请复议？
+  </span>
+
+  <span class="article-note">
+    学签拒签后，不一定应该立即重新申请。
+    先分析原申请的问题及拒签决定，
+    再判断更适合重新申请、Reconsideration，
+    还是需要考虑其他处理方式。
+  </span>
+
+  <a
+    class="read-more"
+    href="articles/study-permit-refused-reapply-or-reconsideration.html"
+  >
+    阅读全文 →
+  </a>
+
+</li>
+<li>
+  <span class="title-zh">
+    加拿大留学资金证明要求更新：9月1日起生活费提高，银行流水要求更明确
+  </span>
+
+  <span class="article-note">
+    2026年9月1日起，Study Permit生活费标准提高，
+    IRCC同时进一步明确过去6个月银行流水及资金来源证明要求。
+  </span>
+
+  <a
+    class="read-more"
+    href="articles/study-permit-fund-requirements-september-2026.html"
+  >
+    阅读全文 →
+  </a>
+</li>        
+        <li>
+  <span class="title-zh">
+    他们为什么以为自己可以申请毕业工签？
+  </span>
+
+  <span class="article-note">
+    从卡尔加里国际学生绝食事件，
+    看加拿大留学规划中的信息风险，
+    以及申请人为什么必须核实具体课程的PGWP资格。
+  </span>
+
+  <a
+    class="read-more"
+    href="articles/why-students-believed-pgwp-eligible.html"
+  >
+    阅读全文 →
+  </a>
+</li>
+        <li>
+  <span class="title-zh">
+    没有给解释机会就拒签？联邦法院裁定移民局有些情况下可能违反程序公正
+  </span>
+
+  <span class="article-note">
+    结合联邦法院 Akaya v. Canada (2026 FC 546) 一案，分析材料不足与真实性疑虑的区别，以及在何种情况下程序公正可能要求给予申请人回应机会。
+  </span>
+
+  <a
+    class="read-more"
+    href="articles/study-permit-procedural-fairness-akaya-2026.html"
+  >
+    阅读全文 →
+  </a>
+</li>
+<li>
+  <span class="title-zh">加拿大欢迎技工移民，哪些职业真正有机会？</span>
+  <span class="title-en">Canada Welcomes Skilled Trades Workers, but Not All Trades Have the Same Opportunities</span>
+  <span class="article-note">
+    加拿大正在加强对技工人才的吸引，但不同Trades职业的移民机会并不相同。本文分析25个相关职业的初步机会、类别要求及申请人需要重点核对的条件。
+  </span>
+  <a class="read-more" href="articles/skilled-trades-immigration-opportunities.html">阅读全文 →</a>
+</li>
+        <li>
+  <span class="title-zh">Skilled Trades 抽签再次出现：技工类申请人真的迎来机会了吗？</span>
+  <span class="title-en">Skilled Trades Draws Are Back: Does This Mean More Opportunities for Trade Workers?</span>
+  <span class="article-note">
+    提醒技工类申请人：Trades 抽签并不代表所有蓝领、技术工种或体力工作都符合条件。申请前应先核对 NOC、Express Entry 入池资格、CRS 分数、语言成绩和雇主支持路径。
+  </span>
+  <a class="read-more" href="articles/skilled-trades-draw-opportunity.html">阅读全文 →</a>
+</li>        
+<li>
+  <span class="title-zh">Express Entry 是否应该尽早入池？</span>
+  <span class="title-en">Should You Create an Express Entry Profile Early?</span>
+  <span class="article-note">
+    说明 Express Entry 入池时间、同分筛选规则、profile 一年有效期，以及哪些申请人适合尽早入池，哪些申请人应先完成整体规划。
+  </span>
+  <a class="read-more" href="articles/express-entry-enter-pool-early.html">阅读全文 →</a>
+</li>        
+        <li>
+          <span class="title-zh">商务访问签证（Business Visitor）申请须知</span>
+          <span class="title-en">Business Visitor Visa Application Reminder</span>
+          <span class="article-note">
+            说明来加拿大参加商务会议、拜访客户、参加展会或进行商务洽谈时，如何判断是否符合 Business Visitor 的定义，以及需要准备哪些支持文件。
+          </span>
+          <a class="read-more" href="articles/business-visitor-visa.html">阅读全文 →</a>
+        </li>
+
+        <li>
+          <span class="title-zh">生物信息采集并不总是“一次完成，十年有效”</span>
+          <span class="title-en">Biometrics Are Not Always “Once and Done”</span>
+          <span class="article-note">
+            提醒申请人注意，不同申请类别对 biometrics 的要求可能不同，临时居民和永久居民申请中的生物信息规则并不完全一样。
+          </span>
+          <a class="read-more" href="articles/biometrics-not-always-once-and-done.html">阅读全文 →</a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Jie “Ellen” Lin, RCIC. All rights reserved.
+  </footer>
+</body>
+</html>
