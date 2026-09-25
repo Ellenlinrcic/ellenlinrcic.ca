@@ -313,6 +313,7 @@
 
 {% include "header.njk" %}
 
+{% if not cardHeader %}
 <section class="article-hero">
   <div class="container">
     <a class="category" href="../{{ category }}.html">
@@ -334,11 +335,18 @@
     </div>
   </div>
 </section>
+{% endif %}
 
 <main>
   <div class="container article-layout">
 
     <article class="article-card">
+{% if cardHeader %}
+      <div class="article-meta">{{ categoryLabel | escape }}</div>
+      <h1>{{ title | escape }}</h1>
+      <p>{{ titleEn | escape }}</p>
+      <p>{{ date | displayDate }} | 发布日期：{{ date | dateISO }}</p>
+{% endif %}
 {{ content | safe }}
 </article>
 
