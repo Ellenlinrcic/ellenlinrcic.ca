@@ -11,8 +11,8 @@ subtitle: "孩子学签、父母Visitor Record与家庭后续身份安排"
 sidebarTitle: "家庭成员身份即将到期？"
 sidebarText1: "孩子的学签与父母的访客身份需要分别评估，不能因为家庭成员未来计划申请新的身份文件，就忽略当前的到期日。"
 sidebarText2: "可根据录取进度、现有身份、家庭安排及计划停留时间，分别制定续期或下一阶段申请方案。"
-contactHref: "../consultation.html?service=Temporary%20Resident%20Status"
-contactLabel: "联系 Ellen | Contact Ellen"
+contactHref: "../#contact"
+contactLabel: "Contact Ellen | 联系 Ellen"
 tags: articles
 ---
 
