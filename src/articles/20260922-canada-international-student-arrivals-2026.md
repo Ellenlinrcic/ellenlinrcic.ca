@@ -18,7 +18,13 @@ tags: articles
 
 <a class="back-link" href="../policy-updates.html">← 返回政策更新 | Back to Policy Insights</a>
 
-<a class="language-jump" href="#english-version">Read in English ↓</a>
+<a class="language-jump" href="#english-version">Read in English</a>
+
+<img
+  class="hero-image"
+  src="../images/international-students-canada-2026.jpg"
+  alt="International students studying on a Canadian university campus"
+/>
 
 加拿大的国际学生政策正在发生明显变化。根据加拿大移民、难民及公民部（IRCC）公布的[学生入境数据](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/reports-statistics/statistics-open-data/immigration-stats/students-workers.html)，2026年1月至7月，约28,200名新国际学生抵达加拿大，比2024年同期减少80%，少了约113,830人。
 
