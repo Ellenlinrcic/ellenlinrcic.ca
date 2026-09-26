@@ -4,6 +4,7 @@ permalink: articles/20260922-canada-international-student-arrivals-2026.html
 title: "加拿大国际学生入境人数下降80%：留学大门真的关了吗？"
 titleEn: "Canada’s International Student Arrivals Fell 80%: Is the Door to Studying in Canada Closing?"
 date: 2026-09-22
+cardHeader: true
 category: policy-updates
 categoryLabel: "Policy Updates | 返回政策更新"
 description: "IRCC数据显示，2026年1月至7月新国际学生入境人数约28,200人，比2024年同期减少80%。解读学签目标与研究生PAL/TAL豁免。"
