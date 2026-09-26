@@ -17,7 +17,7 @@ contactLabel: "预约学签评估 | Book a Study Permit Assessment"
 tags: articles
 ---
 
-<a class="back-link" href="../policy-updates.html">← 返回政策更新 | Back to Policy Insights</a>
+<a class="back-link" href="../policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
 <div class="article-meta">STUDY PERMIT | INTERNATIONAL STUDENTS</div>
 
 # 加拿大国际学生入境人数下降80%：留学大门真的关了吗？
