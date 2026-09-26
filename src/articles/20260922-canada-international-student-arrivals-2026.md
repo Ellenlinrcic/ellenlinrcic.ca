@@ -4,7 +4,7 @@ permalink: articles/20260922-canada-international-student-arrivals-2026.html
 title: "加拿大国际学生入境人数下降80%：留学大门真的关了吗？"
 titleEn: "Canada’s International Student Arrivals Fell 80%: Is the Door to Studying in Canada Closing?"
 date: 2026-09-22
-cardHeader: true
+
 category: policy-updates
 categoryLabel: "Policy Updates | 返回政策更新"
 description: "IRCC数据显示，2026年1月至7月新国际学生入境人数约28,200人，比2024年同期减少80%。解读学签目标与研究生PAL/TAL豁免。"
@@ -13,11 +13,16 @@ sidebarTitle: "计划赴加拿大留学？"
 sidebarText1: "学校、课程、资金证明及学习计划都需要结合个人背景准备。"
 sidebarText2: "申请前应核对当前学签、PAL/TAL及毕业工签要求。"
 contactHref: "../consultation.html?service=Study%20Permit"
-contactLabel: "咨询 Ellen | Contact Ellen"
+contactLabel: "预约学签评估 | Book a Study Permit Assessment"
 tags: articles
 ---
 
 <a class="back-link" href="../policy-updates.html">← 返回政策更新 | Back to Policy Insights</a>
+<div class="article-meta">STUDY PERMIT | INTERNATIONAL STUDENTS</div>
+
+# 加拿大国际学生入境人数下降80%：留学大门真的关了吗？
+
+<p><strong>Canada’s International Student Arrivals Fell 80%: Is the Door to Studying in Canada Closing?</strong></p>
 
 <a class="language-jump" href="#english-version">Read in English</a>
 
@@ -73,4 +78,4 @@ Policies have changed, but opportunities remain. Careful early planning should a
 
 </section>
 
-<p>This article is for general information only and does not replace an assessment of an individual application. 本文仅供一般信息参考，具体申请应根据个人情况评估。</p>
+<p>This article is for general information only and does not replace an assessment of an individual application. </p>
