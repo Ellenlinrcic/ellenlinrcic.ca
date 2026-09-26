@@ -16,7 +16,7 @@ contactLabel: 预约LMIA评估 | Book an Assessment
 tags: articles
 ---
 
-<a class="back-link" href="../policy-updates.html">← 返回政策更新 | Back to Policy Updates</a>
+<a class="back-link" href="../policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
 
 <div class="article-meta">LMIA | Temporary Foreign Worker Program</div>
 
