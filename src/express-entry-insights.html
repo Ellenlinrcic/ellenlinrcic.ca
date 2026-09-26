@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KCHE6G6R63"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KCHE6G6R63');
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Express Entry Insights | 联邦快速通道最新动态</title>
+
+  <meta
+    name="description"
+    content="Express Entry insights by Jie Ellen Lin, RCIC, covering CEC draws, category-based selection, French-language draws, CRS trends, skilled immigration pathways, and application strategy."
+  />
+
+  <link
+    rel="canonical"
+    href="https://ellenlinrcic.ca/express-entry-insights.html"
+  />
+
+  <style>
+    :root {
+      --deep-green: #12343b;
+      --green: #2d545e;
+      --warm-gold: #d4a373;
+      --cream: #f8f7f4;
+      --soft-cream: #efe9dc;
+      --text: #1f2933;
+      --muted: #5f6b73;
+      --white: #ffffff;
+      --border: #e4ded4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--deep-green);
+      color: var(--white);
+      padding: 22px 0;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: -0.5px;
+    }
+
+    .brand p {
+      margin: 4px 0 0;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .directory-hero {
+      background: linear-gradient(135deg, var(--deep-green), var(--green));
+      color: var(--white);
+      padding: 76px 0;
+    }
+
+    .directory-hero .category {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .directory-hero h2 {
+      max-width: 900px;
+      margin: 0 0 18px;
+      font-size: clamp(36px, 5vw, 60px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+    }
+
+    .directory-hero p {
+      max-width: 840px;
+      margin: 0 0 10px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 18px;
+    }
+
+    main {
+      padding: 60px 0 70px;
+      background: var(--soft-cream);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--deep-green);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .article-directory {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 16px;
+    }
+
+    .article-directory li {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(18, 52, 59, 0.07);
+      padding: 24px 28px;
+    }
+
+    .title-zh {
+      display: block;
+      font-size: 23px;
+      font-weight: 800;
+      line-height: 1.35;
+      color: var(--deep-green);
+    }
+
+    .title-en {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .article-note {
+      display: block;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--deep-green);
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: var(--soft-cream);
+      color: var(--deep-green);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    footer {
+      background: var(--deep-green);
+      color: rgba(255, 255, 255, 0.78);
+      padding: 26px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .directory-hero {
+        padding: 56px 0;
+      }
+
+      .title-zh {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container header-inner">
+
+      <div class="brand">
+        <h1>Jie “Ellen” Lin, RCIC</h1>
+        <p>Canadian Immigration Consultant | 加拿大持牌移民顾问</p>
+      </div>
+
+      <nav>
+        <a href="index.html">Home 首页</a>
+        <a href="index.html#services">Services 服务</a>
+        <a href="updates.html">Updates 最新动态</a>
+        <a href="index.html#contact">Contact 联系</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <section class="directory-hero">
+    <div class="container">
+
+      <div class="category">
+        Express Entry Insights | 联邦快速通道最新动态
+      </div>
+
+      <h2>
+        Express Entry Insights<br>
+        联邦快速通道最新动态
+      </h2>
+
+      <p>
+        Practical analysis of Express Entry invitation rounds,
+        CRS trends, Canadian Experience Class, category-based selection,
+        French-language draws, and federal economic immigration strategy.
+      </p>
+
+      <p>
+        本栏目汇总加拿大 Express Entry 联邦快速通道相关的抽选动态、
+        CRS 分数变化、加拿大经验类、类别定向抽选、法语类别及
+        联邦经济类移民申请分析。
+      </p>
+
+    </div>
+  </section>
+
+
+  <main>
+    <div class="container">
+
+      <a
+        class="back-link"
+        href="express-entry.html"
+      >
+        ← Back to Express Entry | 返回联邦快速通道
+      </a>
+
+<ul class="article-directory">
+
+  <!-- 2026-08-19 -->
+
+<li>
+  <span class="title-zh">
+    法语类别发出5,000份邀请，最低仅382分
+  </span>
+
+  <span class="title-en">
+    French-Language Draw Invites 5,000 Candidates
+    With a CRS Cut-Off of 382
+  </span>
+
+  <span class="article-note">
+    2026年8月19日，Express Entry法语能力类别发出5,000份永久居民申请邀请，
+    最低CRS分数仅382分；前一天CEC抽签最低分数为523分。
+    两轮相差141分，显示类别定向抽选对申请机会的重要影响。
+  </span>
+
+  <a
+    class="read-more"
+    href="articles/20260819-express-entry-french-language-draw.html"
+  >
+    Read Article | 阅读全文 →
+  </a>
+</li>
+  <!-- 2026-07-18 -->
+
+  <li>
+    <span class="title-zh">
+      加拿大欢迎技工移民，哪些职业真正有机会？
+    </span>
+
+    <span class="title-en">
+      Canada Welcomes Skilled Trades Workers, but Not All Trades Have the Same Opportunities
+    </span>
+
+    <span class="article-note">
+      加拿大正在加强对技工人才的吸引，但不同 Trades 职业的移民机会并不相同。
+      本文分析25个相关职业的初步机会、类别要求及申请人需要重点核对的条件。
+    </span>
+
+    <a
+      class="read-more"
+      href="articles/skilled-trades-immigration-opportunities.html"
+    >
+      Read Article | 阅读全文 →
+    </a>
+  </li>
+
+
+  <!-- 2026-07-10 -->
+
+  <li>
+    <span class="title-zh">
+      高级管理人员类别分数降至392分：
+      加拿大正在优先保留哪些人才？
+    </span>
+
+    <span class="title-en">
+      Senior Manager Category CRS Drops to 392:
+      What Kind of Talent Is Canada Prioritizing?
+    </span>
+
+    <span class="article-note">
+      2026年7月10日，Express Entry高级管理人员类别发出500份邀请，
+      最低CRS分数降至392分。本文分析这一类别的适用范围，
+      以及加拿大为何正在优先保留具备本地高级管理经验的人才。
+    </span>
+
+    <a
+      class="read-more"
+      href="articles/senior-manager-draw-20260710.html"
+    >
+      Read Article | 阅读全文 →
+    </a>
+  </li>
+
+
+  <!-- 2026-07-09 -->
+
+  <li>
+    <span class="title-zh">
+      同周相差97分：
+      法语类别抽签一次发出5,000份邀请
+    </span>
+
+    <span class="title-en">
+      A 97-Point Gap in the Same Week:
+      French-Language Draw Issues 5,000 Invitations
+    </span>
+
+    <span class="article-note">
+      2026年7月9日，IRCC进行法语能力类别 Express Entry 抽签，
+      发出5,000份邀请，最低CRS分数为420分，
+      与同周CEC抽签相差97分。
+    </span>
+
+    <a
+      class="read-more"
+      href="articles/french-language-draw-july-9-2026.html"
+    >
+      Read Article | 阅读全文 →
+    </a>
+  </li>
+
+
+  <!-- 2026-07-09 -->
+
+  <li>
+    <span class="title-zh">
+      Skilled Trades 抽签再次出现：
+      技工类申请人真的迎来机会了吗？
+    </span>
+
+    <span class="title-en">
+      Skilled Trades Draws Are Back:
+      Does This Mean More Opportunities for Trade Workers?
+    </span>
+
+    <span class="article-note">
+      提醒技工类申请人：Trades 抽签并不代表所有蓝领、
+      技术工种或体力工作都符合条件。
+      申请前应先核对 NOC、Express Entry 入池资格、
+      CRS 分数、语言成绩和雇主支持路径。
+    </span>
+
+    <a
+      class="read-more"
+      href="articles/skilled-trades-draw-opportunity.html"
+    >
+      Read Article | 阅读全文 →
+    </a>
+  </li>
+
+
+  <!-- 2026-07-07 -->
+
+  <li>
+    <span class="title-zh">
+      EE继续定向境内申请人：
+      2026年7月7日 CEC 抽签517分
+    </span>
+
+    <span class="title-en">
+      Express Entry CEC Draw:
+      CRS 517 and 2,000 Invitations
+    </span>
+
+    <span class="article-note">
+      2026年7月7日，IRCC针对 CEC 候选人发出2,000份邀请，
+      最低CRS分数为517分。
+      本文分析本轮抽签对境内申请人、
+      工签持有人和PGWP持有人的意义。
+    </span>
+
+    <a
+      class="read-more"
+      href="articles/express-entry-cec-draw-20260707.html"
+    >
+      Read Article | 阅读全文 →
+    </a>
+  </li>
+
+
+  <!-- 2026-07-07 -->
+
+  <li>
+    <span class="title-zh">
+      Express Entry 是否应该尽早入池？
+    </span>
+
+    <span class="title-en">
+      Should You Create an Express Entry Profile Early?
+    </span>
+
+    <span class="article-note">
+      说明 Express Entry 入池时间、同分筛选规则、
+      profile 一年有效期，以及哪些申请人适合尽早入池，
+      哪些申请人应先完成整体规划。
+    </span>
+
+    <a
+      class="read-more"
+      href="articles/express-entry-enter-pool-early.html"
+    >
+      Read Article | 阅读全文 →
+    </a>
+  </li>
+
+</ul>
+    </div>
+  </main>
+
+
+  <footer>
+    © 2026 Jie “Ellen” Lin, RCIC. All rights reserved.
+  </footer>
+
+</body>
+</html>

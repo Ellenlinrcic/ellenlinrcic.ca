@@ -1,0 +1,18 @@
+{
+  "name": "ellenlinrcic-static-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('_site',{recursive:true,force:true})\" && eleventy",
+    "dev": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.6"
+  },
+  "private": true
+}
