@@ -289,6 +289,11 @@
       font-size: 14px;
     }
 
+    .contact-button-line {
+      display: block;
+      white-space: nowrap;
+    }
+
     footer {
       background: var(--deep-green);
       color: rgba(255,255,255,.78);
@@ -366,7 +371,9 @@
         class="contact-button"
         href="{{ contactHref | escape }}"
       >
-        {{ contactLabel | escape }}
+        {% for labelLine in (contactLabel or '').split('|') %}
+        <span class="contact-button-line">{{ labelLine | trim | escape }}</span>
+        {% endfor %}
       </a>
 
     </aside>
