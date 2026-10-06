@@ -608,6 +608,30 @@ font-weight: 400;
       box-shadow: 0 10px 24px rgba(0,0,0,0.2);
     }
 
+    .wechat-qr-card { grid-column: 2; }
+
+    .whatsapp-qr-window {
+      position: relative;
+      display: inline-block;
+      width: 128px;
+      max-width: 100%;
+      aspect-ratio: 1;
+      overflow: hidden;
+      border: 6px solid var(--white);
+      border-radius: 10px;
+      background: var(--white);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+    }
+
+    .whatsapp-qr-window img {
+      position: absolute;
+      width: 203.28%;
+      max-width: none;
+      height: auto;
+      left: -51.72%;
+      top: -175.86%;
+    }
+
     .social-qr-card h5 {
       margin: 10px 0 3px;
       color: var(--white);
@@ -730,7 +754,10 @@ font-weight: 400;
         gap: 24px;
       }
 
-      .social-qr-image {
+      .wechat-qr-card { grid-column: auto; }
+
+      .social-qr-image,
+      .whatsapp-qr-window {
         width: 150px;
       }
     }
@@ -1599,7 +1626,7 @@ button *,
 
             <div class="contact-social">
               <h4>Connect With Ellen | 联系 Ellen</h4>
-              <p>Scan a QR code to connect through LinkedIn or WeChat.</p>
+              <p>Scan a QR code to connect through LinkedIn, WeChat or WhatsApp.</p>
 
               <div class="social-qr-grid">
                 <div class="social-qr-card">
@@ -1630,6 +1657,15 @@ button *,
                 </div>
 
                 <div class="social-qr-card">
+                  <a class="social-qr-link whatsapp-qr-window" href="images/ellen-whatsapp-qr.jpeg" target="_blank" rel="noopener noreferrer" aria-label="View full WhatsApp QR code | 查看完整WhatsApp二维码">
+                    <img src="images/ellen-whatsapp-qr.jpeg" alt="WhatsApp Business QR code for Ellen &amp; Kay Associates Consulting Ltd." width="1179" height="2556" />
+                  </a>
+                  <h5>WhatsApp</h5>
+                  <p>扫描二维码联系 Ellen<br>Scan to chat on WhatsApp</p>
+                  <a href="images/ellen-whatsapp-qr.jpeg" target="_blank" rel="noopener noreferrer">查看完整二维码 | View QR Code</a>
+                </div>
+
+                <div class="social-qr-card wechat-qr-card">
                   <span class="social-qr-link">
                     <img
                       class="social-qr-image"
