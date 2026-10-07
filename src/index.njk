@@ -610,7 +610,8 @@ font-weight: 400;
 
     .wechat-qr-card { grid-column: 2; }
 
-    .whatsapp-qr-window {
+    .whatsapp-qr-window,
+    .wecom-qr-window {
       position: relative;
       display: inline-block;
       width: 128px;
@@ -630,6 +631,15 @@ font-weight: 400;
       height: auto;
       left: -51.72%;
       top: -175.86%;
+    }
+
+    .wecom-qr-window img {
+      position: absolute;
+      width: 247.37%;
+      max-width: none;
+      height: auto;
+      left: -73.68%;
+      top: -151.32%;
     }
 
     .social-qr-card h5 {
@@ -757,7 +767,8 @@ font-weight: 400;
       .wechat-qr-card { grid-column: auto; }
 
       .social-qr-image,
-      .whatsapp-qr-window {
+      .whatsapp-qr-window,
+      .wecom-qr-window {
         width: 150px;
       }
     }
@@ -1626,7 +1637,7 @@ button *,
 
             <div class="contact-social">
               <h4>Connect With Ellen | 联系 Ellen</h4>
-              <p>Scan a QR code to connect through LinkedIn, WeChat or WhatsApp.</p>
+              <p>Scan a QR code to connect through LinkedIn, WhatsApp or WeCom (WeChat).</p>
 
               <div class="social-qr-grid">
                 <div class="social-qr-card">
@@ -1666,17 +1677,12 @@ button *,
                 </div>
 
                 <div class="social-qr-card wechat-qr-card">
-                  <span class="social-qr-link">
-                    <img
-                      class="social-qr-image"
-                      src="images/ellen-wechat-qr.png"
-                      alt="WeChat QR code for Ellen Lin"
-                      width="128"
-                      height="172"
-                    />
-                  </span>
-                  <h5>WeChat | 微信</h5>
-                  <p>扫描二维码添加 Ellen 微信</p>
+                  <a class="social-qr-link wecom-qr-window" href="images/ellen-wecom-card-20261006.png" target="_blank" rel="noopener noreferrer" aria-label="View Ellen's WeCom contact card | 查看Ellen企业微信名片">
+                    <img src="images/ellen-wecom-card-20261006.png" alt="Ellen 企业微信 WeCom 二维码" width="940" height="1080" />
+                  </a>
+                  <h5>WeCom | 企业微信</h5>
+                  <p>使用微信扫码添加 Ellen<br>Scan with WeChat to connect</p>
+                  <a href="images/ellen-wecom-card-20261006.png" target="_blank" rel="noopener noreferrer">查看完整名片 | View Contact Card</a>
                 </div>
               </div>
 
