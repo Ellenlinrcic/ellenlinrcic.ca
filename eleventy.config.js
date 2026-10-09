@@ -16,6 +16,13 @@ export default function(eleventyConfig) {
   eleventyConfig.addFilter('displayDate', value =>
     'Published on ' + new Intl.DateTimeFormat('en-CA', {timeZone:'UTC',year:'numeric',month:'long',day:'numeric'}).format(new Date(value)));
   eleventyConfig.addFilter('trimLeadingSlash', value => value.replace(/^\//,''));
+  // Match Cloudflare Pages' permanent HTML-to-clean-URL redirects.
+  eleventyConfig.addFilter('canonicalUrl', value => {
+    const pathname = '/' + value.replace(/^\/+/, '');
+    return 'https://ellenlinrcic.ca' + pathname
+      .replace(/\/index\.html$/, '/')
+      .replace(/\.html$/, '');
+  });
   return {
     dir: { input: 'src', includes: '_includes', output: '_site' },
     templateFormats: ['md','njk'],
