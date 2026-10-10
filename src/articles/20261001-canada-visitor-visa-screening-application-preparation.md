@@ -11,12 +11,12 @@ subtitle: "对申请人而言，关键是材料能否形成一个可信、连贯
 sidebarTitle: "准备申请加拿大访客签证？"
 sidebarText1: "一份有说服力的申请应该让签证官看得清楚：申请人为什么来、费用如何承担，以及为什么会按时离开。"
 sidebarText2: "如需评估申请材料或以往拒签问题，可预约咨询。"
-contactHref: "../consultation.html?service=Visitor%20Visa"
+contactHref: "/consultation.html?service=Visitor%20Visa"
 contactLabel: "预约咨询 | Book a Consultation"
 tags: "articles"
 ---
 
-<a class="back-link" href="../client-reminders.html">← 返回重要申请提示 | Back to Application Insights</a>
+<a class="back-link" href="/client-reminders.html">← 返回重要申请提示 | Back to Application Insights</a>
 
 <div class="article-meta">VISITOR VISA | APPLICATION PREPARATION</div>
 
@@ -48,7 +48,7 @@ IRCC公布的《2026年副部长交接资料》明确提到，近年来采取的
 
 一份有说服力的申请应该让签证官看得清楚：申请人为什么来、费用如何承担，以及为什么会按时离开。
 
-<a class="back-link" href="../client-reminders.html">← 返回重要申请提示 | Back to Application Insights</a>
+<a class="back-link" href="/client-reminders.html">← 返回重要申请提示 | Back to Application Insights</a>
 
 <div class="english-section" id="english-version">
 <h2>Canada Has Tightened Visitor Visa Screening: How Should Applicants Prepare?</h2>
@@ -65,5 +65,5 @@ IRCC公布的《2026年副部长交接资料》明确提到，近年来采取的
 <p>These are practical preparation suggestions, rather than a new document checklist introduced by the briefing.</p>
 <p>For applicants with a previous refusal, an especially important question is: Does the new application meaningfully address the concerns behind the earlier refusal? Increasing the bank balance or resubmitting the same documents may leave those concerns unresolved.</p>
 <p>A persuasive application should clearly explain why you are visiting, how the trip will be funded, and why you will leave on time.</p>
-<a class="back-link" href="../client-reminders.html">← 返回重要申请提示 | Back to Application Insights</a>
+<a class="back-link" href="/client-reminders.html">← 返回重要申请提示 | Back to Application Insights</a>
 </div>

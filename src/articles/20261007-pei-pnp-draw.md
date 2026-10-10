@@ -10,12 +10,12 @@ description: "2026年10月7日，爱德华王子岛省（PEI）进行了新一�
 sidebarTitle: "计划申请PEI省提名？"
 sidebarText1: "结合职业、雇主支持及工作经验，评估申请条件。"
 sidebarText2: "Ellen & Kay Associates Consulting Ltd. provides professional immigration assessments and personalized immigration strategies."
-contactHref: "../consultation.html?service=PEI%20PNP%20Assessment"
+contactHref: "/consultation.html?service=PEI%20PNP%20Assessment"
 contactLabel: "预约PEI省提名评估 | Book an Assessment"
 tags: "articles"
 ---
 
-<a class="back-link" href="../provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
+<a class="back-link" href="/provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
 
 <div class="article-meta">PEI PNP | Provincial Immigration</div>
 
@@ -23,7 +23,7 @@ tags: "articles"
 
 <a class="language-jump" href="#english-version">Read in English</a>
 
-<img class="hero-image" src="../images/PEIPNP_Draw_Reusable.jpg" alt="Prince Edward Island PEI Provincial Nominee Program">
+<img class="hero-image" src="/images/PEIPNP_Draw_Reusable.jpg" alt="Prince Edward Island PEI Provincial Nominee Program">
 
 <p>2026年10月7日，爱德华王子岛省（PEI）进行了新一轮省提名EOI抽选，共发出90份邀请。</p>
 
@@ -57,7 +57,7 @@ tags: "articles"
 
 <p>对于计划通过PEI省提名取得加拿大永久居民身份的申请人，建议提前联系我们评估职业及申请条件，制定适合自己的移民方案。</p>
 
-<a class="back-link" href="../provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
+<a class="back-link" href="/provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
 
 <div class="english-section" id="english-version">
 
@@ -106,6 +106,6 @@ Website: www.ellenlinrcic.ca</p>
 
 <p>Official Source: Government of Prince Edward Island – Office of Immigration</p>
 
-<a class="back-link" href="../provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
+<a class="back-link" href="/provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
 
 </div>

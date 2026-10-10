@@ -11,7 +11,7 @@ subtitle: "小批量选择，申请人应关注什么？"
 sidebarTitle: "准备申请纽芬兰与拉布拉多省移民？"
 sidebarText1: "结合职业、雇主及个人背景，评估适合的申请路径。"
 sidebarText2: "如果你已获得当地工作机会，或正在考虑通过纽芬兰与拉布拉多省申请移民，欢迎联系 Ellen & Kay Associates Consulting。我们可以结合你的职业、雇主及个人背景，评估适合的申请路径，并协助准备EOI与后续材料。"
-contactHref: "../consultation.html?service=NLPNP%20Assessment"
+contactHref: "/consultation.html?service=NLPNP%20Assessment"
 contactLabel: "预约NLPNP资格评估 | Book an Assessment"
 tags: "articles"
 ---
@@ -44,7 +44,7 @@ tags: "articles"
 @media(max-width:640px){ .nlpnp-data-table {font-size:14px;} .nlpnp-data-table th,.nlpnp-data-table td{padding:10px;} }
 </style>
 
-<a class="back-link" href="../provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
+<a class="back-link" href="/provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
 
 <div class="article-meta">NLPNP | Provincial Immigration</div>
 
@@ -52,7 +52,7 @@ tags: "articles"
 
 <a class="language-jump" href="#english-version">Read in English</a>
 
-<img class="hero-image" src="../images/NewfoundlandPNP_Draw_Reusable.jpg" alt="Newfoundland and Labrador Provincial Nominee Program">
+<img class="hero-image" src="/images/NewfoundlandPNP_Draw_Reusable.jpg" alt="Newfoundland and Labrador Provincial Nominee Program">
 
 <p>2026年9月25日，纽芬兰与拉布拉多省发出 41份省提名计划（NLPNP）申请邀请，本轮没有大西洋移民计划（AIP）邀请。这是该省9月份的第四轮邀请。</p>
 
@@ -78,7 +78,7 @@ tags: "articles"
 
 <p>官方来源：<a href="https://www.gov.nl.ca/immigration/invitations-to-apply-updates/">邀请记录</a> · <a href="https://www.gov.nl.ca/immigration/expression-of-interest-model-prioritization-criteria/">EOI优先考虑因素</a></p>
 
-<a class="back-link" href="../provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
+<a class="back-link" href="/provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
 
 <div class="english-section" id="english-version">
 
@@ -108,6 +108,6 @@ tags: "articles"
 
 <p>Official sources: <a href="https://www.gov.nl.ca/immigration/invitations-to-apply-updates/">Invitation results</a> · <a href="https://www.gov.nl.ca/immigration/expression-of-interest-model-prioritization-criteria/">EOI prioritization criteria</a></p>
 
-<a class="back-link" href="../provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
+<a class="back-link" href="/provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
 
 </div>

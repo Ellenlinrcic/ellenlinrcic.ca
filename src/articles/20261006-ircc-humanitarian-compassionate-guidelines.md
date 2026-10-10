@@ -10,12 +10,12 @@ description: "2026年10月6日，加拿大移民局（IRCC）更新了人道主�
 sidebarTitle: "需要评估H&C申请或拒签后的方案？"
 sidebarText1: "结合个人情况、申请记录和现有证据，评估下一步申请方案。"
 sidebarText2: "If you are considering an H&C application or facing complications with family sponsorship, a professional assessment can help identify your available options and potential risks."
-contactHref: "../consultation.html?service=H%26C%20Assessment"
+contactHref: "/consultation.html?service=H%26C%20Assessment"
 contactLabel: "预约个案评估 | Book an Assessment"
 tags: "articles"
 ---
 
-<a class="back-link" href="../policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
+<a class="back-link" href="/policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
 
 <div class="article-meta">HUMANITARIAN &amp; COMPASSIONATE | 政策观察</div>
 
@@ -23,7 +23,7 @@ tags: "articles"
 
 <a class="language-jump" href="#english-version">Read in English</a>
 
-<img class="hero-image" src="../images/20261006-ircc-humanitarian-compassionate-guidelines.png" alt="法院立柱与木质法槌，人道主义及同情理由申请文章主题配图">
+<img class="hero-image" src="/images/20261006-ircc-humanitarian-compassionate-guidelines.png" alt="法院立柱与木质法槌，人道主义及同情理由申请文章主题配图">
 
 <p>2026年10月6日，加拿大移民局（IRCC）更新了人道主义及同情理由申请（Humanitarian and Compassionate Considerations，简称H&amp;C）的内部审理指引，进一步说明多次递交H&amp;C申请，以及H&amp;C与其他永久居民申请同时存在时的处理方式。</p>
 
@@ -75,7 +75,7 @@ tags: "articles"
 
 <p><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/updates/2026-updates-humanitarian-compassionate-consideration-pages.html" target="_blank" rel="noopener noreferrer">IRCC — October 6, 2026: Updates to H&amp;C Consideration Pages</a></p>
 
-<a class="back-link" href="../policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
+<a class="back-link" href="/policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
 
 <div class="english-section" id="english-version">
 
@@ -135,6 +135,6 @@ tags: "articles"
 
 <p><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/permanent-residence/humanitarian-compassionate-consideration/processing/in-canada/consideration-stage-1-processing-canada-consecutive-concurrent-applications.html" target="_blank" rel="noopener noreferrer">IRCC – Processing Consecutive and Concurrent H&amp;C Applications</a></p>
 
-<a class="back-link" href="../policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
+<a class="back-link" href="/policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
 
 </div>

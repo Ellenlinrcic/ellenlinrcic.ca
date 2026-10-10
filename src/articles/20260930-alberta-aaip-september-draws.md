@@ -11,12 +11,12 @@ subtitle: "从9月的抽选情况来看，一个趋势越来越明显：阿省�
 sidebarTitle: "准备申请阿省省提名？"
 sidebarText1: "AAIP目前的方向已经很清楚：分数重要，但职业、行业、雇主和阿省实际劳动力需求同样重要。"
 sidebarText2: "对于准备申请阿省省提名的人来说，不仅要看分数，更重要的是确认自己是否进入了阿省目前真正需要的人才范围。"
-contactHref: "../consultation.html?service=Alberta%20AAIP%20Assessment"
+contactHref: "/consultation.html?service=Alberta%20AAIP%20Assessment"
 contactLabel: "预约AAIP资格评估 | Book an Assessment"
 tags: "articles"
 ---
 
-<a class="back-link" href="../alberta-aaip.html">← 返回阿尔伯塔省提名 | Back to Alberta AAIP</a>
+<a class="back-link" href="/alberta-aaip.html">← 返回阿尔伯塔省提名 | Back to Alberta AAIP</a>
 
 <div class="article-meta">ALBERTA AAIP | SEPTEMBER 2026 DRAWS</div>
 
@@ -24,7 +24,7 @@ tags: "articles"
 
 <a class="language-jump" href="#english-version">Read in English</a>
 
-<img class="hero-image" src="../images/aaip.jpg" alt="Alberta Advantage Immigration Program AAIP">
+<img class="hero-image" src="/images/aaip.jpg" alt="Alberta Advantage Immigration Program AAIP">
 
 2026年9月，Alberta Advantage Immigration Program（AAIP）连续进行了多轮抽选，涉及 Alberta Opportunity Stream（AOS）、科技、医疗、制造业、农业以及执法人员等多个方向。
 
@@ -84,7 +84,7 @@ AAIP目前的方向已经很清楚：分数重要，但职业、行业、雇主�
 
 对于准备申请阿省省提名的人来说，不仅要看分数，更重要的是确认自己是否进入了阿省目前真正需要的人才范围。
 
-<a class="back-link" href="../alberta-aaip.html">← 返回阿尔伯塔省提名 | Back to Alberta AAIP</a>
+<a class="back-link" href="/alberta-aaip.html">← 返回阿尔伯塔省提名 | Back to Alberta AAIP</a>
 
 <div class="english-section" id="english-version">
 <h2>Alberta AAIP Sees Active September Draws: Tech, Health Care and AOS Continue to Move</h2>
@@ -119,5 +119,5 @@ AAIP目前的方向已经很清楚：分数重要，但职业、行业、雇主�
 <p>Applicants who have an Alberta employer, meet the occupational requirements and maintain valid immigration status should not automatically assume that a relatively modest EOI score means they have no opportunity.</p>
 <p>The direction of AAIP in 2026 is increasingly clear: EOI points matter, but occupation, sector, employer and Alberta’s actual labour market needs matter as well.</p>
 <p>For anyone considering Alberta immigration, the first step should therefore be to determine not only how many points they have, but also whether their background fits Alberta’s current economic and labour market priorities.</p>
-<a class="back-link" href="../alberta-aaip.html">← 返回阿尔伯塔省提名 | Back to Alberta AAIP</a>
+<a class="back-link" href="/alberta-aaip.html">← 返回阿尔伯塔省提名 | Back to Alberta AAIP</a>
 </div>

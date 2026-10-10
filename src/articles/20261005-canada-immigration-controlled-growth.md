@@ -11,12 +11,12 @@ subtitle: "从政策信号看Express Entry、法语与省提名的提前规划"
 sidebarTitle: "规划您的移民申请方向"
 sidebarText1: "结合CRS、语言、职业背景及加拿大工作经验，评估适合的申请策略。"
 sidebarText2: "如果您正在考虑Express Entry、法语类别或省提名，但不确定自己的条件应该如何规划，可以联系我们进行个案评估。"
-contactHref: "../consultation.html?service=Immigration%20Strategy%20Assessment"
+contactHref: "/consultation.html?service=Immigration%20Strategy%20Assessment"
 contactLabel: "预约个案评估 | Book an Assessment"
 tags: "articles"
 ---
 
-<a class="back-link" href="../policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
+<a class="back-link" href="/policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
 
 <div class="article-meta">IMMIGRATION POLICY | EXPRESS ENTRY</div>
 
@@ -24,7 +24,7 @@ tags: "articles"
 
 <a class="language-jump" href="#english-version">Read in English</a>
 
-<img class="hero-image" src="../images/20261005-canada-immigration-controlled-growth.png" alt="加拿大移民政策与申请规划主题插画：国会建筑、枫叶及通往远方的道路">
+<img class="hero-image" src="/images/20261005-canada-immigration-controlled-growth.png" alt="加拿大移民政策与申请规划主题插画：国会建筑、枫叶及通往远方的道路">
 
 <p>过去两年，加拿大移民政策的关键词一直是“控制”。</p>
 
@@ -92,7 +92,7 @@ tags: "articles"
 
 <p>如果您正在考虑Express Entry、法语类别或省提名，但不确定自己的条件应该如何规划，可以联系我们进行个案评估。</p>
 
-<a class="back-link" href="../policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
+<a class="back-link" href="/policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
 
 <div class="english-section" id="english-version">
 
@@ -170,6 +170,6 @@ tags: "articles"
 
 <p>If you are considering Express Entry, French-language category-based selection, or a Provincial Nominee Program and are unsure which strategy may fit your circumstances, you may contact our office for an individual assessment.</p>
 
-<a class="back-link" href="../policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
+<a class="back-link" href="/policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
 
 </div>

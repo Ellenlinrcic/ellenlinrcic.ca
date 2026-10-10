@@ -12,12 +12,12 @@ subtitle: "IRCC 2026年前七个月国际学生入境数据与学签政策解读
 sidebarTitle: "计划赴加拿大留学？"
 sidebarText1: "学校、课程、资金证明及学习计划都需要结合个人背景准备。"
 sidebarText2: "申请前应核对当前学签、PAL/TAL及毕业工签要求。"
-contactHref: "../consultation.html?service=Study%20Permit"
+contactHref: "/consultation.html?service=Study%20Permit"
 contactLabel: "预约学签评估 | Book a Study Permit Assessment"
 tags: articles
 ---
 
-<a class="back-link" href="../policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
+<a class="back-link" href="/policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
 <div class="article-meta">STUDY PERMIT | INTERNATIONAL STUDENTS</div>
 
 # 加拿大国际学生入境人数下降80%：留学大门真的关了吗？
@@ -28,7 +28,7 @@ tags: articles
 
 <img
   class="hero-image"
-  src="../images/international-students-canada-2026.jpg"
+  src="/images/international-students-canada-2026.jpg"
   alt="International students studying on a Canadian university campus"
 />
 

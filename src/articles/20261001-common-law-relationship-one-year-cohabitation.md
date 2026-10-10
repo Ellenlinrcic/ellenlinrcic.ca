@@ -11,12 +11,12 @@ subtitle: "加拿大移民法中的“同居关系”，没有想象中那么简
 sidebarTitle: "需要评估 Common-law 关系？"
 sidebarText1: "共同地址可以证明双方住在一起，但不一定能够单独证明这段共同生活从什么时候开始具有 conjugal relationship 的性质。"
 sidebarText2: "可预约咨询，结合关系发展时间线和现有材料评估具体情况。"
-contactHref: "../consultation.html?service=Common-law%20Relationship"
+contactHref: "/consultation.html?service=Common-law%20Relationship"
 contactLabel: "预约咨询 | Book a Consultation"
 tags: "articles"
 ---
 
-<a class="back-link" href="../case-strategy-notes.html">← 返回案件策略笔记 | Back to Case Strategy Notes</a>
+<a class="back-link" href="/case-strategy-notes.html">← 返回案件策略笔记 | Back to Case Strategy Notes</a>
 
 <div class="article-meta">COMMON-LAW | RELATIONSHIP EVIDENCE</div>
 
@@ -128,7 +128,7 @@ Common-law Relationship Established
 
 我处理过的一个真实案例很好地说明了这一点。一对伴侣虽然已经共同居住超过一年，但IRCC最初审查他们的居住记录和相关资料后，仍认为现有证据不足以确定双方在相关时间是否已经构成 Common-law Relationship，因此要求进一步提交详细的 Relationship Timeline。双方如实说明了共同生活、家庭开支及关系发展的情况后，Officer才认定他们早期的共同居住已经具有 conjugal relationship 的性质，并据此确定了 Common-law 日期。这个案例提醒我们：共同地址可以证明双方住在一起，但不一定能够单独证明这段共同生活从什么时候开始具有 conjugal relationship 的性质，而这个时间点恰恰可能决定法律上的 Common-law 日期。
 
-<a class="back-link" href="../case-strategy-notes.html">← 返回案件策略笔记 | Back to Case Strategy Notes</a>
+<a class="back-link" href="/case-strategy-notes.html">← 返回案件策略笔记 | Back to Case Strategy Notes</a>
 
 <div class="english-section" id="english-version">
 <h2>If You Live Together for One Year, Are You Automatically Common-Law Partners?</h2>
@@ -189,5 +189,5 @@ Common-law Relationship Established
 <p>When did they begin cohabiting as conjugal partners?</p>
 <h3>A Real Case Illustrates the Difference</h3>
 <p>A case I handled illustrates why this distinction matters. The couple had lived together for more than a year, but when IRCC first reviewed their records, the officer found there was insufficient information to determine whether they had been common-law partners during the relevant period. IRCC therefore requested a detailed Relationship Timeline. After the couple provided further information about how they lived together, shared household expenses and developed their relationship, the officer concluded that their earlier cohabitation had already been conjugal in nature. The lesson is simple: a shared address may establish cohabitation, but it does not necessarily establish when that cohabitation became conjugal—and that distinction can determine the legal common-law date.</p>
-<a class="back-link" href="../case-strategy-notes.html">← 返回案件策略笔记 | Back to Case Strategy Notes</a>
+<a class="back-link" href="/case-strategy-notes.html">← 返回案件策略笔记 | Back to Case Strategy Notes</a>
 </div>

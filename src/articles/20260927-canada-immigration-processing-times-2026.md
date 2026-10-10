@@ -11,12 +11,12 @@ subtitle: "配偶团聚等待时间有所增加，Express Entry 整体相对稳�
 sidebarTitle: "规划加拿大移民或签证申请？"
 sidebarText1: "因此，在规划加拿大移民或签证申请时，不能只看一个 Processing Time 数字。申请类别、当前库存、年度移民名额以及申请所在地，都可能影响最终的等待时间。"
 sidebarText2: "因此，申请人除了参考 IRCC Processing Time，也需要对实际等待时间保持更现实的预期。复杂案件、补件或 PFL 等情况还可能进一步延长处理时间。"
-contactHref: "../consultation.html"
+contactHref: "/consultation.html"
 contactLabel: "预约咨询 | Book a Consultation"
 tags: "articles"
 ---
 
-<a class="back-link" href="../policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
+<a class="back-link" href="/policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
 
 <div class="article-meta">Canadian Immigration | Processing Times</div>
 
@@ -24,7 +24,7 @@ tags: "articles"
 
 <a class="language-jump" href="#english-version">Read in English</a>
 
-<img class="hero-image" src="../images/20260927-canada-immigration-processing-times-2026.png" alt="2026年加拿大移民处理时间 | Canadian Immigration Processing Times in 2026">
+<img class="hero-image" src="/images/20260927-canada-immigration-processing-times-2026.png" alt="2026年加拿大移民处理时间 | Canadian Immigration Processing Times in 2026">
 
 最近不少申请人都在问：加拿大移民和签证是不是越来越慢了？
 
@@ -72,7 +72,7 @@ Protection/H&C 仍然存在较大的申请库存。不过 IRCC 已宣布将在20
 
 因此，在规划加拿大移民或签证申请时，不能只看一个 Processing Time 数字。申请类别、当前库存、年度移民名额以及申请所在地，都可能影响最终的等待时间。
 
-<a class="back-link" href="../policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
+<a class="back-link" href="/policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
 
 <div class="english-section" id="english-version">
 <h2>What Is Changing with Canadian Immigration Processing Times in 2026?</h2>
@@ -99,5 +99,5 @@ Protection/H&C 仍然存在较大的申请库存。不过 IRCC 已宣布将在20
 <p>The current picture is therefore not one of immigration processing becoming slower across the board.</p>
 <p>Spousal sponsorship is experiencing longer waits, Express Entry remains comparatively stable, while temporary residence processing increasingly varies by application location.</p>
 <p>When planning an immigration or visa application, the published processing-time figure should be considered together with the program category, current inventory, annual immigration levels and application location.</p>
-<a class="back-link" href="../policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
+<a class="back-link" href="/policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
 </div>

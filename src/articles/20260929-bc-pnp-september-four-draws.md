@@ -11,12 +11,12 @@ subtitle: "从本月的抽选可以看到，BC PNP目前的选择方向越来越
 sidebarTitle: "准备申请BC PNP？"
 sidebarText1: "因此，对于目前已经在BC工作、准备申请BC PNP的人来说，除了计算自己的注册分数，更重要的是判断自己的职业、工资水平、专业资格以及雇主情况是否符合BC省目前的优先选择方向。"
 sidebarText2: "特别是医疗、幼教、建筑技工以及工资较高的TEER 0–3申请人，建议重新检查自己的BC PNP条件和最新分数。"
-contactHref: "../consultation.html?service=BC%20PNP%20Skills%20Immigration"
+contactHref: "/consultation.html?service=BC%20PNP%20Skills%20Immigration"
 contactLabel: "预约BC PNP资格评估 | Book an Assessment"
 tags: "articles"
 ---
 
-<a class="back-link" href="../provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
+<a class="back-link" href="/provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
 
 <div class="article-meta">BC PNP | September 2026 Draws</div>
 
@@ -24,7 +24,7 @@ tags: "articles"
 
 <a class="language-jump" href="#english-version">Read in English</a>
 
-<img class="hero-image" src="../images/BCPNP_Draw_Reusable.jpg" alt="BC PNP 2026年9月四轮抽选 | BC PNP September 2026 Draws">
+<img class="hero-image" src="/images/BCPNP_Draw_Reusable.jpg" alt="BC PNP 2026年9月四轮抽选 | BC PNP September 2026 Draws">
 
 2026年9月，BC省提名计划（BC PNP）进行了四轮邀请，涵盖技术移民、农村及偏远地区医疗支持项目以及企业家移民。
 
@@ -90,7 +90,7 @@ Innovate则通过High Economic Impact邀请，吸引能够为BC省经济发展�
 
 BC PNP并没有停止，机会也仍然存在，但现在的邀请越来越有针对性。找到适合自己的类别，比单纯追逐某一轮最低分更加重要。
 
-<a class="back-link" href="../provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
+<a class="back-link" href="/provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
 
 <div class="english-section" id="english-version">
 <h2>BC PNP September 2026: Four Rounds of Invitations and a Growing Focus on High Economic Impact</h2>
@@ -129,5 +129,5 @@ BC PNP并没有停止，机会也仍然存在，但现在的邀请越来越有�
 <p>For people already working in B.C. and considering BC PNP, the registration score is therefore only part of the assessment. Occupation, wage level, professional qualifications and employer circumstances may all affect whether a candidate fits within the province’s current priorities.</p>
 <p>Candidates working in health care, childcare, construction trades, or higher-wage TEER 0–3 occupations may wish to review their eligibility under the latest BC PNP selection criteria.</p>
 <p>BC PNP continues to provide immigration opportunities, but invitations are becoming increasingly targeted. Understanding where your profile fits within B.C.’s priorities is now more important than simply following the minimum score from the latest draw.</p>
-<a class="back-link" href="../provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
+<a class="back-link" href="/provincial-nominee-programs.html">← 返回省提名项目 | Back to Provincial Nominee Programs</a>
 </div>

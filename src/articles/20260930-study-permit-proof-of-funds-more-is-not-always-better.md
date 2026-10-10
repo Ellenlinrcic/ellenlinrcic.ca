@@ -11,12 +11,12 @@ subtitle: "资金证明的重点，是足够、可用、来源清楚。"
 sidebarTitle: "准备学签资金证明？"
 sidebarText1: "资金证明的重点，是足够、可用、来源清楚。按要求如实披露，把用于学习的资金解释完整，比单纯提供大额存单更有说服力。"
 sidebarText2: "如果你不确定哪些资金适合用于学签申请、需要哪些来源证明，欢迎联系我们进行评估。"
-contactHref: "../consultation.html?service=Study%20Permit"
+contactHref: "/consultation.html?service=Study%20Permit"
 contactLabel: "预约咨询 | Book a Consultation"
 tags: "articles"
 ---
 
-<a class="back-link" href="../case-strategy-notes.html">← 返回案件策略笔记 | Back to Case Strategy Notes</a>
+<a class="back-link" href="/case-strategy-notes.html">← 返回案件策略笔记 | Back to Case Strategy Notes</a>
 
 <div class="article-meta">STUDY PERMIT | PROOF OF FUNDS</div>
 
@@ -40,7 +40,7 @@ tags: "articles"
 
 如果你不确定哪些资金适合用于学签申请、需要哪些来源证明，欢迎联系我们进行评估。
 
-<a class="back-link" href="../case-strategy-notes.html">← 返回案件策略笔记 | Back to Case Strategy Notes</a>
+<a class="back-link" href="/case-strategy-notes.html">← 返回案件策略笔记 | Back to Case Strategy Notes</a>
 
 <div class="english-section" id="english-version">
 <h2>Study Permit Proof of Funds: More Is Not Always Better</h2>
@@ -51,5 +51,5 @@ tags: "articles"
 <p>When reviewing study permit financial documents, we look at whether account balances, income records and fund transfers tell a consistent financial story. A substantial balance with little supporting explanation can create additional questions.</p>
 <p>The goal is to demonstrate sufficient, accessible funds with a clear source. Provide all required disclosures truthfully and support the funds you rely on, rather than simply adding more assets.</p>
 <p>If you are unsure which funds to rely on or how to document their source, contact us for an assessment.</p>
-<a class="back-link" href="../case-strategy-notes.html">← 返回案件策略笔记 | Back to Case Strategy Notes</a>
+<a class="back-link" href="/case-strategy-notes.html">← 返回案件策略笔记 | Back to Case Strategy Notes</a>
 </div>

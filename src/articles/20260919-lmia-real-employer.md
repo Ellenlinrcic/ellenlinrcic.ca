@@ -11,12 +11,12 @@ subtitle: "Service Canada进一步明确LMIA申请中的真实雇主、雇佣关
 sidebarTitle: 准备申请LMIA？
 sidebarText1: 如果企业存在关联公司、多个经营地点、分包、人力供应或其他复杂用工安排，在申请LMIA之前应先确认真正的雇主是谁。
 sidebarText2: 可以结合工资支付、日常管理、工作地点、雇佣合同以及实际服务对象等因素进行评估。
-contactHref: ../consultation.html?service=LMIA%20Assessment
+contactHref: /consultation.html?service=LMIA%20Assessment
 contactLabel: 预约LMIA评估 | Book an Assessment
 tags: articles
 ---
 
-<a class="back-link" href="../policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
+<a class="back-link" href="/policy-updates.html">← 返回政策观察 | Back to Policy Insights</a>
 
 <div class="article-meta">LMIA | Temporary Foreign Worker Program</div>
 
@@ -24,7 +24,7 @@ tags: articles
 
 <a class="language-jump" href="#english-version">Read in English</a>
 
-<img class="hero-image" src="../images/LMIA_Update.jpg" alt="LMIA update on employer employee relationship under Canada's Temporary Foreign Worker Program">
+<img class="hero-image" src="/images/LMIA_Update.jpg" alt="LMIA update on employer employee relationship under Canada's Temporary Foreign Worker Program">
 
 2026年9月18日，Service Canada更新了临时外国工人计划 （Temporary Foreign Worker Program，TFWP）的雇主要求， 进一步明确了在LMIA申请中，如何判断谁才是真正的雇主。
 
