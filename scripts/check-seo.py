@@ -92,7 +92,7 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,*args):return None
 def get(url):
     try:
-        with urllib.request.build_opener(NoRedirect).open(url,timeout=25) as r:return r.status,r.headers,r.read().decode('utf-8')
+        with urllib.request.build_opener(NoRedirect).open(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; EllenLinSEOCheck/1.0)'}),timeout=25) as r:return r.status,r.headers,r.read().decode('utf-8')
     except urllib.error.HTTPError as e:return e.code,e.headers,e.read().decode('utf-8')
 def live(articles,urls):
     errors=[]
