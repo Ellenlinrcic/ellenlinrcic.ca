@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "node -e \"require('node:fs').rmSync('_site',{recursive:true,force:true})\" && eleventy",
-    "dev": "eleventy --serve"
+    "dev": "eleventy --serve",
+    "check:publish": "python3 scripts/check-seo.py",
+    "test:seo": "python3 -m unittest discover -s scripts -p \"test_*.py\""
   },
   "keywords": [],
   "author": "",
