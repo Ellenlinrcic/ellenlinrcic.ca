@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Offline output validation; --live adds explicit production HTTP verification."""
 import argparse, hashlib, json, re, subprocess, sys
+from difflib import SequenceMatcher
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, urljoin, unquote
@@ -14,9 +15,11 @@ def route(p):
     return s[:-10] if s.endswith('index.html') else s[:-5] if s.endswith('.html') else s
 class Scan(HTMLParser):
     def __init__(self,text):
-        super().__init__(); self.canonical=[]; self.refs=[]; self.robots=[]; self.h1=0; self.feed(text)
+        super().__init__(); self.canonical=[]; self.refs=[]; self.robots=[]; self.h1=0; self.titles=[]; self.descriptions=[]; self.in_title=False; self.feed(text)
     def handle_starttag(self,t,attrs):
         a=dict(attrs)
+        if t=='title': self.titles.append(''); self.in_title=True
+        if t=='meta' and a.get('name','').lower()=='description': self.descriptions.append(a.get('content',''))
         if t=='link' and 'canonical' in a.get('rel','').lower().split(): self.canonical.append(a.get('href',''))
         if t=='meta' and a.get('name','').lower() in ('robots','googlebot'): self.robots.append(a.get('content','').lower())
         if t=='h1': self.h1+=1
@@ -24,6 +27,31 @@ class Scan(HTMLParser):
             if k in a: self.refs.append((k,a[k]))
         if 'srcset' in a:
             self.refs.extend(('srcset',x.strip().split()[0]) for x in a['srcset'].split(',') if x.strip())
+    def handle_data(self,data):
+        if self.in_title: self.titles[-1]+=data
+    def handle_endtag(self,t):
+        if t=='title': self.in_title=False
+
+def metadata_issues(records):
+    """Missing/ambiguous metadata is fatal; editorial similarity needs review."""
+    errors=[]; warnings=[]; titles={}; descriptions=[]
+    norm=lambda value: ' '.join(value.split()).casefold()
+    for route,s in records:
+        for label,values in (('SEO title',s.titles),('meta description',s.descriptions)):
+            if len(values)!=1 or not norm(values[0]):
+                errors.append('Missing/empty or multiple '+label+': '+route)
+        if len(s.titles)==1 and norm(s.titles[0]):
+            title=norm(s.titles[0])
+            if title in titles: warnings.append('SEO review: duplicate title: '+titles[title]+' and '+route)
+            titles[title]=route
+        if len(s.descriptions)==1 and norm(s.descriptions[0]):
+            description=norm(s.descriptions[0])
+            for other,previous in descriptions:
+                if description==previous or SequenceMatcher(None,description,previous,autojunk=False).ratio()>=0.92:
+                    warnings.append('SEO review: duplicate/highly similar descriptions: '+other+' and '+route)
+            descriptions.append((route,description))
+    return errors,warnings
+
 def validate(root,baseline):
     errors=[];warnings=[]
     def check(ok,msg):
@@ -35,6 +63,7 @@ def validate(root,baseline):
     expected=[]
     for p in (root/'src/articles').rglob('*'):
         if p.suffix not in ('.md','.njk','.html'):continue
+        check(bool(re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',p.stem)), 'Invalid English article filename: '+p.name)
         if p.suffix=='.html': r=route(p.relative_to(root/'src'))
         else:
             text=p.read_text(); fm=text.split('---',2)
@@ -59,12 +88,14 @@ def validate(root,baseline):
     check('Sitemap: '+ORIGIN+'/sitemap.xml' in (out/'robots.txt').read_text(),'Missing robots sitemap declaration')
     headers=(out/'_headers').read_text() if (out/'_headers').exists() else ''
     check(not re.search(r'X-Robots-Tag\s*:.*(?:noindex|none)',headers,re.I),'Blocking X-Robots-Tag in _headers (review scope)')
+    metadata=[]
     inbound=set(); known=baseline['known_refs']; seen=set()
     for r,p in pages.items():
         text=p.read_text();s=Scan(text)
         check('/articles/articles/' not in text,'Repeated articles path: '+r)
         check(not re.search(r'\{\{|\{%|<%=',text),'Unrendered template syntax: '+r)
         if r in expected:
+            metadata.append((r,s))
             check(s.canonical==[ORIGIN+r],'Canonical mismatch: '+r)
             check(ORIGIN+r in urls,'Article missing from sitemap: '+r)
             check(s.h1>0 and len(re.sub('<[^>]*>','',text))>200,'Missing static article content: '+r)
@@ -81,6 +112,8 @@ def validate(root,baseline):
                 else: errors.append('Broken/relative internal reference: '+key)
             if kind=='href' and not r.startswith('/articles/'):
                 inbound.add(path.removesuffix('.html'))
+    metadata_errors,metadata_warnings=metadata_issues(metadata)
+    errors.extend(metadata_errors); warnings.extend(metadata_warnings)
     for r in expected:
         if r not in inbound and r in baseline.get('known_orphans',[]): warnings.append('Existing static discovery exception: '+r)
         else: check(r in inbound,'Article lacks static homepage/category link: '+r)
@@ -114,13 +147,14 @@ def live(articles,urls):
     check(c==200 and all(rp.can_fetch('Googlebot',ORIGIN+r) for r in articles),'Live robots blocks articles')
     return errors
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--live',action='store_true');args=parser.parse_args()
-    subprocess.run(['npm','run','build'],cwd=ROOT,check=True)
+    parser=argparse.ArgumentParser();parser.add_argument('--live',action='store_true');parser.add_argument('--skip-build',action='store_true',help='Validate an already generated _site without rebuilding');args=parser.parse_args()
+    if not args.skip_build: subprocess.run(['npm','run','build:raw'],cwd=ROOT,check=True)
     baseline=json.loads((ROOT/'scripts/seo-baseline.json').read_text())
     errors,warnings,articles,urls=validate(ROOT,baseline)
     for x in warnings:print('WARNING:',x)
     for x in errors:print('FAIL:',x)
-    print(f'BUILD CHECK: {len(articles)} articles, {len(urls)} sitemap URLs, {len(errors)} errors, {len(warnings)} documented exceptions. No HTTP status verified by build checks.')
+    print(f'BUILD CHECK: {len(articles)} articles, {len(urls)} sitemap URLs, {len(errors)} errors, {sum(x.startswith("Existing ") for x in warnings)} documented exceptions, {sum(x.startswith("SEO review:") for x in warnings)} SEO review warnings. No HTTP status verified by build checks.')
+    print('DISPLAY CHECK: NOT RUN by this static checker; desktop/mobile browser review is required. Google indexing: NOT VERIFIED.')
     if not errors and args.live:
         try:errors=live(articles,urls)
         except Exception as e:errors=['Live verification incomplete: '+str(e)]

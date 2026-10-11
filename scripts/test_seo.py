@@ -52,3 +52,68 @@ class Regression(unittest.TestCase):
             return (200,h,b) if c==404 else (301,h,b) if c==308 else (c,h,b)
         with patch.object(seo,'get',side_effect=broken):
             errors=seo.live(['/articles/example'],[url]);self.assertTrue(any('404' in e for e in errors));self.assertTrue(any('308' in e for e in errors))
+
+    def test_real_validator_exit_codes(self):
+        import subprocess
+        self.assertEqual(self.errors(),[])
+        (self.r/'scripts').mkdir()
+        shutil.copy2(seo.ROOT/'scripts/check-seo.py',self.r/'scripts/check-seo.py')
+        (self.r/'scripts/seo-baseline.json').write_text(json.dumps(self.baseline))
+        command=['python3','scripts/check-seo.py','--skip-build']
+        result=subprocess.run(command,cwd=self.r,capture_output=True,text=True)
+        self.assertEqual(result.returncode,0,result.stdout+result.stderr)
+        self.assertIn('6 documented exceptions',result.stdout)
+        self.assertIn('DISPLAY CHECK: NOT RUN',result.stdout)
+        self.edit(self.article,'name="description"','name="removed-description"')
+        result=subprocess.run(command,cwd=self.r,capture_output=True,text=True)
+        self.assertNotEqual(result.returncode,0)
+        self.assertIn('Missing/empty or multiple meta description',result.stdout)
+        self.assertIn('6 documented exceptions',result.stdout)
+    def test_english_filename(self):
+        p=self.r/'src/articles/中文.md'
+        p.write_text((self.r/'src/articles/20260924-manitoba-mpnp-draw-280.md').read_text())
+        self.assertTrue(any('Invalid English article filename' in e for e in self.errors()))
+    def test_duplicate_canonical(self):
+        self.article.write_text(self.article.read_text()+'<link rel="canonical" href="https://ellenlinrcic.ca/articles/20260924-manitoba-mpnp-draw-280">')
+        self.assertTrue(any('Canonical mismatch' in e for e in self.errors()))
+
+class Metadata(unittest.TestCase):
+    def scan(self,title='Example',description='Example description'):
+        return seo.Scan('<title>'+title+'</title><meta name="description" content="'+description+'">')
+    def test_missing_title_and_description(self):
+        errors,_=seo.metadata_issues([('/a',seo.Scan('<h1>Body</h1>'))])
+        self.assertEqual(len(errors),2)
+    def test_empty_metadata(self):
+        errors,_=seo.metadata_issues([('/a',self.scan('   ','  '))]);self.assertEqual(len(errors),2)
+    def test_multiple_metadata(self):
+        s=seo.Scan('<title>A</title><title>B</title><meta name="description" content="A"><meta name="description" content="B">')
+        self.assertEqual(len(seo.metadata_issues([('/a',s)])[0]),2)
+    def test_similarity_is_advisory(self):
+        errors,warnings=seo.metadata_issues([('/a',self.scan()),('/b',self.scan()),('/c',self.scan('Other','Example description!'))])
+        self.assertEqual(errors,[]);self.assertTrue(any('duplicate title' in w for w in warnings));self.assertTrue(any('similar descriptions' in w for w in warnings))
+    def test_distinct_metadata(self):
+        self.assertEqual(seo.metadata_issues([('/a',self.scan()),('/b',self.scan('Unique','A wholly different topic with its own summary'))]),([],[]))
+    def test_title_entities_and_nested_text(self):
+        s=seo.Scan('<title>A &amp; B</title><meta name="description" content="A &amp; B">')
+        self.assertEqual(s.titles,['A & B']);self.assertEqual(s.descriptions,['A & B'])
+
+class BuildGate(unittest.TestCase):
+    def test_build_success_and_failures_without_recursion(self):
+        import subprocess
+        # Exercise actual npm wiring in an isolated project, with no website edits.
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'scripts').mkdir()
+            package=json.loads((seo.ROOT/'package.json').read_text())
+            package['scripts']['build:raw']='node -e "process.exit(0)"'
+            (root/'package.json').write_text(json.dumps(package))
+            script=root/'scripts/check-seo.py'
+            script.write_text('import sys\nassert "--skip-build" in sys.argv\nprint("VALIDATOR_CALLED")\n')
+            result=subprocess.run(['npm','run','build'],cwd=root,capture_output=True,text=True)
+            self.assertEqual(result.returncode,0);self.assertEqual(result.stdout.count('VALIDATOR_CALLED'),1)
+            script.write_text('import sys\nprint("CRITICAL_FAILURE")\nsys.exit(1)\n')
+            result=subprocess.run(['npm','run','build'],cwd=root,capture_output=True,text=True)
+            self.assertNotEqual(result.returncode,0);self.assertIn('CRITICAL_FAILURE',result.stdout)
+            package['scripts']['build:raw']='node -e "process.exit(7)"'
+            (root/'package.json').write_text(json.dumps(package))
+            result=subprocess.run(['npm','run','build'],cwd=root,capture_output=True,text=True)
+            self.assertNotEqual(result.returncode,0);self.assertNotIn('CRITICAL_FAILURE',result.stdout)

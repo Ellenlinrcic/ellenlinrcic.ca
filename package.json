@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node -e \"require('node:fs').rmSync('_site',{recursive:true,force:true})\" && eleventy",
+    "build": "npm run build:raw && python3 scripts/check-seo.py --skip-build",
     "dev": "eleventy --serve",
     "check:publish": "python3 scripts/check-seo.py",
-    "test:seo": "python3 -m unittest discover -s scripts -p \"test_*.py\""
+    "test:seo": "python3 -m unittest discover -s scripts -p \"test_*.py\"",
+    "build:raw": "node -e \"require('node:fs').rmSync('_site',{recursive:true,force:true})\" && eleventy"
   },
   "keywords": [],
   "author": "",
