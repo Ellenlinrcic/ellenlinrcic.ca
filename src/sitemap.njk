@@ -496,4 +496,7 @@ permalink: sitemap.xml
 <url><loc>https://ellenlinrcic.ca/northwest-territories-nominee-program</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ellenlinrcic.ca/new-brunswick-pnp-insights</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://ellenlinrcic.ca/northwest-territories-nominee-program-insights</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+{% for program in collections.programPages %}
+<url><loc>{{ program.url | canonicalUrl }}</loc><lastmod>{{ program.date | dateISO }}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+{% endfor %}
 </urlset>

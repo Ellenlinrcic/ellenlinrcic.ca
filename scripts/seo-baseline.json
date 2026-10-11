@@ -39,7 +39,7 @@
     "src/manitoba-pnp.html": "412839bb215bd4dd4c6fd76cc19773ee480f8eedb2490be20fa9b57c4a582071",
     "src/alberta-pnp-insights.html": "88a750089b123572ee15012c6d86fb5416c730a8ca6dc320ab8c5fa6ffb91cfc",
     "src/pei-pnp.html": "43c533c62cf1f27381b87d8d3a080bc56a0afc632c98a9a15e1ceedcfe97d9f6",
-    "src/sitemap.njk": "dad54143e13c45a89e1c2820c5a909b479baeb0357cd74ded93305154b1d8b6f",
+    "src/sitemap.njk": "4b15e9db432b50f99246df1fba8a22fcab1cc3c19295f331a37e0e5641dfc178",
     "src/thank-you.html": "207f05f226d917b33854bcf7669c34720627da3052f17babc0f85e38399efb07",
     "src/new-brunswick-pnp-insights.html": "ee50de24424a8c62351c971ac3042ad8d6a4d171be84551da93399f4fb2b5457",
     "src/_includes/article.njk": "1cc773eb7d0e7c73975430d931eedcf5e62995c68a71c5c49cfac26544ac90bd",
@@ -153,7 +153,9 @@
     "src/articles/20260824-restoration-maintained-status-lost-status.html": "a1a0fc8b1881f98a77b1034a3c45d065f7274ae0a1f0b7097fd8fc2dc9715e85",
     "src/articles/business-visitor-visa.html": "d48f2a774004996c76042367062196c07e6d31b33db78716eab47ccd12496cef",
     "src/articles/20261010-canada-land-border-hours-update.md": "e0cceda8d074e6781196e17e06f708c695f402b3df7dcaeef7bdc1dd482b7357",
-    "src/images/20261010-canada-land-border-checkpoint.png": "e7a6ba8cdc2d397c632326fd2a97d4e426e919db63a2b9335d30c4acd933480a"
+    "src/images/20261010-canada-land-border-checkpoint.png": "e7a6ba8cdc2d397c632326fd2a97d4e426e919db63a2b9335d30c4acd933480a",
+    "src/ontario-oinp.njk": "583c4d97e2928cc8c44e9aab3a3ef8b60d8ea57860481635533e1b4c9ee0bef7",
+    "src/ontario-oinp-insights.njk": "16786c60e2401e299b0da72a8d59b31194a4fc5124943779934d2fa0399190c4"
   },
   "known_refs": [
     "/|href|/visitor-visas.html",
