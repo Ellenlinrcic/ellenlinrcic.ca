@@ -15,13 +15,13 @@ contactLabel: "预约咨询 | Book a Consultation"
 tags: "articles"
 ---
 
-<a class="back-link" href="/policy-updates">← 政策更新 | Policy Updates</a>
+<a class="back-link" href="/policy-updates">← 返回政策观察 | Back to Policy Insights</a>
 
 # 11月1日起，加拿大26个陆路口岸调整开放时间：BC居民出行前请确认
 
 <a class="language-jump" href="#english-version">Read in English</a>
 
-<img class="hero-image" src="/images/20261010-canada-land-border-checkpoint.png" alt="Canadian land border checkpoint with inspection booths, vehicle lanes and a Canadian flag" width="1672" height="941">
+<img class="hero-image" style="height:auto" src="/images/20261010-canada-land-border-checkpoint.png" alt="Canadian land border checkpoint with inspection booths, vehicle lanes and a Canadian flag" width="1672" height="941">
 
 <p>计划在11月以后开车往返加拿大与美国的朋友，需要留意口岸开放时间的新安排。</p>
 
@@ -87,6 +87,15 @@ tags: "articles"
 <p>建议旅客出发前确认加拿大与美国两侧口岸的服务时间，注意当地时区，并为路况和排队预留余量。尤其是计划晚间过境的旅客，不宜把到达时间安排在口岸关闭前的最后几分钟。</p>
 
 <p>对已经安排11月及之后陆路行程的朋友，现在就可以检查路线和预计到达时间。提前确认这些细节，有助于减少临时改道，也能避免因口岸已经关闭而耽误行程。</p>
+
+<h2>官方来源</h2>
+<ul>
+<li><a href="https://www.canada.ca/en/border-services-agency/news/2026/10/the-cbsa-is-adjusting-hours-of-service-at-nine-land-ports-of-entry-in-british-columbia.html">CBSA — 卑诗省（BC省）</a></li>
+<li><a href="https://www.canada.ca/en/border-services-agency/news/2026/10/the-cbsa-is-adjusting-hours-of-service-at-four-land-ports-of-entry-in-alberta.html">CBSA — 阿尔伯塔省（阿省）</a></li>
+<li><a href="https://www.canada.ca/en/border-services-agency/news/2026/10/the-cbsa-is-adjusting-hours-of-service-at-13-land-ports-of-entry-in-manitoba.html">CBSA — 曼尼托巴省（曼省）</a></li>
+</ul>
+
+<a class="back-link" href="/policy-updates">← 返回政策观察 | Back to Policy Insights</a>
 
 <div class="english-section" id="english-version">
 <h2>Canada to Adjust Hours at 26 Land Border Crossings on November 1: What BC Travellers Should Know</h2>
@@ -155,11 +164,13 @@ tags: "articles"
 
 <p>If you already have a land-border trip planned for November or later, review your route and expected arrival time now. A little preparation can help prevent an unexpected detour or a delay caused by arriving after the crossing has closed.</p>
 
-</div>
-<h2>官方来源 | Official Sources</h2>
+<h2>Official Sources</h2>
 <ul>
-<li><a href="https://www.canada.ca/en/border-services-agency/news/2026/10/the-cbsa-is-adjusting-hours-of-service-at-nine-land-ports-of-entry-in-british-columbia.html">CBSA — British Columbia（BC省）</a></li>
-<li><a href="https://www.canada.ca/en/border-services-agency/news/2026/10/the-cbsa-is-adjusting-hours-of-service-at-four-land-ports-of-entry-in-alberta.html">CBSA — Alberta（阿省）</a></li>
-<li><a href="https://www.canada.ca/en/border-services-agency/news/2026/10/the-cbsa-is-adjusting-hours-of-service-at-13-land-ports-of-entry-in-manitoba.html">CBSA — Manitoba（曼省）</a></li>
+<li><a href="https://www.canada.ca/en/border-services-agency/news/2026/10/the-cbsa-is-adjusting-hours-of-service-at-nine-land-ports-of-entry-in-british-columbia.html">CBSA — British Columbia</a></li>
+<li><a href="https://www.canada.ca/en/border-services-agency/news/2026/10/the-cbsa-is-adjusting-hours-of-service-at-four-land-ports-of-entry-in-alberta.html">CBSA — Alberta</a></li>
+<li><a href="https://www.canada.ca/en/border-services-agency/news/2026/10/the-cbsa-is-adjusting-hours-of-service-at-13-land-ports-of-entry-in-manitoba.html">CBSA — Manitoba</a></li>
 </ul>
-<a class="back-link" href="/policy-updates">← 政策更新 | Policy Updates</a>
+
+</div>
+
+<a class="back-link" href="/policy-updates">← 返回政策观察 | Back to Policy Insights</a>
