@@ -1,0 +1,218 @@
+{
+  "topics": {
+    "bc": "src/bc-pnp-insights.html",
+    "alberta": "src/alberta-pnp-insights.html",
+    "manitoba": "src/manitoba-pnp-insights.html",
+    "ontario": "src/ontario-oinp-insights.njk",
+    "pei": "src/pei-pnp-insights.html",
+    "newfoundland-labrador": "src/newfoundland-labrador-pnp-insights.html",
+    "saskatchewan": "src/saskatchewan-sinp-insights.html",
+    "new-brunswick": "src/new-brunswick-pnp-insights.html",
+    "northwest-territories": "src/northwest-territories-nominee-program-insights.html"
+  },
+  "articles": {
+    "/articles/20260820-bc-pnp-high-economic-impact-draw": {
+      "topics": [
+        "bc"
+      ],
+      "published": "2026-08-20"
+    },
+    "/articles/20260820-pei-pnp-draw": {
+      "topics": [
+        "pei"
+      ],
+      "published": "2026-08-20"
+    },
+    "/articles/20260825-bc-pnp-entrepreneur-immigration-draw": {
+      "topics": [
+        "bc"
+      ],
+      "published": "2026-08-25"
+    },
+    "/articles/20260826-nlpnp-aip-draw": {
+      "topics": [
+        "newfoundland-labrador"
+      ],
+      "published": "2026-08-26"
+    },
+    "/articles/20260827-manitoba-pnp-draw": {
+      "topics": [
+        "manitoba"
+      ],
+      "published": "2026-08-27"
+    },
+    "/articles/20260901-bc-pnp-rural-remote-health-support-extension": {
+      "topics": [
+        "bc"
+      ],
+      "published": "2026-09-01"
+    },
+    "/articles/20260903-sinp-capped-sector-intake": {
+      "topics": [
+        "saskatchewan"
+      ],
+      "published": "2026-09-03"
+    },
+    "/articles/20260904-nlpnp-97-invitations": {
+      "topics": [
+        "newfoundland-labrador"
+      ],
+      "published": "2026-09-04"
+    },
+    "/articles/20260909-aaip-additional-federal-spaces": {
+      "topics": [
+        "alberta"
+      ],
+      "published": "2026-09-09"
+    },
+    "/articles/20260909-aaip-three-draws": {
+      "topics": [
+        "alberta"
+      ],
+      "published": "2026-09-12"
+    },
+    "/articles/20260910-bc-pnp-targeted-draw": {
+      "topics": [
+        "bc"
+      ],
+      "published": "2026-09-10"
+    },
+    "/articles/20260910-manitoba-pnp-draw": {
+      "topics": [
+        "manitoba"
+      ],
+      "published": "2026-09-10"
+    },
+    "/articles/20260910-nlpnp-36-invitations": {
+      "topics": [
+        "newfoundland-labrador"
+      ],
+      "published": "2026-09-10"
+    },
+    "/articles/20260917-pei-pnp-draw": {
+      "topics": [
+        "pei"
+      ],
+      "published": "2026-09-18"
+    },
+    "/articles/20260924-manitoba-mpnp-draw-280": {
+      "topics": [
+        "manitoba"
+      ],
+      "published": "2026-09-24"
+    },
+    "/articles/20260925-newfoundland-labrador-september-four-rounds": {
+      "topics": [
+        "newfoundland-labrador"
+      ],
+      "published": "2026-09-25"
+    },
+    "/articles/20260929-bc-pnp-september-four-draws": {
+      "topics": [
+        "bc"
+      ],
+      "published": "2026-09-29"
+    },
+    "/articles/20260930-alberta-aaip-september-draws": {
+      "topics": [
+        "alberta"
+      ],
+      "published": "2026-09-30"
+    },
+    "/articles/20261007-pei-pnp-draw": {
+      "topics": [
+        "pei"
+      ],
+      "published": "2026-10-07"
+    },
+    "/articles/20261008-bc-pnp-targeted-draw": {
+      "topics": [
+        "bc"
+      ],
+      "published": "2026-10-08"
+    },
+    "/articles/aaip-monthly-insights-july-2026": {
+      "topics": [
+        "alberta"
+      ],
+      "published": "2026-07-21",
+      "title": "2026年7月AAIP月度观察：阿省省提名进入下半场，今年还有多少机会？",
+      "title_en": "AAIP Monthly Insights: July 2026",
+      "description": "2026年7月AAIP月度观察：阿省省提名进入下半场，今年还有多少机会？"
+    },
+    "/articles/bc-pnp-high-economic-impact-2026": {
+      "topics": [
+        "bc"
+      ],
+      "published": "2026-07-20"
+    },
+    "/articles/oinp-earnings-history-scoring-2026": {
+      "topics": [
+        "ontario"
+      ],
+      "published": "2026-10-11"
+    },
+    "/articles/oinp-workforce-priority-reform-2026": {
+      "topics": [
+        "ontario"
+      ],
+      "published": "2026-07-30"
+    },
+    "/articles/ontario-new-pr-pathways-20260626": {
+      "topics": [
+        "ontario"
+      ],
+      "published": "2026-06-26"
+    }
+  },
+  "legacy_unclassified": [
+    "/articles/2026-2027-canadian-immigration-outlook",
+    "/articles/20260819-express-entry-french-language-draw",
+    "/articles/20260824-restoration-maintained-status-lost-status",
+    "/articles/20260828-lmia-rule-changes",
+    "/articles/20260904-work-permit-study-policy",
+    "/articles/20260913-canada-biometrics-fingerprints-validity",
+    "/articles/20260914-canada-cbsa-immigration-enforcement-removals",
+    "/articles/20260919-lmia-real-employer",
+    "/articles/20260922-canada-international-student-arrivals-2026",
+    "/articles/20260922-study-permit-restoration-unauthorized-study-approved",
+    "/articles/20260924-family-status-child-college-parents-visitor-record",
+    "/articles/20260927-canada-immigration-processing-times-2026",
+    "/articles/20260930-study-permit-proof-of-funds-more-is-not-always-better",
+    "/articles/20261001-canada-visitor-visa-screening-application-preparation",
+    "/articles/20261001-common-law-relationship-one-year-cohabitation",
+    "/articles/20261005-canada-immigration-controlled-growth",
+    "/articles/20261006-ircc-humanitarian-compassionate-guidelines",
+    "/articles/20261010-canada-land-border-hours-update",
+    "/articles/artists-photographers-videographers-work-permit-canada",
+    "/articles/biometrics-not-always-once-and-done",
+    "/articles/business-visitor-visa",
+    "/articles/canada-pr-allocation-first-five-months-2026",
+    "/articles/common-law-vs-marriage",
+    "/articles/excluded-family-member-case-note",
+    "/articles/express-entry-cec-draw-20260707",
+    "/articles/express-entry-enter-pool-early",
+    "/articles/french-language-draw-july-9-2026",
+    "/articles/ircc-processing-time-does-not-always-mean-reasonable-delay",
+    "/articles/new-student-arrivals-down-83-2026",
+    "/articles/new-worker-arrivals-down-63-2026",
+    "/articles/parents-grandparents-program-suspended",
+    "/articles/pgwp-hunger-strike-calgary",
+    "/articles/pgwp-student-hunger-strike-2026",
+    "/articles/procedural-fairness-letter-response",
+    "/articles/senior-manager-draw-20260710",
+    "/articles/skilled-trades-draw-opportunity",
+    "/articles/skilled-trades-immigration-opportunities",
+    "/articles/study-permit-fund-requirements-september-2026",
+    "/articles/study-permit-procedural-fairness-akaya-2026",
+    "/articles/study-permit-refusal-insufficient-funds-2026",
+    "/articles/study-permit-refused-reapply-or-reconsideration",
+    "/articles/super-visa-income-2026",
+    "/articles/what-to-do-when-ircc-takes-too-long",
+    "/articles/why-canada-tightens-immigration-policies",
+    "/articles/why-genuine-marriage-can-still-be-refused",
+    "/articles/why-students-believed-pgwp-eligible",
+    "/articles/why-trv-is-getting-harder",
+    "/articles/work-permit-not-guarantee-pr"
+  ]
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Offline output validation; --live adds explicit production HTTP verification."""
-import argparse, hashlib, json, re, subprocess, sys
+import argparse, hashlib, importlib.util, json, re, subprocess, sys
 from difflib import SequenceMatcher
 from pathlib import Path
 from html.parser import HTMLParser
@@ -8,6 +8,8 @@ from urllib.parse import urlsplit, urljoin, unquote
 import urllib.request, urllib.error, urllib.robotparser
 import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
+province_spec=importlib.util.spec_from_file_location('province_insights',Path(__file__).with_name('province_insights.py'))
+province_insights=importlib.util.module_from_spec(province_spec);province_spec.loader.exec_module(province_insights)
 ORIGIN='https://ellenlinrcic.ca'
 def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 def route(p):
@@ -94,9 +96,10 @@ def validate(root,baseline):
         text=p.read_text();s=Scan(text)
         check('/articles/articles/' not in text,'Repeated articles path: '+r)
         check(not re.search(r'\{\{|\{%|<%=',text),'Unrendered template syntax: '+r)
+        if r in expected or ORIGIN+r in urls:
+            check(s.canonical==[ORIGIN+r],'Canonical mismatch: '+r)
         if r in expected:
             metadata.append((r,s))
-            check(s.canonical==[ORIGIN+r],'Canonical mismatch: '+r)
             check(ORIGIN+r in urls,'Article missing from sitemap: '+r)
             check(s.h1>0 and len(re.sub('<[^>]*>','',text))>200,'Missing static article content: '+r)
             check(not any(re.search(r'\b(noindex|none)\b',x) for x in s.robots),'Article noindex: '+r)
@@ -120,6 +123,8 @@ def validate(root,baseline):
     check((out/'404.html').is_file(),'Missing top-level 404.html')
     if (out/'404.html').exists():check(any('noindex' in x for x in Scan((out/'404.html').read_text()).robots),'404 must be noindex')
     check(ORIGIN+'/404' not in urls,'404 in sitemap')
+    errors.extend(province_insights.validate(root,expected))
+    warnings.extend(province_insights.review_warnings(root))
     return errors,warnings,expected,urls
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,*args):return None
@@ -133,8 +138,8 @@ def live(articles,urls):
         if not ok:errors.append(msg)
     for u in urls:
         c,h,b=get(u);check(c==200,'Live expected 200: '+u+' got '+str(c))
+        check(Scan(b).canonical==[u],'Live canonical mismatch: '+u)
         if urlsplit(u).path in articles:
-            check(Scan(b).canonical==[u],'Live canonical mismatch: '+u)
             check(not any(re.search(r'\b(noindex|none)\b',x) for x in Scan(b).robots) and not re.search(r'noindex|none',h.get('X-Robots-Tag',''),re.I),'Live noindex: '+u)
         old=u+'index.html' if u.endswith('/') else u+'.html'
         c,h,b=get(old);check(c==308 and urljoin(old,h.get('Location',''))==u,'Live expected 308 to canonical: '+old)
