@@ -26,7 +26,7 @@
     "src/bc-pnp.html": "b7f97e3554d519ebd6765981c18ec2e446ca7c70fc9ada5e33f96bee73590b45",
     "src/updates.html": "8f8fc3199569f2396d99dde7feb907dc2f3961238edaab0f278bbcb20bd07e4b",
     "src/family-sponsorship.html": "834a266075d6ee48de8132ecb166e97673369797939e93a14569d5de5415f6f3",
-    "src/alberta-aaip.html": "ce2a85ae1f86df53a373494e99a2df843fafbc10055636c189a3fc46847e288b",
+    "src/alberta-aaip.html": "fc44efaf2a234debac40c774c46527a8c9fad8e5be37beb82ee6fb15d9834caf",
     "src/study-permit-extension-assessment.html": "61421c4325fd21c203882111a5c34a27cc09b4b9e0d6e96ab3c58b56d2c8dc80",
     "src/study-permit-refusal-assessment.html": "7fd2e0a6e02709743c6af53f98a4eb0e061bb30b3f8c4eb7d6686737deb5778e",
     "src/study-permits-education-planning.html": "d6b5746378d77e166d732e950b3a7423298832429de75922d8af65a631281681",
@@ -37,7 +37,7 @@
     "src/saskatchewan-sinp.html": "c9cf854d57e0eb7dce7a10a661ab4a97504208ac375838f966dad4ca51949e1f",
     "src/client-reminders.njk": "4008f60d6b42fc582ee9574e360ab886addf4bfa6c997c9ae17ef47e2158d303",
     "src/manitoba-pnp.html": "412839bb215bd4dd4c6fd76cc19773ee480f8eedb2490be20fa9b57c4a582071",
-    "src/alberta-pnp-insights.html": "b778aeb3c07fb5ff6ec98c9b41dfedf6fd0bcce07fad77f6d081dc3410896420",
+    "src/alberta-pnp-insights.html": "988588ad13b48eb712a2cce4e857cfaf94a4789bca4dbeaa8d3619ecf5cc69dd",
     "src/pei-pnp.html": "43c533c62cf1f27381b87d8d3a080bc56a0afc632c98a9a15e1ceedcfe97d9f6",
     "src/sitemap.njk": "4b15e9db432b50f99246df1fba8a22fcab1cc3c19295f331a37e0e5641dfc178",
     "src/thank-you.html": "207f05f226d917b33854bcf7669c34720627da3052f17babc0f85e38399efb07",
@@ -158,7 +158,8 @@
     "src/ontario-oinp-insights.njk": "abf3d2b445db3016d0f30c4ba2bf5d0e1bafbb0cef9e283dddfc07238d6a2d7e",
     "src/articles/oinp-earnings-history-scoring-2026.md": "302ae78ab593273d97b402509e8aa48a42161dbe8c0bb14c1279d92bcc302fa0",
     "src/images/oinp-earnings-history-scoring-2026.jpg": "090671ec3b95985b64a36862481890e82ac68924f17571e2f625eeb3dfbee777",
-    "src/articles/20261008-bc-pnp-targeted-draw.md": "cf49f86f32a2ce1b3c325cc41b8466a2d2b5611002376e38b54e8e0f03414355"
+    "src/articles/20261008-bc-pnp-targeted-draw.md": "cf49f86f32a2ce1b3c325cc41b8466a2d2b5611002376e38b54e8e0f03414355",
+    "src/articles/20261008-alberta-aaip-allocation-draws.md": "92619a9e31b8c57bcad7c952ca5175a961132d917d592511f8e3868280412ed8"
   },
   "known_refs": [
     "/|href|/visitor-visas.html",

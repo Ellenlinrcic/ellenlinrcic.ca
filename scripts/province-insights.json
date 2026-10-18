@@ -125,6 +125,15 @@
       ],
       "published": "2026-10-07"
     },
+    "/articles/20261008-alberta-aaip-allocation-draws": {
+      "topics": [
+        "alberta"
+      ],
+      "published": "2026-10-08",
+      "title": "阿省提名配额进一步收紧：截至10月7日，年度剩余名额降至1,062个",
+      "title_en": "Alberta’s AAIP Allocation Tightens: 1,062 Nomination Spaces Remaining as of October 7",
+      "description": "截至2026年10月7日，AAIP已发出5,541份提名，剩余1,062个名额；整理三轮抽选、Worker EOI分数及各类别余量，区分邀请与提名。"
+    },
     "/articles/20261008-bc-pnp-targeted-draw": {
       "topics": [
         "bc"
